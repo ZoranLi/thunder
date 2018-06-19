@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/item_icon_layout" app:layout_width="UNKNOWN_DATA_0x7f0b0249" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/choiceness_ad_side_space_template_ugc" app:layout_marginRight="@dimen/choiceness_ad_side_space_template_ugc" app:layout_below="@+id/item_title" app:ratio="@dimen/choiceness_ad_image_width_height_radio_template_ugc">
+        <ImageView app:id="@+id/item_icon" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/choiceness_icon_default" app:scaleType="fitXY" />
+    </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+</merge>

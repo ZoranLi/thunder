@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.search.ui.widget.SearchTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@+id/fl_search_layout" android:background="@drawable/common_layout_content_bkg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <fragment android:name="com.xunlei.downloadprovider.search.ui.search.MainSearchFragment" android:id="@+id/main_search_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.xunlei.downloadprovider.search.ui.widget.SearchAssociativeView android:id="@+id/search_associative_vie" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.xunlei.downloadprovider.web.base.core.CustomWebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:id="@+id/search_mask" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/search_clip_layout" android:background="@drawable/search_clip_background" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3401" android:layout_below="@+id/title_bar">
+        <ImageView android:id="@+id/search_clip_image" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clip_image" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:contentDescription="@string/search_bar_icon_description" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/search_clip_arrow" android:layout_toRightOf="@+id/search_clip_image" android:layout_toStartOf="@+id/search_clip_arrow" android:layout_toEndOf="@+id/search_clip_image">
+            <TextView android:textSize="14sp" android:textColor="#3b424c" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/search_clip_text" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1a01" android:maxLines="1" />
+            <TextView android:textSize="11sp" android:textColor="#979aa0" android:id="@+id/search_clip_hint" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1a01" android:layout_below="@+id/search_clip_text" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/search_clip_arrow" android:padding="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clip_close" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/search_bar_icon_description" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.xunlei.downloadprovider.search.ui.widget.KeyboardHelpView android:id="@+id/keyboard_help" android:background="#e4e4e4" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginTop="-100dp" />
+</RelativeLayout>

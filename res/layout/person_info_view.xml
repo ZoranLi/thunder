@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_marginRight="13dp">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/person_info_head" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/user_not_login_avatar" />
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/person_info_headtype" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0xe01" android:layout_height="UNKNOWN_DATA_0xe01" android:src="@drawable/youliao_big_img_v" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textColor="#3b424c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/person_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jack" />
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="#3b424c" android:id="@+id/person_info_video_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="34视频" />
+            <TextView android:textSize="12sp" android:textColor="#3b424c" android:id="@+id/person_info_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5.4万粉丝" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/private_info" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b01d0" android:layout_alignParentBottom="true">
+            <TextView android:textSize="8sp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/publisher_type" android:background="@drawable/user_type" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b01d0" android:layout_marginRight="5dp" android:text="有料女神" />
+            <include layout="@layout/layout_publisher_per_info" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/lv_follow" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="53dp" />
+</FrameLayout>

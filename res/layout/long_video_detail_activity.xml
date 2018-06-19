@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.web.base.core.CustomWebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:background="0x106000d" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f">
+        <View android:id="@+id/title_bar_layout" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@+id/goback_btn" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="@dimen/common_padding_left_normal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/short_list_back_icon_selector" android:onClick="onClickGoback" />
+        <TextView android:textSize="18sp" android:textColor="0x106000d" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180dp" android:text="@string/long_video_detail_page_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:id="@+id/title_line" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/video_clickable_background_selector" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_user_info" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/item_publisher_layout" />
+    <TextView android:ellipsize="none" android:id="@+id/tv_description" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="青春" android:maxLines="3" android:layout_below="@+id/layout_user_info" style="@style/ChoicenessTitle" />
+    <com.xunlei.downloadprovider.contentpublish.website.view.WebsiteView android:id="@+id/layout_website_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_below="@+id/tv_description" />
+    <include android:id="@+id/ll_share_comment" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_below="@+id/layout_website_view" layout="@layout/share_like_comment_layout" />
+    <FrameLayout android:id="@+id/layout_website_bottom" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_below="@+id/layout_website_view">
+        <View android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        <TextView android:textSize="13sp" android:textColor="#4677bc" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:paddingLeft="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看详情" />
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0xc01" android:layout_height="UNKNOWN_DATA_0xc01" android:layout_marginRight="13dp" android:src="@drawable/setting_arrow" />
+    </FrameLayout>
+    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" android:layout_marginTop="40dp" android:layout_below="@+id/layout_website_view" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_title" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="UNKNOWN_DATA_0x8c01" android:src="@drawable/user_type_info_big_v_img" android:scaleType="fitXY" />
+        <TextView android:textSize="17sp" android:textColor="#3b424c" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/tv_title" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp" android:layout_marginBottom="35dp" android:layout_below="@+id/iv_title" />
+        <TextView android:textSize="14sp" android:textColor="#979aa0" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_msg" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="35dp" android:layout_marginRight="35dp" android:layout_marginBottom="35dp" android:layout_below="@+id/iv_title" />
+        <TextView android:id="@+id/tv_ok" android:layout_width="UNKNOWN_DATA_0xfd01" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginBottom="17dp" android:text="知道了" android:layout_below="@+id/tv_msg" android:layout_centerHorizontal="true" style="@style/common_blue_button" />
+    </RelativeLayout>
+</RelativeLayout>

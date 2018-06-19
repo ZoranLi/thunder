@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:background="@drawable/task_list_feed_poster_border" app:layout_width="match_parent" app:layout_height="wrap_content" app:ratio="@dimen/task_list_feed_large_image_poster_ratio">
+        <ImageView app:id="@+id/iv_poster" app:layout_width="match_parent" app:layout_height="match_parent" style="@style/TaskListFeedPosterIV" />
+    </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff0" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/item_first" android:background="@drawable/top_round_corner_gray_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="" />
+        <include layout="@layout/line" />
+        <TextView android:textSize="16sp" android:textColor="#333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/item_second" android:background="@drawable/bottom_round_corner_gray_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="" />
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/cancel" android:background="@drawable/round_corner_gray_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginTop="8dp" android:text="取消" />
+</LinearLayout>

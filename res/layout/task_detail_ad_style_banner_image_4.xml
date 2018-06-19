@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:ratio="2.0">
+        <ImageView app:id="@+id/iv_banner" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="fitXY" app:contentDescription="0x0" />
+    </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+</merge>

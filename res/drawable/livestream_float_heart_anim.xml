@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_00" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_01" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_02" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_03" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_04" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_05" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_06" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_07" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_08" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_09" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_10" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_11" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_12" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_13" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_14" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_15" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_16" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_17" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_18" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_19" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_20" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_21" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_22" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_23" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_24" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_25" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_26" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_27" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_28" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_29" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_30" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_31" />
+    <item android:duration="84" android:drawable="@drawable/xllive_homepage_card_like_anim_32" />
+</animation-list>

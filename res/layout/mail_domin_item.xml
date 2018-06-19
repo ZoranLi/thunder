@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/settings_item_top_radius_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+    <TextView android:textSize="@dimen/bt_cm_textsize_14" android:textColor="#ff333333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/mail_domain_text" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" />
+</LinearLayout>

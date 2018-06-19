@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/bg_normal_press_selector" app:paddingLeft="13dp" app:paddingTop="13dp" app:paddingRight="13dp" app:paddingBottom="13dp" app:layout_width="match_parent" app:layout_height="wrap_content"
+    <RelativeLayout app:id="@+id/layout_header" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_marginBottom="10dp">
+        <ImageView app:id="@+id/iv_like_icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_type_like" app:layout_centerVertical="true" />
+        <TextView app:textSize="12sp" app:textColor="#3b424c" app:id="@+id/tv_type_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:text="赞了该影评" app:layout_toRightOf="@+id/iv_like_icon" app:layout_centerVertical="true" app:layout_marginStart="8dp" app:layout_toEndOf="@+id/iv_like_icon" />
+        <TextView app:textSize="11sp" app:textColor="#979aa0" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_time" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.xunlei.downloadprovider.publiser.per.view.DynamicCinecismView app:id="@+id/dynamic_cinecism_view" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/layout_header" app:defaultLayout="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lin_root_view" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingBottom="13sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x1b01" android:layout_height="UNKNOWN_DATA_0x1b01" android:layout_marginTop="16dp" android:src="@drawable/ic_default_avatar" />
+        <RelativeLayout android:orientation="vertical" android:paddingBottom="1dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_weight="1.0">
+            <TextView android:textSize="16sp" android:textColor="#406599" android:ellipsize="end" android:id="@+id/tv_replyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.xunlei.downloadprovider.personal.message.JustifyTextView android:textSize="15sp" android:textColor="#3b424c" android:id="@+id/tv_replayContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="可爱的男生" android:layout_below="@+id/tv_replyName" />
+            <TextView android:textSize="10sp" android:textColor="#979ba1" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/tv_replayContent" android:layout_alignWithParentIfMissing="true" />
+            <TextView android:textSize="12sp" android:textColor="#406599" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_reply" android:background="@drawable/btn_reply_selector" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginTop="10dp" android:text="回复" android:layout_below="@+id/tv_time" />
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/message_center_content_container" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="match_parent" android:layout_marginLeft="23dp" android:layout_marginTop="13dp" android:layout_toRightOf="@+id/iv_good_icon" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+</LinearLayout>

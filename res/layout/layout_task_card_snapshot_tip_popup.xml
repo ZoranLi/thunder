@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/task_card_snapshot_tip_popup" android:background="@drawable/bg_download_card_tip_popup" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="9sp" android:textColor="@color/global_text_color_2" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_item_task_snapshot_tip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/ryt_website" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="20dp" android:layout_marginRight="13dp" android:layout_marginBottom="13dp">
+    <ImageView android:id="@+id/iv_website_pic" android:layout_width="UNKNOWN_DATA_0x7f0b026a" android:layout_height="UNKNOWN_DATA_0x7f0b0269" android:src="@drawable/website_icon_default_square" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_website_pic" android:layout_centerVertical="true">
+        <TextView android:textSize="13sp" android:textColor="#5b6473" android:ellipsize="end" android:id="@+id/tv_website_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="10sp" android:textColor="#979aa0" android:ellipsize="end" android:id="@+id/tv_website_url" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

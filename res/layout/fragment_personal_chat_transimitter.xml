@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.xunlei.downloadprovider.personal.message.chat.chatkit.messages.MessageInput app:id="@+id/input" app:layout_width="match_parent" app:layout_height="wrap_content" app:inputButtonBackground="@drawable/personal_chat_send_btn_selector" app:inputButtonText="发送" app:inputButtonTextColor="@color/white" app:inputButtonTextSize="15sp" app:inputButtonMargin="10dp" app:inputButtonWidth="56dp" app:inputButtonHeight="29dp" app:showAttachmentButton="false" app:inputHint="输入内容" app:inputTextSize="15sp" app:inputTextColor="@color/black" app:inputHintColor="#979aa0" app:inputCursorDrawable="@color/maintab_tint_color" />
+</FrameLayout>

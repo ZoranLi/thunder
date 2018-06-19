@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.tdlive.view.LiveListPKView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:paddingBottom="@dimen/dp_25" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1901">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="#161616" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:text="PK战" />
+        <TextView android:textSize="@dimen/dp_10" android:textColor="#b5b5b5" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/go_pk_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5" android:text="全部>" />
+    </FrameLayout>
+    <include android:id="@id/first_item" layout="@layout/xllive_pk_list_item_view" />
+    <include android:id="@id/second_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" layout="@layout/xllive_pk_list_item_view" />
+</com.xunlei.tdlive.view.LiveListPKView>

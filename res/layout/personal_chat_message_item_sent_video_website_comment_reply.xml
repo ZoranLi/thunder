@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/message_margin_in" android:layout_marginTop="@dimen/message_margin_top" android:layout_marginRight="@dimen/message_margin_out" android:layout_marginBottom="@dimen/message_margin_bottom">
+    <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/messageUserAvatar" android:layout_width="UNKNOWN_DATA_0x7f0b0174" android:layout_height="UNKNOWN_DATA_0x7f0b0172" android:layout_marginLeft="@dimen/message_avatar_margin_to_content" android:src="@drawable/ic_default_avatar_new" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/bubble" android:layout_width="UNKNOWN_DATA_0x7f0b0028" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/messageUserAvatar">
+        <FrameLayout android:id="@+id/fl_reply" android:background="@drawable/chat_sent_comment_reply_message_reply_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/personal_chat_message_item_comment_reply_item" />
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_resource" android:background="@drawable/chat_sent_comment_reply_message_resource_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/personal_chat_message_item_video_website_comment_reply_resource_item" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/messageSendStatusIcon" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="UNKNOWN_DATA_0x2001" android:src="@drawable/icon_personal_chat_dialog_message_send_fail" android:scaleType="center" android:layout_toLeftOf="@+id/bubble" android:layout_centerVertical="true" />
+</RelativeLayout>

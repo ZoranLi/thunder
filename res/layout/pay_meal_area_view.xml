@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.downloadprovider.member.payment.ui.widget.PayMealAreaView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/pay_meal_area_view" android:background="@color/white" android:paddingTop="13dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/pay_meal_rv" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include android:visibility="gone" layout="@layout/include_pay_auto_renew" />
+    <include android:id="@+id/renew_operate_line_view" layout="@layout/pay_line" />
+    <include android:visibility="gone" layout="@layout/include_pay_operate" />
+    <View android:id="@+id/empty_line_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01a1" />
+</com.xunlei.downloadprovider.member.payment.ui.widget.PayMealAreaView>

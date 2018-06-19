@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/main_activity_content_ly" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_tab" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@+id/main_line" android:background="#e4e4e4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        <com.xunlei.downloadprovider.frame.view.XLTabLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/main_activity_tab_ly" android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0161" />
+    </LinearLayout>
+    <include android:id="@+id/lyt_update_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_above="@+id/layout_tab" layout="@layout/update_bar_layout" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lin_root_view" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingBottom="13sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x1b01" android:layout_height="UNKNOWN_DATA_0x1b01" android:layout_marginTop="16dp" android:src="@drawable/ic_default_avatar" />
+        <RelativeLayout android:orientation="vertical" android:paddingBottom="1dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_weight="1.0">
+            <TextView android:textSize="16sp" android:textColor="#406599" android:id="@+id/tv_replyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <ImageView android:id="@+id/im_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/message_like_icon" android:layout_below="@+id/tv_replyName" />
+            <TextView android:textSize="10sp" android:textColor="#979ba1" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/im_like" android:layout_alignWithParentIfMissing="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginLeft="23dp" android:layout_marginTop="13dp" android:layout_toRightOf="@+id/iv_good_icon">
+            <include layout="@layout/fragment_message_center_video_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+</LinearLayout>

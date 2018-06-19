@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="0x1020000" android:drawable="@drawable/homepage_progress_bg" />
+    <item android:id="@+id/thirdProgress" android:drawable="@drawable/homepage_progress_acce" />
+    <item android:id="@+id/secondaryProgress" android:drawable="@drawable/homepage_progress_p2p" />
+    <item android:id="@+id/progress" android:drawable="@drawable/homepage_progress_normal" />
+</layer-list>

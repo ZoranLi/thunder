@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff0" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/item_rl_first" android:background="@drawable/top_round_corner_gray_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501">
+            <LinearLayout android:id="@+id/item_first_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@drawable/user_account_sex_icon_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/item_first" />
+                <TextView android:textSize="16sp" android:textColor="#333" android:id="@+id/item_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="男" />
+            </LinearLayout>
+            <ImageView android:id="@+id/item_first_iv" android:background="@drawable/user_account_sex_chose" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/item_first_ll" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/line" />
+        <RelativeLayout android:id="@+id/item_rl_second" android:background="@drawable/top_round_corner_gray_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501">
+            <LinearLayout android:id="@+id/item_second_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@drawable/user_account_sex_icon_woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/item_second" />
+                <TextView android:textSize="16sp" android:textColor="#333" android:id="@+id/item_second" android:background="@drawable/bottom_round_corner_gray_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="女" />
+            </LinearLayout>
+            <ImageView android:id="@+id/item_second_iv" android:background="@drawable/user_account_sex_chose" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/item_second_ll" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/cancel" android:background="@drawable/round_corner_gray_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginTop="8dp" android:text="取消" />
+</LinearLayout>

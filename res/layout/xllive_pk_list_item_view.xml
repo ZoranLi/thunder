@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.tdlive.view.PkListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/item_view" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25">
+        <include android:id="@id/left_inner_view" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/xllive_pk_list_inner_item" />
+        <View android:layout_width="UNKNOWN_DATA_0x7f0b0114" android:layout_height="match_parent" />
+        <include android:id="@id/right_inner_view" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/xllive_pk_list_inner_item" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2101"
+        <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xc01">
+            <ProgressBar android:id="@id/pk_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:progress="50" android:progressDrawable="@drawable/xllive_pk_item_progress_drawable" style="@*style/Widget.ProgressBar.Horizontal" />
+            <TextView android:textSize="8dp" android:textColor="#ffffff" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/host_score" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="88dp" android:text="0票" />
+            <TextView android:textSize="8dp" android:textColor="#ffffff" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/guest_score" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="88dp" android:text="0票" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xllive_pk_list_icon" />
+    </FrameLayout>
+</com.xunlei.tdlive.view.PkListItemView>

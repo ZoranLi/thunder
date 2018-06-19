@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/following_success_loading_view" android:background="0x106000b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/follow_tab_loading" />
+        <TextView android:textSize="14sp" android:textColor="#979aa0" android:id="@+id/tv_follow_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="已成功关注23播主" />
+        <TextView android:textSize="18sp" android:textColor="#3b424c" android:paddingBottom="40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="正在加载动态..." />
+    </LinearLayout>
+</FrameLayout>

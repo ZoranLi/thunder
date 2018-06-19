@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/item_bg" android:background="@drawable/bt_addaddress_list_item_bg_selector" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3801">
+    <ImageView android:id="@+id/website_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/site_history_delete_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/common_imageview_contentdescription" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/linear_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/website_delete">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:ellipsize="middle" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/auto_complete" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" />
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true" />
+        <TextView android:textSize="12sp" android:textColor="#ff808080" android:ellipsize="middle" android:id="@+id/url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/btn_share" android:background="0x0" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:src="@drawable/ic_detail_share_black" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@+id/flt_comment" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:id="@+id/btn_comment" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_detail_comment_black" android:layout_centerInParent="true" />
+        <TextView android:textSize="8sp" android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_comment_count" android:background="@drawable/bg_red_count" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginRight="-6dp" android:minWidth="16dp" android:layout_alignTop="@+id/btn_comment" android:layout_alignRight="@+id/btn_comment" />
+    </RelativeLayout>
+    <com.xunlei.downloadprovider.homepage.choiceness.ui.widget.LikeView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/detail_like_view" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/task_card_bkg" android:paddingLeft="@dimen/task_list_feed_padding_side" android:paddingTop="10dp" android:paddingRight="@dimen/task_list_feed_padding_side" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:maxLines="2" style="@style/TaskListFeedTitleTV" />
+    <include layout="@layout/layout_task_list_feed_template_multi_image_poster" />
+    <com.xunlei.downloadprovider.download.tasklist.list.feed.view.TaskListFeedBottomView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/bottom_view" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2101" />
+</LinearLayout>

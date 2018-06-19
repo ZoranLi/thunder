@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/publisher_layout" android:layout_width="UNKNOWN_DATA_0x9c01" android:layout_height="UNKNOWN_DATA_0x9c01">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/choiceness_icon_default" />
+        <ImageView android:id="@id/tag" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x5401" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_marginLeft="8dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1201" android:layout_marginLeft="8dp" android:layout_marginTop="129dp" android:layout_marginRight="8dp">
+            <TextView android:textSize="13dp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/nickname" android:layout_width="UNKNOWN_DATA_0x4c01" android:layout_height="match_parent" android:text="哈哈哈哈哈哈" android:maxLines="1" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.5" />
+            <TextView android:textSize="13dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/online_num" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:maxLines="1" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.5" android:drawableRight="@drawable/live_audience_icon" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:layout_marginBottom="17dp" android:src="@drawable/pay_suc_ic" android:scaleType="center" />
+    <TextView android:textSize="18dp" android:textColor="#00b740" android:id="@+id/pay_result_detail_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23dp" android:text="@string/pay_result_detail_format" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="67dp" android:layout_marginRight="67dp" android:layout_marginBottom="23dp">
+        <TextView android:textSize="12sp" android:textColor="#ff3741" android:id="@+id/bind_mobile_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_mobile_tip" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/account_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/pay_result_account" android:singleLine="true" android:layout_toLeftOf="@+id/bind_mobile_tv" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

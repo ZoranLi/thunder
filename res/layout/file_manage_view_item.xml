@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/bt_item_local_file_icon" android:layout_width="UNKNOWN_DATA_0x3101" android:layout_height="UNKNOWN_DATA_0x3101" android:layout_marginLeft="8dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/common_imageview_contentdescription" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/bt_item_local_file_size_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:id="@+id/creat_task_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/bt_item_local_file_size_layout" android:layout_toRightOf="@+id/bt_item_local_file_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="18sp" android:textColor="#333333" android:ellipsize="middle" android:id="@+id/bt_item_local_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:singleLine="true" />
+        <TextView android:textSize="12sp" android:textColor="#ffa5a5a5" android:ellipsize="middle" android:id="@+id/bt_item_local_file_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:layout_marginRight="5dp" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/path_choice_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:layout_toRightOf="@+id/bt_item_local_file_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="#ff000000" android:ellipsize="middle" android:id="@+id/tv_file_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/tv_file_name">
+            <TextView android:id="@+id/tv_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:text="128M" />
+            <TextView android:id="@+id/tv_file_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013-3-28" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

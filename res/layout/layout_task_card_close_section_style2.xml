@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1e01">
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_alignParentTop="true" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tagView" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b021e" android:minWidth="@dimen/task_card_ad_tag_min_width" android:layout_centerVertical="true" style="@style/TaskCardPromotionTagAppearance" />
+    <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/closeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_card_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/lx_space_create_url_task_btn" android:text="@string/lx_space_create_url_task" style="@style/LXCreateTaskDlgItemStyle" />
+    <include layout="@layout/line" />
+    <Button android:id="@+id/lx_space_create_bt_task_btn" android:text="@string/lx_space_create_bt_task" style="@style/LXCreateTaskDlgItemStyle" />
+    <include layout="@layout/line" />
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <Button android:id="@+id/lx_space_create_task_cancel_btn" android:layout_height="UNKNOWN_DATA_0x3001" android:text="取消" style="@style/LXCreateTaskDlgItemStyle" />
+</LinearLayout>

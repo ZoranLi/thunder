@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="@dimen/common_padding_left_normal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01e1">
+        <TextView android:textStyle="bold" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="搜索历史" style="@style/search_title_style" />
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/ll_delete_data" android:clickable="true" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b01e1" android:layout_alignParentRight="true">
+            <TextView android:textSize="11sp" android:textColor="#979aa0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" />
+            <ImageView android:id="@+id/delete_btn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/search_banner_drawable_padding_left" android:src="@drawable/search_delete_btn_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_search_history_list_view" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" /> />

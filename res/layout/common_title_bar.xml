@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@id/common_title_bar" app:background="@color/common_title_bkg_color" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b0240">
+    <FrameLayout app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentLeft="true" app:layout_centerVertical="true">
+        <ImageView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/titlebar_left" app:padding="11dp" app:layout_width="UNKNOWN_DATA_0x7f0b023c" app:layout_height="UNKNOWN_DATA_0x7f0b023c" app:layout_marginLeft="4dp" app:src="@drawable/commonui_nav_arrow_back_selector" app:scaleType="fitXY" app:adjustViewBounds="true" />
+        <TextView app:textColor="@color/text_appearance_entry_primary_title_selector" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/titlebar_left_tv" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="15dp" />
+    </FrameLayout>
+    <TextView app:textAppearance="@style/TextAppearanceMainTitle" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/titlebar_title" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginLeft="4dp" app:maxWidth="160dp" app:text="@string/app_name" app:maxLines="1" app:singleLine="true" app:layout_centerInParent="true" />
+    <LinearLayout app:orientation="horizontal" app:id="@id/titlebar_right_container" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+        <ProgressBar app:id="@id/titlebar_flower" app:padding="14dp" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0b023c" app:layout_height="UNKNOWN_DATA_0x7f0b023c" app:layout_marginRight="-8dp" style="@style/XLProgressBarStyleOnTiTleBar" />
+        <FrameLayout app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <TextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/titlebar_right_1" app:paddingLeft="8dp" app:paddingRight="8dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="8dp" />
+            <ImageView app:id="@id/titlebar_right_1_iv" app:padding="11dp" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0b023c" app:layout_height="UNKNOWN_DATA_0x7f0b023c" app:layout_marginRight="8dp" />
+        </FrameLayout>
+        <FrameLayout app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <TextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/titlebar_right" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="8dp" />
+            <ImageView app:id="@id/titlebar_right_iv" app:padding="11dp" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0b023c" app:layout_height="UNKNOWN_DATA_0x7f0b023c" app:layout_marginRight="8dp" app:src="@drawable/commonui_nav_arrow_back_selector" />
+        </FrameLayout>
+        <com.xunlei.common.commonview.DownloadEntranceView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/titlebar_download_entrance" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x2401" app:layout_height="UNKNOWN_DATA_0x1f01" app:layout_marginRight="@dimen/common_title_downloadicon_margin_to_right" app:entranceStyle="0" />
+    </LinearLayout>
+    <TextView app:id="@id/xreader_common_divide" app:background="@color/common_title_separate_tab_line_color" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_alignParentBottom="true" />
+    <View app:id="@id/white_button_line" app:background="@color/common_white_button_line" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_alignParentBottom="true" />
+</RelativeLayout>

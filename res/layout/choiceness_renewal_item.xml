@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/list_item_bg_selector" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingTop="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/recycle_view_divider_height">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/item_main_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="30dp" android:text="你的白金会员将于3天后到期" />
+            <ImageView android:id="@+id/item_delete_icon" android:paddingLeft="13dp" android:paddingTop="4dp" android:paddingRight="13dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/download_center_vip_renew_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:textSize="11sp" android:textColor="#c3c3c3" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/item_sub_title" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1001" android:layout_marginRight="76dp" android:text="现在续年费立享7.5折优惠" android:includeFontPadding="false" android:drawableLeft="@drawable/renew_vip_flag_ic" android:drawablePadding="2dp" android:layout_centerVertical="true" />
+            <TextView android:textSize="11sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/item_btn_renew" android:background="@drawable/bg_sy_renew" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginLeft="10dp" android:text="立即续费" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

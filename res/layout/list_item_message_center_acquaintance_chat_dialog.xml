@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_view" style="@style/MessageCenterListItem">
+    <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x7f0b0176" android:layout_height="UNKNOWN_DATA_0x7f0b0176" style="@style/MessageCenterAvatar" />
+    <TextView android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="13dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/MessageCenterDate" />
+    <TextView android:id="@+id/tv_unread_count" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b017d" android:layout_marginRight="15dp" android:layout_marginBottom="13dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/MessageCenterUnreadCount" />
+    <TextView android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/tv_date" android:layout_toRightOf="@+id/iv_avatar" android:layout_alignParentTop="true" style="@style/MessageCenterTitle" />
+    <TextView android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29dp" android:layout_marginBottom="14dp" android:layout_toLeftOf="@+id/tv_unread_count" android:layout_toRightOf="@+id/iv_avatar" android:layout_alignParentBottom="true" style="@style/MessageCenterDesc" />
+</RelativeLayout>

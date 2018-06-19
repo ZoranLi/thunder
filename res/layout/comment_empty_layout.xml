@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="#ffffff" app:paddingTop="40dp" app:paddingBottom="40dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <ImageView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/img_shafa" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x4101" app:layout_height="UNKNOWN_DATA_0x3c01" app:src="@drawable/ic_shafa" app:adjustViewBounds="true" />
+    <TextView app:textSize="13sp" app:textColor="#5b6473" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_empty_comment" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="16dp" app:layout_marginBottom="13dp" app:text="@string/tips_no_comment" />
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.QuickCommentView app:id="@+id/qk_comment" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="-6dp" app:qk_border="@drawable/bg_quick_comment_item2" app:qk_text_color="@color/quick_comment_text_color2" app:qk_center="true" />
+</LinearLayout>

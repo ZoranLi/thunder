@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="#b2000000" app:layout_width="match_parent" app:layout_height="match_parent">
+    <FrameLayout app:id="@+id/animation_layout" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/like_guide_animation_view" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/play_complete_like_guide" />
+        <com.xunlei.common.commonview.RoundProgressBar app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/progress_bar" app:layout_width="UNKNOWN_DATA_0x3401" app:layout_height="UNKNOWN_DATA_0x3401" app:alpha="0.0" app:rPbarColor="#99ffffff" app:rPbarProgressColor="#ffffff" app:rPbarWidth="3dp" app:rPbarTextColor="0x106000d" app:rPbarMax="360" app:rPbarProgress="0" />
+    </FrameLayout>
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/count_down_layout" app:layout_width="wrap_content" app:layout_height="wrap_content" app:alpha="0.0">
+        <TextView app:textSize="12sp" app:textColor="0x106000b" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="赞一下" />
+        <TextView app:textSize="13sp" app:textColor="#1aa3ff" app:id="@+id/count_down_view" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="3dp" app:text="5" />
+    </LinearLayout>
+</LinearLayout>

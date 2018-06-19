@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+        <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b023c">
+            <ImageView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/back" android:padding="11dp" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:src="@drawable/commonui_nav_arrow_back_selector" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="17sp" android:textColor="#3b424c" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:paddingRight="48dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/my_collection" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        <fragment android:name="com.xunlei.downloadprovider.web.website.fragment.CollectionAndHistoryFragment" android:id="@+id/frament_Collections" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.xunlei.downloadprovider.web.website.view.CollectionUserSyncTipBottomView android:id="@+id/cloud_sync_bottom_card" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_alignParentBottom="true" />
+</RelativeLayout>

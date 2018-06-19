@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:paddingLeft="0dp" android:paddingTop="5dp" android:paddingRight="@dimen/task_card_padding" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_card_close" android:contentDescription="@string/app_name" />
+</FrameLayout>

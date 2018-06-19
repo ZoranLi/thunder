@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#d90f111a" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="UNKNOWN_DATA_0x7f0b0262" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="#99ffffff" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/title_textview" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2801" android:text="选择音轨" />
+    <View android:background="@drawable/vod_player_menu_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_below="@+id/title_textview" />
+    <ListView android:id="@+id/list_view" android:scrollbars="UNKNOWN_DATA_0x0" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="0x106000d" android:drawSelectorOnTop="false" android:divider="@drawable/vod_player_menu_divider" android:dividerHeight="1dp" android:layout_below="@+id/title_textview" android:requiresFadingEdge="UNKNOWN_DATA_0x0" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:text="暂未音轨" android:layout_below="@+id/title_textview" />
+</RelativeLayout>

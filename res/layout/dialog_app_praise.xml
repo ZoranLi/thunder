@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_title" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="UNKNOWN_DATA_0xb001" android:scaleType="fitXY" />
+        <ImageView android:id="@id/iv_close" android:layout_width="UNKNOWN_DATA_0x1c01" android:layout_height="UNKNOWN_DATA_0x1c01" android:src="@drawable/gift_dispatching_close_btn_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/default_description" />
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_msg" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="35dp" android:layout_marginRight="35dp" android:layout_marginBottom="35dp" android:text="@string/app_praise_dlg_msg" android:layout_below="@+id/iv_title" />
+        <View android:id="@+id/line" android:background="#22000000" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="UNKNOWN_DATA_0x100" android:layout_below="@+id/tv_msg" />
+        <RelativeLayout android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_below="@+id/line">
+            <TextView android:textSize="17sp" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_dislike" android:layout_width="UNKNOWN_DATA_0x9d01" android:layout_height="match_parent" android:text="@string/app_praise_btn_text_dislike" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="17sp" android:textColor="@color/common_blue" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_praise" android:layout_width="UNKNOWN_DATA_0x9d01" android:layout_height="match_parent" android:text="@string/app_praise_btn_text_praise" android:layout_alignParentRight="true" />
+            <View android:id="@+id/vertical_line" android:background="#22000000" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" android:layout_marginLeft="157dp" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

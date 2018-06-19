@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/like_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/choiceness_like_selector" android:layout_centerVertical="true" />
+    <TextView android:textSize="12sp" android:textColor="#5a6473" android:id="@+id/like_count" android:paddingLeft="5dp" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="28dp" android:lines="1" android:layout_toRightOf="@+id/like_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="12sp" android:textColor="#1294f6" android:id="@+id/tv_plus_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1" android:layout_above="@+id/like_count" android:layout_alignLeft="@+id/like_icon" />
+</merge>

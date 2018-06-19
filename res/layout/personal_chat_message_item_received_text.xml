@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/message_margin_out" android:layout_marginTop="@dimen/message_margin_top" android:layout_marginRight="@dimen/message_margin_in" android:layout_marginBottom="@dimen/message_margin_bottom">
+    <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/messageUserAvatar" android:layout_width="UNKNOWN_DATA_0x7f0b0174" android:layout_height="UNKNOWN_DATA_0x7f0b0172" android:layout_marginRight="@dimen/message_avatar_margin_to_content" android:src="@drawable/ic_default_avatar_new" android:layout_alignParentLeft="true" />
+    <FrameLayout android:id="@+id/bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/messageUserAvatar">
+        <TextView android:id="@+id/messageText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

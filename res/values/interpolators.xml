@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <interpolator name="decelerate_cubic">res/interpolator/decelerate_cubic.xml</interpolator>
+    <interpolator name="decelerate_quint">res/interpolator/decelerate_quint.xml</interpolator>
+</resources>

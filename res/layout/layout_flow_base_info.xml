@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="10dp">
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.ShortMoviePublisherInfoView app:id="@+id/short_movie_publisher_info_view" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.0" />
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.ShortMovieBaseTitleInfoView app:id="@+id/short_movie_base_title_info_view" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/short_movie_publisher_info_view" app:title_text_max_lines="2" />
+</android.support.constraint.ConstraintLayout>

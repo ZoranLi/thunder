@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/push_msg_pic" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xca01" android:src="@drawable/new_noti_logo" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/common_imageview_contentdescription" />
+    <ImageView android:id="@+id/push_msg_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/movie_play_default" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/push_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/push_msg_pic">
+        <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/push_msg_logo" android:layout_width="UNKNOWN_DATA_0x1601" android:layout_height="UNKNOWN_DATA_0x1601" android:layout_marginLeft="7dp" android:src="@mipmap/ic_launcher" />
+        <TextView android:textSize="15sp" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/push_msg_content" android:paddingLeft="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="我是标题" android:singleLine="true" android:layout_toRightOf="@+id/push_msg_logo" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1px" android:color="@color/choiceness_ad_hint_gray" />
+    <corners android:radius="2dp" />
+    <solid android:color="0x106000d" />
+</shape>

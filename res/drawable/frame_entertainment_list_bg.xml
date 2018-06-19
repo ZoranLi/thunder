@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/recommend_list_line_color" />
+    <item android:drawable="@drawable/common_layout_content_bkg" android:left="0px" android:top="1px" android:right="0px" android:bottom="0px" />
+</layer-list>

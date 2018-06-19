@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <TextView app:textSize="27sp" app:textColor="#333333" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_remain" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="1.2GB可用" />
+    <TextView app:textSize="@dimen/payment_12_sp" app:textColor="#999999" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_total" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:text="(已清理21MB,共16GB)" />
+    <LinearLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp"
+        <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <com.xunlei.downloadprovider.personal.settings.ui.RecFView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="UNKNOWN_DATA_0xa01" app:layout_height="UNKNOWN_DATA_0xa01" app:rectColor="#ffa63c" />
+            <TextView app:textSize="@dimen/payment_12_sp" app:textColor="#666666" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="6dp" app:text="已用空间" />
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="28dp">
+            <com.xunlei.downloadprovider.personal.settings.ui.RecFView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="UNKNOWN_DATA_0xa01" app:layout_height="UNKNOWN_DATA_0xa01" app:rectColor="#dcdcdc" />
+            <TextView app:textSize="@dimen/payment_12_sp" app:textColor="#666666" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="6dp" app:text="剩余空间" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="60dp">
+        <TextView app:textSize="@dimen/payment_12_sp" app:textColor="#999999" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_has_clean" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="7dp" app:text="建议深度清理释放更多空间" />
+        <TextView app:textSize="17sp" app:textColor="#ffffff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_deep_clean" app:background="@drawable/common_blue_button_selector" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="30dp" app:layout_marginRight="30dp" app:text="深度清理" />
+    </LinearLayout>
+</LinearLayout>

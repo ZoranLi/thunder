@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.iwf.photopicker.widget.TouchImageView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/iv_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/__picker_ic_photo_black_48dp" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/btn_back" android:padding="11dp" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="UNKNOWN_DATA_0x3001" android:src="@drawable/commonui_nav_arrow_back_selector" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/btn_more_operation" android:padding="11dp" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="UNKNOWN_DATA_0x3001" android:src="@drawable/ic_menu_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginRight="11dp" android:maxLines="1" android:layout_toLeftOf="@+id/btn_more_operation" android:layout_toRightOf="@+id/btn_back" android:layout_centerInParent="true" />
+</merge>

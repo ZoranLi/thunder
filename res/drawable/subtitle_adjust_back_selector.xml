@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/subtitle_adjust_back" />
+    <item android:state_pressed="true" android:drawable="@drawable/subtitle_adjust_back_press" />
+</selector>

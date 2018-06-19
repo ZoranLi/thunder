@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_title" layout="@layout/common_title_bar" />
+    <fragment android:name="com.xunlei.downloadprovider.homepage.follow.ui.FollowFragment" android:id="@+id/my_following_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

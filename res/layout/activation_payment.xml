@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/common_layout_content_bkg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/common_layout_content_bkg" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <TextView android:textSize="16sp" android:textColor="#20222a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activation_code" />
+            <LinearLayout android:layout_marginTop="12dp" style="@style/registerEditBoxLineBg">
+                <RelativeLayout style="@style/registerEditBoxItem">
+                    <EditText android:id="@+id/activation_code_et" android:layout_marginLeft="13dp" android:hint="@string/activation_hint" style="@style/registerEditInput" />
+                    <Button android:id="@+id/clearBtn1" android:background="@drawable/edit_text_clear_btn_selector" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0x2301" android:layout_height="UNKNOWN_DATA_0x2301" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="8dp" style="@style/registerEditBoxLineBg">
+                <RelativeLayout android:id="@+id/verify_rl" style="@style/registerEditBoxItem">
+                    <FrameLayout android:id="@+id/verify_fl" android:layout_width="UNKNOWN_DATA_0x4301" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/verify_picture_iv" android:background="#d9dbde" android:layout_width="UNKNOWN_DATA_0x4301" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="@string/common_imageview_contentdescription" />
+                        <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/verify_progress" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1c01" android:layout_height="UNKNOWN_DATA_0x1c01" android:indeterminateDrawable="@drawable/activation_progress_circle" />
+                    </FrameLayout>
+                    <TextView android:id="@+id/verify_line" android:background="@drawable/activation_line" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" android:layout_toLeftOf="@+id/verify_fl" />
+                    <Button android:id="@+id/clearBtn2" android:background="@drawable/edit_text_clear_btn_selector" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0x2301" android:layout_height="UNKNOWN_DATA_0x2301" android:layout_toLeftOf="@+id/verify_line" android:layout_centerVertical="true" />
+                    <EditText android:id="@+id/verify_code_et" android:layout_marginLeft="13dp" android:hint="@string/register_error_msg_input_verify" android:layout_toLeftOf="@+id/clearBtn2" style="@style/registerEditInput" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+                <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/recharge_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/recharge" style="@style/common_blue_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

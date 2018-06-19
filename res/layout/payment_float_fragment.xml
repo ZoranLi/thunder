@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@+id/rl_view_shadow" android:background="@color/payment_float_top_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/fl_content">
+        <ImageView android:id="@+id/iv_float_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/payment_13_dp" android:layout_marginBottom="@dimen/payment_8_dp" android:src="@drawable/pay_float_close" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fl_content" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1a501" android:layout_alignParentBottom="true"
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/tab_1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x7f0b01b2" android:layout_marginLeft="@dimen/payment_13_dp" android:layout_marginTop="@dimen/payment_13_dp" android:layout_marginBottom="@dimen/payment_13_dp" android:layout_weight="1.0" layout="@layout/float_pay_tab" />
+            <include android:id="@+id/tab_2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x7f0b01b2" android:layout_margin="@dimen/payment_13_dp" android:layout_weight="1.0" layout="@layout/float_pay_tab" />
+        </LinearLayout>
+        <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01be" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/pay_bottom_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pay_meal_area_view" />
+                    <include android:visibility="gone" layout="@layout/include_pay_red_packet_info" />
+                    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01be" />
+                    <include layout="@layout/include_pay_way_layout" />
+                    <include layout="@layout/include_pay_amount_save_layout" />
+                    <RelativeLayout android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/payment_60_dp">
+                        <TextView android:textSize="@dimen/payment_15_sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pay_btn" android:background="@drawable/common_blue_button_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01b6" android:layout_marginLeft="@dimen/payment_15_dp" android:layout_marginTop="@dimen/payment_8_dp" android:layout_marginRight="@dimen/payment_15_dp" android:layout_marginBottom="@dimen/payment_8_dp" android:text="立即开通" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/pay_config_failed_layout" />
+            <include android:id="@+id/pay_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/get_pay_data_progress_layout" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

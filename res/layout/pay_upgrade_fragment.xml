@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/payment_14_sp" android:textColor="@color/payment_title_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pay_privilege_tv" android:background="@color/white" android:paddingTop="@dimen/payment_13_dp" android:paddingBottom="@dimen/payment_13_dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+            <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/pay_meal_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_title_color" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/upgrade_title" android:paddingLeft="@dimen/payment_13_dp" android:paddingRight="@dimen/payment_13_dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b019b" android:text="升级钻石会员" />
+                    <include layout="@layout/pay_line" />
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/upgrade_seek_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_13_dp" android:layout_marginTop="@dimen/payment_9_dp">
+                                <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_title_color" android:id="@+id/member_expired_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="@dimen/payment_15_sp" android:textColor="@color/payment_dark_black" android:id="@+id/upgrade_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_9_dp" />
+                            </LinearLayout>
+                            <com.xunlei.downloadprovider.member.payment.ui.widget.RangSeekBar android:id="@+id/upgrade_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/payment_18_dp" />
+                        </LinearLayout>
+                        <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/upgrade_day_layout" android:background="@drawable/pay_upgrade_select_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_37_dp" android:layout_marginTop="@dimen/payment_13_dp" android:layout_marginRight="@dimen/payment_37_dp" android:layout_marginBottom="@dimen/payment_13_dp">
+                            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_20_dp" android:layout_marginBottom="@dimen/payment_20_dp">
+                                <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_gray" android:id="@+id/upgrade_day_expired_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="@dimen/payment_14_sp" android:id="@+id/upgrade_day_vip_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_12_dp" />
+                            </LinearLayout>
+                            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/meal_select_flag_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_meal_item_select_flag" />
+                        </FrameLayout>
+                    </FrameLayout>
+                    <include layout="@layout/include_pay_vouchers" />
+                </LinearLayout>
+                <include android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pay_config_failed_layout" />
+                <include android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pay_progress" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/get_pay_data_progress_layout" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/pay_area_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+                <include layout="@layout/include_pay_way_layout" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/include_pay_amount_save_layout" />
+                    <include layout="@layout/include_payment_pay_protocol" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

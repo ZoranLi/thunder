@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="#f20f111a" app:paddingLeft="20dp" app:paddingRight="20dp" app:layout_width="UNKNOWN_DATA_0x7f0b0262" app:layout_height="match_parent">
+    <TextView app:textSize="12sp" app:textColor="#99ffffff" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/tv_title_back" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x2801" app:text="@string/vod_player_subtitle_adjust" app:drawableLeft="@drawable/subtitle_adjust_back_selector" />
+    <View app:background="@drawable/vod_player_menu_divider" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_below="@+id/tv_title_back" />
+    <com.xunlei.downloadprovider.vod.subtitle.LoopView app:id="@+id/v_adjust" app:layout_width="UNKNOWN_DATA_0x5901" app:layout_height="UNKNOWN_DATA_0xda01" app:layout_centerInParent="true" app:awv_textsize="18sp" app:awv_lineSpace="2.78" app:awv_centerTextColor="#1aa3ff" app:awv_outerTextColor="#4dffffff" app:awv_dividerTextColor="#1aa3ff" app:awv_itemsVisibleCount="5" app:awv_isLoop="false" app:awv_initialPosition="10" app:awv_scaleX="1.0" />
+    <View app:background="@drawable/vod_player_menu_divider" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_above="@+id/bottom_color_layout" />
+    <RelativeLayout app:orientation="horizontal" app:id="@+id/bottom_color_layout" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_alignParentBottom="true">
+        <TextView app:textSize="12sp" app:textColor="@color/white" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="字体颜色：" app:layout_centerVertical="true" />
+        <TextView app:textSize="12sp" app:textColor="@color/white" app:id="@+id/black_btn" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="28dp" app:text="黑色" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/black_btn_image" app:layout_width="UNKNOWN_DATA_0x1401" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_marginRight="5dp" app:src="@drawable/vod_subtitle_no_check" app:layout_toLeftOf="@+id/black_btn" app:layout_centerVertical="true" />
+        <TextView app:textSize="12sp" app:textColor="@color/white" app:id="@+id/white_btn" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="33dp" app:text="白色" app:layout_toLeftOf="@+id/black_btn_image" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/white_btn_image" app:layout_width="UNKNOWN_DATA_0x1401" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_marginRight="5dp" app:src="@drawable/vod_subtitle_checked" app:layout_toLeftOf="@+id/white_btn" app:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

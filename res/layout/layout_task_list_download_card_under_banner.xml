@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@+id/free_trial_layout_banner" android:layout="@layout/layout_task_card_template_basic_vip_banner" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/task_download_exception_banner" android:layout="@layout/layout_task_card_template_basic_exception_banner" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/task_download_red_envelope" android:layout="@layout/layout_task_card_template_basic_red_envelope_banner" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/task_download_share_guide" android:layout="@layout/layout_task_card_template_basic_vip_banner" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/task_play_finish_share_guide" android:layout="@layout/layout_task_card_template_basic_vip_banner" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/voucher_packet_layout_banner" android:layout="@layout/layout_task_card_template_basic_red_envelope_banner" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/limit_privilege_layout_banner" android:layout="@layout/layout_task_card_template_basic_limit_privilege" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+    <ViewStub android:id="@+id/task_download_twiceconsume" android:layout="@layout/item_downloadlist_twiceconsuming" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207" />
+</merge>

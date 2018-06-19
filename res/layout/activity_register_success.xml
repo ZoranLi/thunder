@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/common_title_bkg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <include android:id="@+id/layout_title" layout="@layout/common_title_bar" />
+    <RelativeLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/layout_avatar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="54dp" android:layout_below="@+id/layout_title">
+        <ImageView android:id="@+id/iv_user_avatar" android:layout_width="UNKNOWN_DATA_0x5a01" android:layout_height="UNKNOWN_DATA_0x5a01" android:src="@drawable/user_register_success_default_avatar" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:src="@drawable/avatar_camera" android:layout_alignRight="@+id/iv_user_avatar" android:layout_alignBottom="@+id/iv_user_avatar" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="添加头像，做霸气的自己！" android:layout_below="@+id/iv_user_avatar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_name_and_gender" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="60dp" android:layout_marginRight="30dp" android:layout_below="@+id/layout_title">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3901">
+            <ImageView android:id="@+id/iv_icon_nickname" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginBottom="7dp" android:src="@drawable/icon_nickname" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <EditText android:id="@+id/et_nickname" android:paddingLeft="38dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3901" android:layout_marginTop="26dp" android:hint="给自己取个喜欢的昵称" style="@style/LoginRegisterEditText" />
+            <ImageView android:id="@+id/iv_clear_nickname" android:padding="10dp" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginRight="-10dp" android:src="@drawable/user_account_nickname_delete" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp"
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/layout_btn_gender_male" android:background="@drawable/register_gender_male_btn_bg_selector" android:layout_width="UNKNOWN_DATA_0x4a01" android:layout_height="UNKNOWN_DATA_0x2c01">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/register_gender_male_icon_selector" />
+                    <TextView android:textSize="15sp" android:textColor="@drawable/register_gender_male_text_color_selector" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="男" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/layout_btn_gender_female" android:background="@drawable/register_gender_female_btn_bg_selector" android:layout_width="UNKNOWN_DATA_0x4a01" android:layout_height="UNKNOWN_DATA_0x2c01">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/register_gender_female_icon_selector" />
+                    <TextView android:textSize="15sp" android:textColor="@drawable/register_gender_female_text_color_selector" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="女" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="16sp" android:textColor="@color/common_text_selector" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_complete" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginLeft="30dp" android:layout_marginTop="223dp" android:layout_marginRight="30dp" android:text="完成" android:layout_below="@+id/layout_title" style="@style/common_blue_button" />
+</RelativeLayout>

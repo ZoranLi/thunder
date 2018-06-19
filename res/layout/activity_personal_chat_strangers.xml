@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+    <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/pull_to_refresh_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/error_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.downloadprovider.member.payment.ui.widget.PayAmoutSaveView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/pay_amount_layout" android:background="@color/white" android:paddingLeft="@dimen/payment_13_dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01b7">
+    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_dark_black" android:id="@+id/pay_amount_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_amount_tip" />
+    <TextView android:textSize="@dimen/payment_15_sp" android:textColor="@color/payment_orange" android:id="@+id/pay_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_dark_black" android:id="@+id/pay_unit_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_2_dp" android:text="元" />
+    <TextView android:textSize="@dimen/payment_12_sp" android:id="@+id/save_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/operate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_5_dp" android:lines="1" />
+</com.xunlei.downloadprovider.member.payment.ui.widget.PayAmoutSaveView>

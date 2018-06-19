@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/lx_space_login_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xunlei.downloadprovider.xlui.widget.PagerSlidingTabStrip android:id="@+id/pager_sliding_tab" android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009b" />
+            <com.xunlei.downloadprovider.frame.view.CustomViewPager android:id="@+id/viewPager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+        <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/lx_space_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

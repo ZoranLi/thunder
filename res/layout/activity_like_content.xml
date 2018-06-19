@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include app:id="@+id/title_bar" layout="@layout/common_title_bar" />
+    <com.xunlei.downloadprovider.xlui.widget.PagerSlidingTabStrip app:id="@+id/tb_fragment" app:background="@color/white" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2b01" app:layout_below="@+id/title_bar" />
+    <include app:id="@+id/line" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_below="@+id/tb_fragment" layout="@layout/line" />
+    <com.xunlei.downloadprovider.frame.view.CustomViewPager app:id="@+id/vp_fragment" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/line" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:behavior_overlapTop="0dp" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView app:id="@+id/ev_error" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/title_bar" />
+    <com.xunlei.common.commonview.UnifiedLoadingView app:id="@+id/lv_loading" app:background="#ffffff" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/title_bar" />
+</RelativeLayout>

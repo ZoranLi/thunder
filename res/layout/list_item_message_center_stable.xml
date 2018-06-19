@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/MessageCenterListItem">
+    <ImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x7f0b0176" android:layout_height="UNKNOWN_DATA_0x7f0b0176" android:scaleType="center" style="@style/MessageCenterAvatar" />
+    <TextView android:id="@+id/tv_unread_count" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b017d" android:layout_marginRight="15dp" android:layout_marginBottom="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MessageCenterUnreadCount" />
+    <TextView android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/tv_unread_count" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true" style="@style/MessageCenterTitle" />
+</RelativeLayout>

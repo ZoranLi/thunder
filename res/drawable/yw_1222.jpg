@@ -1,0 +1,18 @@
+Error decode img
+jadx.core.utils.exceptions.JadxRuntimeException: Image load error
+	at jadx.core.xmlgen.ResContainer.singleImageFile(ResContainer.java:43)
+	at jadx.api.ResourcesLoader.loadContent(ResourcesLoader.java:113)
+	at jadx.api.ResourcesLoader.access$000(ResourcesLoader.java:30)
+	at jadx.api.ResourcesLoader$1.decode(ResourcesLoader.java:89)
+	at jadx.api.ResourcesLoader.decodeStream(ResourcesLoader.java:68)
+	at jadx.api.ResourcesLoader.loadContent(ResourcesLoader.java:86)
+	at jadx.api.ResourceFile.loadContent(ResourceFile.java:52)
+Caused by: javax.imageio.IIOException: Bogus marker length
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.readImage(Native Method)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.readInternal(JPEGImageReader.java:1236)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.read(JPEGImageReader.java:1039)
+	at javax.imageio.ImageIO.read(ImageIO.java:1448)
+	at javax.imageio.ImageIO.read(ImageIO.java:1352)
+	at jadx.core.xmlgen.ResContainer.singleImageFile(ResContainer.java:41)
+	... 6 more
+

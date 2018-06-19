@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.tdlive.control.GestureDetectorFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/xllive_title_bar" />
+        <FrameLayout android:id="@id/container" android:background="#ffefefef" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+            <com.xunlei.tdlive.control.PullToRefreshRecyclerView android:scrollbarSize="4dp" android:scrollbarThumbVertical="@color/A6A6A6" android:tag="tag_control_live_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44dp" android:listSelector="#00000000" android:divider="#ffefefef" android:dividerHeight="0dp" />
+            <include android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/focus_floating_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="60dp" layout="@layout/xllive_focus_floating_layer_view" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/check_in_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="14dp" android:src="@drawable/xllive_check_in_btn" />
+    <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/check_in_red_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:src="@drawable/xllive_check_in_red_flag" />
+</com.xunlei.tdlive.control.GestureDetectorFrameLayout>

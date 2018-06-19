@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:background="@drawable/task_list_feed_poster_border" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginRight="@dimen/task_list_feed_multi_image_space" app:layout_weight="1.0" app:ratio="@dimen/task_list_feed_multi_image_poster_ratio">
+            <ImageView app:id="@+id/iv_poster1" app:layout_width="match_parent" app:layout_height="match_parent" style="@style/TaskListFeedPosterIV" />
+        </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+        <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:background="@drawable/task_list_feed_poster_border" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginRight="@dimen/task_list_feed_multi_image_space" app:layout_weight="1.0" app:ratio="@dimen/task_list_feed_multi_image_poster_ratio">
+            <ImageView app:id="@+id/iv_poster2" app:layout_width="match_parent" app:layout_height="match_parent" style="@style/TaskListFeedPosterIV" />
+        </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+        <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:background="@drawable/task_list_feed_poster_border" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0" app:ratio="@dimen/task_list_feed_multi_image_poster_ratio">
+            <ImageView app:id="@+id/iv_poster3" app:layout_width="match_parent" app:layout_height="match_parent" style="@style/TaskListFeedPosterIV" />
+        </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+    </LinearLayout>
+</merge>

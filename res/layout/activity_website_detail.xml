@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/fl_title_container" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f" layout="@layout/website_article_title_bar_layout" />
+    <include android:id="@+id/lyt_write_comment" layout="@layout/video_detail_comment_layout" />
+    <FrameLayout android:id="@+id/detail_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="52dp" android:layout_above="@+id/lyt_write_comment" android:layout_below="@+id/fl_title_container" />
+    <com.xunlei.downloadprovidershare.view.SharePopView android:id="@+id/tv_follow_popup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-12dp" android:layout_marginRight="45dp" android:layout_below="@+id/fl_title_container" android:layout_alignRight="@+id/fl_title_container" />
+</RelativeLayout>

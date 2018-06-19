@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/noti_whole" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="5dp" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3f01">
+        <ImageView android:id="@+id/noti_logo" android:layout_width="UNKNOWN_DATA_0x2b01" android:layout_height="UNKNOWN_DATA_0x2b01" android:src="@mipmap/ic_launcher" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/common_imageview_contentdescription" />
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_weight="1.0">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/noti_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kuainiao_dialog_title" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/kuainiao_notification_content_prefix" />
+                <TextView android:textColor="#2c8dff" android:id="@+id/max_speed_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" />
+                <TextView android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/kuainiao_notification_content_suffix" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/noti_open" android:background="@drawable/noti_kuainiao_btn_selector" android:layout_width="UNKNOWN_DATA_0x4101" android:layout_height="UNKNOWN_DATA_0x1b01" android:text="@string/kuainiao_open_member" />
+    </LinearLayout>
+</LinearLayout>

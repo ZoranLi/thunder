@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/top_divider_space" android:background="@color/discovery_tab_item_gap_bg_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" android:layout_alignParentTop="true" />
+    <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_header" android:paddingLeft="@dimen/common_padding_left_normal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="热门话题" android:layout_below="@+id/top_divider_space" style="@style/search_title_style" />
+    <android.support.v7.widget.RecyclerView android:id="@+id/hot_topic_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/common_padding_left_normal" />
+</LinearLayout>

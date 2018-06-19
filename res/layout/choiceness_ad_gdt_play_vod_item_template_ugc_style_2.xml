@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_view" android:paddingTop="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/choiceness_ad_root">
+    <include layout="@layout/include_choiceness_ad_header_template_ugc_style_2" />
+    <include layout="@layout/include_choiceness_ad_title_template_ugc" />
+    <include layout="@layout/include_choiceness_ad_gdt_video_media_player_template_ugc" />
+    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" android:layout_marginTop="13dp" android:layout_below="@+id/item_icon_layout" />
+</RelativeLayout>

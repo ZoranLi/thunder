@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_poster" android:layout_width="UNKNOWN_DATA_0x7f0b0238" android:layout_height="UNKNOWN_DATA_0x7f0b0237" style="@style/TaskListFeedPosterIV" />
+</merge>

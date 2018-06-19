@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_visit" android:background="@drawable/bg_normal_press_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x3401" android:layout_height="UNKNOWN_DATA_0x3401" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:src="@drawable/ic_default_avatar_new" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="72dp" android:layout_weight="1.0" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_avatar">
+            <TextView android:textSize="14sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户名用户名用户名用户名用户名用户名用户名用户名用户名" android:maxLines="1" />
+            <com.xunlei.downloadprovider.publiser.common.view.UserInfoTagView android:id="@+id/view_user_info_tag" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:id="@+id/layout_video" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x3801" android:layout_height="UNKNOWN_DATA_0x3801" android:layout_marginRight="13dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_video_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:src="@drawable/ic_play_normal_index" />
+        </FrameLayout>
+        <TextView android:textSize="11sp" android:textColor="#979aa0" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_video_deleted" android:background="#efeff0" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x3401" android:layout_height="UNKNOWN_DATA_0x3401" android:layout_marginRight="13dp" android:text="该视频
+已删除" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/iv_photo_article_cover" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x3401" android:layout_height="UNKNOWN_DATA_0x3401" android:layout_marginRight="13dp" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textColor="#979ba1" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_foot" android:paddingTop="13dp" android:paddingBottom="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="仅展示最新的500条访问记录" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/loading_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+        <LinearLayout android:orientation="horizontal" android:id="@+id/view_gdt_splash" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <include layout="@layout/layout_splash_bottom" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/bottom_layout" layout="@layout/layout_splash_bottom" />
+        <ImageView android:id="@+id/loading_img_start" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_above="@+id/bottom_layout" android:contentDescription="@string/common_imageview_contentdescription" />
+        <include android:id="@+id/include_default_loading_img_start" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_splash_default" />
+        <ImageView android:id="@+id/loading_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80dp" android:src="@drawable/loading_huawei" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

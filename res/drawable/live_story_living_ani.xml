@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="60" android:drawable="@drawable/living_000" />
+    <item android:duration="60" android:drawable="@drawable/living_001" />
+    <item android:duration="60" android:drawable="@drawable/living_002" />
+    <item android:duration="60" android:drawable="@drawable/living_003" />
+    <item android:duration="60" android:drawable="@drawable/living_004" />
+    <item android:duration="60" android:drawable="@drawable/living_005" />
+    <item android:duration="60" android:drawable="@drawable/living_006" />
+    <item android:duration="60" android:drawable="@drawable/living_007" />
+    <item android:duration="60" android:drawable="@drawable/living_008" />
+    <item android:duration="60" android:drawable="@drawable/living_009" />
+    <item android:duration="60" android:drawable="@drawable/living_010" />
+    <item android:duration="60" android:drawable="@drawable/living_011" />
+    <item android:duration="60" android:drawable="@drawable/living_012" />
+    <item android:duration="60" android:drawable="@drawable/living_013" />
+    <item android:duration="60" android:drawable="@drawable/living_014" />
+    <item android:duration="60" android:drawable="@drawable/living_015" />
+    <item android:duration="60" android:drawable="@drawable/living_016" />
+    <item android:duration="60" android:drawable="@drawable/living_017" />
+    <item android:duration="60" android:drawable="@drawable/living_018" />
+    <item android:duration="60" android:drawable="@drawable/living_019" />
+</animation-list>

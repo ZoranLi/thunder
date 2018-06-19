@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@id/container" app:layout_width="UNKNOWN_DATA_0x7c01" app:layout_height="UNKNOWN_DATA_0x7c01">
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_centerInParent="true">
+        <com.xunlei.common.commonview.BounceLoadingView app:id="@id/gif_view" app:layout_width="UNKNOWN_DATA_0x6401" app:layout_height="UNKNOWN_DATA_0x6401" app:layout_centerInParent="true" />
+        <TextView app:textSize="10dp" app:textColor="#c3c3c3" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/loading_tip" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="7dp" app:text="正在加载" />
+    </LinearLayout>
+</RelativeLayout>

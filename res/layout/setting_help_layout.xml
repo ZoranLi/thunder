@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/common_layout_content_bkg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/setting_help_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/common_title_bar" />
+    </LinearLayout>
+    <WebView android:id="@+id/setting_help_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/setting_help_bottom_bar" android:layout_below="@+id/setting_help_title_bar" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/setting_help_waitting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/setting_help_webview" android:layout_alignBottom="@+id/setting_help_webview">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="0x1010079" />
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sett_help_wait" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/setting_help_bottom_bar" android:background="@drawable/sh_bottom_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/setting_help_back" android:background="@drawable/bt_browser_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:contentDescription="@string/common_imageview_contentdescription" />
+        <ImageView android:id="@+id/setting_help_go" android:background="@drawable/bt_browser_go_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/setting_help_back" android:contentDescription="@string/common_imageview_contentdescription" />
+        <ImageView android:id="@+id/setting_help_refresh" android:background="@drawable/sh_refresh_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:contentDescription="@string/common_imageview_contentdescription" />
+    </RelativeLayout>
+    <include android:id="@+id/channel_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/setting_help_title_bar" layout="@layout/channel_fragment_emtpy" />
+</RelativeLayout>

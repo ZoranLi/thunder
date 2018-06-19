@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_poster" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/common_imageview_contentdescription" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_poster" android:layout_centerVertical="true"
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/NotificationTitle" android:ellipsize="end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/tv_title" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_tag" style="@style/NotificationADTag" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/NotificationDesc" android:ellipsize="end" android:id="@+id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

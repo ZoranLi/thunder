@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:id="@+id/rl_hot_comment" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_hot_comment" android:paddingRight="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/iv_hot_comment_user_avatar">
+            <ImageView android:background="@drawable/feed_hot_comment_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_alignLeft="@+id/ll_hot_comment" />
+            <TextView android:textSize="14sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@+id/tv_hot_comment_name" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:maxLines="2" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <ImageView android:background="@drawable/feed_hot_comment_click_good" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" />
+                <TextView android:textSize="10sp" android:textColor="#979aa0" android:id="@+id/tv_hot_comment_thumb_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123333" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

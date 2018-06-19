@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/common_layout_content_bkg" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01b6">
+        <ImageView android:id="@+id/left_iv" android:paddingLeft="@dimen/payment_13_dp" android:paddingRight="@dimen/payment_13_dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/commonui_nav_arrow_back_selector" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="@style/TextAppearanceMainTitle" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/userinfo_rl" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="18sp" android:textColor="#20222a" android:ellipsize="end" android:id="@+id/payment_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_payment_success" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rebuy_account_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/payment_success" android:layout_alignLeft="@+id/payment_success">
+            <TextView android:textSize="14sp" android:textColor="#20222a" android:id="@+id/rebuy_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_payment_account" />
+            <TextView android:textSize="14sp" android:textColor="#20222a" android:id="@+id/rebuy_account_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/user_default_value" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/payment_business_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/rebuy_account_ll" android:layout_alignLeft="@+id/payment_success">
+            <TextView android:textSize="14sp" android:textColor="#20222a" android:id="@+id/payment_business" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_payment_business" />
+            <TextView android:textSize="14sp" android:textColor="#20222a" android:id="@+id/payment_business_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/activation_recharge" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginBottom="18dp" android:src="@drawable/payment_success_icon" android:layout_above="@+id/userinfo_rl" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginBottom="12dp" android:layout_alignParentBottom="true">
+        <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/recharge_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/activation_payment_ok" style="@style/common_blue_button" />
+    </LinearLayout>
+</RelativeLayout>

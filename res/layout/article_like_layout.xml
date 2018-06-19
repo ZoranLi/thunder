@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:paddingRight="@dimen/common_padding_left_normal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3401">
+    <com.xunlei.downloadprovider.homepage.choiceness.ui.widget.LikeView android:id="@+id/like_view" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/like_icon0" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginRight="7dp" android:src="@drawable/feedflow_icon_default" android:scaleType="centerCrop" />
+        <ImageView android:id="@+id/like_icon1" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginRight="7dp" android:src="@drawable/feedflow_icon_default" android:scaleType="centerCrop" />
+        <ImageView android:id="@+id/like_icon2" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginRight="6dp" android:src="@drawable/feedflow_icon_default" android:scaleType="centerCrop" />
+        <TextView android:textSize="11sp" android:textStyle="UNKNOWN_DATA_0x0" android:textColor="#5a6473" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

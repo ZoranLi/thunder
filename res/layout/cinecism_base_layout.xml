@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/lyt_cinecism" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_poster" android:layout_width="UNKNOWN_DATA_0x4101" android:layout_height="UNKNOWN_DATA_0x4101" android:scaleType="centerCrop" />
+        <TextView android:textSize="9sp" android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="影评" android:drawableLeft="@drawable/ic_detail_cinceism" android:drawablePadding="2dp" />
+    </FrameLayout>
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="13sp" android:textColor="#5b6473" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="《战狼2》里塑造了一个更加的真实与接地气、有血有肉的英雄" android:maxLines="2" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+            <TextView android:textSize="10sp" android:textColor="#979aa0" android:id="@+id/tv_show" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="10sp" android:textColor="#979aa0" android:id="@+id/tv_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_play" android:layout_alignTop="@+id/tv_play" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

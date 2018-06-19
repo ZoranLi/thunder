@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/banner_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2b01" android:contentDescription="no_more_view">
+    <TextView android:textSize="10sp" android:textColor="#2d2d2d" android:id="@id/loading_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="到底了哦！回到顶部" android:drawableRight="@drawable/xllive_goto_top" android:drawablePadding="7dp" />
+</LinearLayout>

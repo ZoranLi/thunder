@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:id="@id/platform_layout" android:background="#efeff0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <HorizontalScrollView android:paddingTop="20dp" android:paddingBottom="20dp" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/share_platfrom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" />
+        <HorizontalScrollView android:paddingTop="20dp" android:paddingBottom="20dp" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/share_operation_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <TextView android:textSize="15sp" android:textColor="#333333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/cancel" android:background="@drawable/share_cancel_bg_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginTop="8dp" android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

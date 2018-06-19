@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#f2f2f2" />
+                    <size android:height="57dp" android:width="57dp" />
+                    <corners android:radius="30dp" />
+                    <padding android:left="14.5dp" android:top="14.5dp" android:right="14.5dp" android:bottom="14.5dp" />
+                </shape>
+            </item>
+            <item android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:height="28dp" android:width="28dp" android:drawable="@drawable/popup_menu_ic_delete" />
+        </layer-list> />
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white" />
+                    <size android:height="57dp" android:width="57dp" />
+                    <corners android:radius="30dp" />
+                    <padding android:left="14.5dp" android:top="14.5dp" android:right="14.5dp" android:bottom="14.5dp" />
+                </shape>
+            </item>
+            <item android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:height="28dp" android:width="28dp" android:drawable="@drawable/popup_menu_ic_delete" />
+        </layer-list> />
+</selector>

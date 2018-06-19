@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.tdlive.view.FocusFloatingLayerView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="15dp" android:textColor="@color/white" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/floating_layer_normal" android:background="@drawable/xllive_floating_layer_state_normal_bg" android:padding="4.5dp" android:layout_width="UNKNOWN_DATA_0x7601" android:layout_height="UNKNOWN_DATA_0x2701" android:text="@string/live_dynamic" android:drawableLeft="@drawable/xllive_floating_layer_normal_img" android:drawablePadding="4.5dp" />
+    <include android:id="@id/floating_layer_anchor_info" layout="@layout/xllive_floating_layer_anchor_info_view" />
+    <include android:id="@id/floating_layer_anchor_num" layout="@layout/xllive_floating_layer_anchor_num_view" />
+</com.xunlei.tdlive.view.FocusFloatingLayerView>

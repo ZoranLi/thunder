@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="14sp" android:textColor="@color/download_tab_unselected" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tab_title" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1e01" android:text="收藏/历史  " android:layout_centerInParent="true" />
+        <ImageView android:id="@+id/tab_red_point" android:background="@drawable/collect_tab_red_point" android:layout_width="UNKNOWN_DATA_0x701" android:layout_height="UNKNOWN_DATA_0x701" android:layout_marginLeft="-15dp" android:layout_toRightOf="@+id/tab_title" />
+    </RelativeLayout>
+</RelativeLayout>

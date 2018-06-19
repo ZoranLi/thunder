@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="@drawable/lx_space_ex_dlg_bg" app:layout_width="UNKNOWN_DATA_0x13a01" app:layout_height="wrap_content">
+    <ImageView app:id="@+id/lx_space_ex_title_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:src="@drawable/lx_space_ex_title_svip" />
+    <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lx_space_ex_close_iv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_open_private_space_dialog_cha" />
+    <LinearLayout app:orientation="vertical" app:paddingLeft="10dp" app:paddingRight="10dp" app:layout_width="match_parent" app:layout_height="match_parent"
+        <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <TextView app:textSize="14sp" app:textColor="@color/lx_space_ex_current" app:id="@+id/lx_space_ex_vip_level_tips" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="15dp" app:text="@string/lx_space_exp_vip_level" />
+            <ImageView app:id="@+id/lx_space_ex_year_icon" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="19dp" app:src="@drawable/ic_year_vip_red" />
+            <TextView app:textSize="14sp" app:textColor="@color/lx_space_ex_normal_count" app:id="@+id/lx_space_ex_vip_normal" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="15dp" app:text="普通会员 VIP4" />
+            <ImageView app:id="@+id/lx_space_ex_vip_icon" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="19dp" app:src="@drawable/ic_super_vip_level" />
+            <TextView app:textSize="8sp" app:textStyle="bold" app:textColor="@color/white" app:id="@+id/lx_space_ex_vip_level" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="-9dp" app:layout_marginTop="12.5dp" app:text="7" />
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <TextView app:textSize="14sp" app:textColor="@color/lx_space_ex_current" app:id="@+id/lx_space_exp_every_month_tips" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="7dp" app:text="@string/lx_space_exp_every_month_count" />
+            <TextView app:textSize="14sp" app:textColor="@color/lx_space_ex_current" app:id="@+id/lx_space_ex_current_count_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="7dp" />
+            <TextView app:textSize="12sp" app:textColor="@color/lx_space_ex_current" app:id="@+id/lx_space_ex_upgrade_count_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="8dp" />
+        </LinearLayout>
+        <TextView app:textSize="14sp" app:textColor="@color/lx_space_ex_detail" app:id="@+id/lx_space_ex_detial_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="25dp" app:text="@string/lx_space_exp_detial_count" />
+        <com.xunlei.downloadprovider.personal.lixianspace.expansion.columnview.ColumnChartView app:id="@+id/lx_space_ex_ccv" app:layout_width="UNKNOWN_DATA_0x12c01" app:layout_height="UNKNOWN_DATA_0xb401" app:ccv_padding_top="35dp" app:ccv_padding_bottom="20dp" app:ccv_cloumn_size="10dp" app:ccv_split_count="10" app:ccv_icon_size="22dp" app:ccv_draw_frame="false" />
+        <Button app:textSize="17sp" app:textColor="@color/lx_space_golden" app:id="@+id/lx_space_ex_open_vip_btn" app:background="@drawable/lx_space_black_btn_selector" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="17dp" app:layout_marginTop="35dp" app:layout_marginRight="17dp" app:layout_marginBottom="17dp" app:text="@string/lx_space_open_vip" />
+    </LinearLayout>
+</FrameLayout>

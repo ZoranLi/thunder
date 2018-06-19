@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/xl_toast_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imageView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sniff_download_success_margin_edge" android:layout_marginTop="@dimen/sniff_download_success_icon_margin_top" android:layout_marginRight="@dimen/sniff_download_success_margin_edge" android:layout_marginBottom="@dimen/sniff_download_success_icon_margin_bottom" android:src="@drawable/sniff_download_success_icon" />
+    <TextView android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sniff_download_success_icon_margin_top" android:text="@string/text_download_success_txt" />
+</LinearLayout>

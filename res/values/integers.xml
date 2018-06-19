@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_activityDefaultDur">220</integer>
+    <integer name="config_activityShortDur">150</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="double_click_animation_item_duration">50</integer>
+    <integer name="follow_btn_animation_interval">50</integer>
+    <integer name="hide_password_duration">320</integer>
+    <integer name="max_record_time">180</integer>
+    <integer name="min_record_time">3</integer>
+    <integer name="play_complete_like_guide_item_duration">50</integer>
+    <integer name="pull_refreshing_amin_duration">45</integer>
+    <integer name="pull_refreshing_amin_duration2">80</integer>
+    <integer name="rad_living_anim_duration">135</integer>
+    <integer name="show_password_duration">200</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="task_card_download_finish_tip_size_style2">12</integer>
+    <integer name="task_card_download_status_tip_size">10</integer>
+    <integer name="user_center_member_aciont_duration">45</integer>
+    <integer name="user_center_member_aciont_duration1">30</integer>
+</resources>

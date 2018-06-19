@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <com.xunlei.downloadprovider.web.base.core.CustomWebView android:id="@+id/cinecism_webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@+id/main_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_back" android:background="@color/transparent" android:padding="11dp" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b009f" android:src="@drawable/commonui_nav_arrow_back_selector" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <ImageView android:id="@+id/iv_menu" android:background="@color/transparent" android:paddingLeft="10dp" android:paddingRight="13dp" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b009f" android:src="@drawable/ic_menu_gray" android:layout_alignParentRight="true" android:paddingStart="10dp" android:paddingEnd="13dp" android:layout_alignParentEnd="true" />
+            <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/cinecism_loading_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/iv_menu" />
+            <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/cinecism_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/iv_menu" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="@dimen/common_padding_left_normal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2e01">
+        <TextView android:textSize="14sp" android:textColor="#5a6473" android:textColorHint="#5a6473" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_write_comment" android:background="@drawable/comment_input_layout_selector" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0xa001" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginRight="7dp" android:hint="@string/tips_write_comment" android:maxLines="1" android:layout_marginEnd="7dp" />
+        <include layout="@layout/detail_operation_layout" />
+    </LinearLayout>
+</LinearLayout>

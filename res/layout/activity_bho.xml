@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/content_layout" android:background="@drawable/dlg_bg_new" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp"
+        <RelativeLayout android:id="@+id/xl_dlg_title_layout" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/xl_dlg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bho_dlg_text_help_download" android:singleLine="true" android:layout_centerInParent="true" style="@style/dlg_title_txt_style" />
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:id="@+id/xl_dlg_message" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:maxLines="5" android:layout_below="@+id/xl_dlg_title_layout" style="@style/dlg_content_txt_style" />
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/dlg_2btn_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b00db" android:weightSum="2.0" android:layout_below="@+id/xl_dlg_message">
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_left_btn" android:layout_width="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/dlg_left_white_button" />
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_right_btn" android:layout_width="match_parent" android:text="@string/bho_dlg_btn_download" android:layout_weight="1.0" style="@style/dlg_right_white_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

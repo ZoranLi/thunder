@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/rad_living_anim_duration" android:drawable="@drawable/rad_living_btn_1" />
+    <item android:duration="@integer/rad_living_anim_duration" android:drawable="@drawable/rad_living_btn_2" />
+    <item android:duration="@integer/rad_living_anim_duration" android:drawable="@drawable/rad_living_btn_3" />
+    <item android:duration="@integer/rad_living_anim_duration" android:drawable="@drawable/rad_living_btn_4" />
+    <item android:duration="@integer/rad_living_anim_duration" android:drawable="@drawable/rad_living_btn_5" />
+    <item android:duration="@integer/rad_living_anim_duration" android:drawable="@drawable/rad_living_btn_6" />
+</animation-list>

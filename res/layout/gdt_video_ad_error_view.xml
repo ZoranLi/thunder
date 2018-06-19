@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12sp" android:textColor="0x106000b" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败，点击重试" android:drawableTop="@drawable/ic_replay_selector" android:drawablePadding="8dp" />

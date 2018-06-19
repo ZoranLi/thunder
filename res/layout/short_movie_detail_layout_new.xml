@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/ryt_top_area" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xc801" android:minHeight="100dp">
+                <FrameLayout android:id="@+id/vod_layout" android:background="0x106000c" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <Button android:textSize="12sp" android:textColor="@color/comment_text_color_selector" android:id="@+id/btn_extra" android:background="@drawable/bg_border_button_selector" android:layout_width="UNKNOWN_DATA_0x3801" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:text="@string/have_a_play" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="12sp" android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_video_tips" android:background="0x106000c" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </RelativeLayout>
+            <com.xunlei.downloadprovider.shortvideo.videodetail.widget.ShortMovieFlowBaseInfoView android:id="@+id/flow_base_info" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:id="@+id/detail_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="52dp" android:layout_below="@+id/ryt_top_area" />
+    </LinearLayout>
+    <include layout="@layout/video_detail_comment_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_titlebar_wrapper" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:id="@+id/fl_title_container" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f" layout="@layout/shortdetail_title_bar_layout" />
+    </LinearLayout>
+    <com.xunlei.downloadprovidershare.view.SharePopView android:id="@+id/tv_follow_popup" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-12dp" android:layout_marginRight="45dp" android:layout_below="@+id/lyt_titlebar_wrapper" android:layout_alignRight="@+id/lyt_titlebar_wrapper" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie_detail_share1" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x6001" android:layout_height="UNKNOWN_DATA_0x4501" android:layout_marginTop="-48dp" android:layout_marginRight="4dp" android:layout_below="@+id/lyt_titlebar_wrapper" android:layout_alignParentRight="true" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie_detail_share2" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x6001" android:layout_height="UNKNOWN_DATA_0x4501" android:layout_marginTop="-48dp" android:layout_marginRight="4dp" android:layout_below="@+id/lyt_titlebar_wrapper" android:layout_alignParentRight="true" />
+    <ImageView android:id="@+id/iv_red_packet" android:background="@drawable/ic_detail_red_packet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-48dp" android:layout_marginRight="4dp" android:layout_below="@+id/lyt_titlebar_wrapper" android:layout_alignParentRight="true" />
+</RelativeLayout>

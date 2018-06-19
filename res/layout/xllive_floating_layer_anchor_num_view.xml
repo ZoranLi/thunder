@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.tdlive.view.FloatingLayerAnchorNumView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/xllive_floating_layer_state_normal_bg" android:layout_width="UNKNOWN_DATA_0x7601" android:layout_height="UNKNOWN_DATA_0x2701">
+    <com.xunlei.tdlive.control.RecycleableViewPager android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/anchorAvatar" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_margin="4.5dp" />
+    <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.5dp">
+        <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/tvAnchorNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在直播" android:lines="1" />
+    </LinearLayout>
+</com.xunlei.tdlive.view.FloatingLayerAnchorNumView>

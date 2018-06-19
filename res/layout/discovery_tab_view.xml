@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/action_bar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/status_bar_fix_layout" />
+    <com.xunlei.downloadprovider.search.ui.widget.HomeTitleBar android:id="@+id/search_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@+id/top_divider_line" android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/sv_layout" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/discovery_tab_item_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/empty_layout" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/ul_loading_view" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+    </FrameLayout>
+</LinearLayout>

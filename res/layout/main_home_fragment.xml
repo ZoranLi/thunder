@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include layout="@layout/status_bar_fix_layout" />
+    <FrameLayout app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent">
+        <com.xunlei.downloadprovider.frame.view.CustomViewPager app:id="@+id/viewPager" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="@dimen/common_tab_layout_height" />
+        <RelativeLayout app:orientation="vertical" app:id="@+id/title_layout" app:background="@color/white" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.xunlei.downloadprovider.search.ui.widget.HomeTitleBar app:id="@+id/title_bar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="@dimen/home_top_tab_download_entrance_width" />
+            <RelativeLayout app:orientation="horizontal" app:id="@+id/pager_sliding_tab_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/title_bar">
+                <com.xunlei.downloadprovider.xlui.widget.PagerSlidingTabStrip app:id="@+id/pager_sliding_tab" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b009b" app:layout_toLeftOf="@+id/tab_space" />
+                <android.support.v4.widget.Space app:id="@+id/tab_space" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <com.xunlei.common.commonview.DownloadEntranceView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tab_download_entrance" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x7f0b014b" app:layout_height="wrap_content" app:layout_marginTop="@dimen/home_top_tab_download_entrance_margin_top" app:layout_alignParentRight="true" app:entranceStyle="1" />
+            <View app:id="@+id/line" app:background="#e4e4e4" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_below="@+id/pager_sliding_tab_layout" />
+        </RelativeLayout>
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/iv_go_to_top" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="13dp" app:layout_marginBottom="65dp" app:src="@drawable/go_to_top_selector" />
+    </FrameLayout>
+</LinearLayout>

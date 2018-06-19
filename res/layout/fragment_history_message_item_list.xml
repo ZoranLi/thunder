@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView app:id="@+id/list" app:background="@color/white" app:layout_width="match_parent" app:layout_height="match_parent" app:layoutManager="LinearLayoutManager" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView app:id="@+id/ev_error" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <com.xunlei.common.commonview.UnifiedLoadingView app:id="@+id/lv_loading" app:background="#ffffff" app:layout_width="match_parent" app:layout_height="match_parent" />
+</FrameLayout>

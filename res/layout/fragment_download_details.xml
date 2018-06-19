@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/root_view" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView app:id="@+id/task_detail_recycler_view" app:background="@color/common_content_bkg_color" app:scrollbars="UNKNOWN_DATA_0x0" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:fadeScrollbars="true" app:overScrollMode="never" app:layout_constraintBottom_toTopOf="@+id/fl_bottom_footer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/fl_top_header" />
+    <FrameLayout app:id="@+id/fl_bottom_footer" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/task_detail_recycler_view">
+        <include layout="@layout/comment_input_layout" />
+        <com.xunlei.downloadprovider.download.center.widget.DownloadCenterBottomView app:id="@+id/bottom_view" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout app:id="@+id/fl_top_header" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="0"
+        <FrameLayout app:id="@+id/fl_play_view" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <include app:id="@+id/download_details_title_header_bar" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b009f" layout="@layout/download_details_title_header_bar" />
+            <FrameLayout app:id="@+id/player_container_layout" app:background="0x106000c" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b00e0">
+                <include app:id="@+id/playerView" layout="@layout/downloadvod_player_view" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout app:id="@+id/fl_before_play" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <include layout="@layout/download_detail_new_before_play_layout" />
+        </FrameLayout>
+        <com.xunlei.downloadprovider.download.center.widget.DownloadCenterSelectFileTitleView app:id="@+id/select_file_title" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout app:id="@+id/fab_task_expand" app:background="@drawable/commonui_white_shadow_bg" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginBottom="50dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="0">
+        <TextView app:textSize="12sp" app:textColor="@color/task_card_title_color_style2" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/fab_task_expand_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="收起列表" app:drawableRight="@drawable/detail_arrow_up" app:drawablePadding="0dp" app:layout_centerInParent="true" app:drawableEnd="@drawable/detail_arrow_up" />
+    </RelativeLayout>
+    <FrameLayout app:id="@+id/fl_ad" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.0">
+        <include layout="@layout/download_detail_new_ad_layout" />
+    </FrameLayout>
+    <com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsBeforePlayTopBar app:id="@+id/before_play_top_bar" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f0b009f" />
+</android.support.constraint.ConstraintLayout>

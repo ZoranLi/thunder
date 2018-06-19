@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/sett_choose_sdcard_title_bar" android:visibility="visible" layout="@layout/common_title_bar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/sdcard_layout" android:padding="@dimen/EntryBorderWidth" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+            <com.xunlei.downloadprovider.personal.settings.ui.SDCardViewHolder android:id="@+id/sett_choose_sdcard_card1" android:background="@drawable/settings_group_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" layout="@layout/layout_choose_sdcard_card" />
+            <com.xunlei.downloadprovider.personal.settings.ui.SDCardViewHolder android:id="@+id/sett_choose_sdcard_card2" android:background="@drawable/settings_group_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" layout="@layout/layout_choose_sdcard_card" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/filemanager_nosdcard_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="20sp" android:textColor="#999999" android:id="@+id/nosdcardTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_sdcard_found" android:drawableTop="@drawable/fileexplorer_nosdcard" android:drawablePadding="10dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

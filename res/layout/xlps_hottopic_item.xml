@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/xlps_hottopic_item_ly" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/xlps_topic_icon" android:layout_width="UNKNOWN_DATA_0xd01" android:layout_height="UNKNOWN_DATA_0xd01" android:src="@drawable/xlps_topic_icon" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="6dp" android:layout_toRightOf="@+id/xlps_topic_icon">
+            <TextView android:textSize="15sp" android:textColor="#000000" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/xlps_hottopic_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:text="话题话题----------------------------------" android:singleLine="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="#7e7e7e" android:id="@+id/xlps_hottopic_item_content" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="内容
+内容" android:maxLines="10" android:minLines="1" />
+</LinearLayout>

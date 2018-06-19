@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="match_parent" android:max="100" android:progress="50" android:progressDrawable="@drawable/download_storage_progress" style="?unknown_attr_ref: 1010078" />
+    <TextView android:textSize="9sp" android:textColor="@color/white" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textViewLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="已下载:  0GB" />
+    <TextView android:textSize="9sp" android:textColor="@color/white" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textViewRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="剩余空间:  0GB" />
+</FrameLayout>

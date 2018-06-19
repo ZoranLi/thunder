@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_photo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@+id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photo_publish_photo_view_delete_btn" />
+</merge>

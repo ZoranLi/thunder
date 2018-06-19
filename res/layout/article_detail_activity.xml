@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/fl_title_container" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f" layout="@layout/website_article_title_bar_layout" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/article_recycle_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="0x106000b" />
+        <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/article_loading_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="@dimen/common_padding_left_normal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2e01">
+        <TextView android:textSize="14sp" android:textColor="#5a6473" android:textColorHint="#5a6473" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_write_comment" android:background="@drawable/comment_input_layout_selector" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0xa001" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginRight="7dp" android:hint="@string/tips_write_comment" android:maxLines="1" />
+        <include layout="@layout/detail_operation_layout" />
+    </LinearLayout>
+</LinearLayout>

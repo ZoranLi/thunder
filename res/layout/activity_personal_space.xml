@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout app:id="@+id/lyt_coordinator" app:fitsSystemWindows="false" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginBottom="-4dp" app:layout_above="@+id/layout_publisher_bottom_chat_follow">
+        <include layout="@layout/publisher_header_layout" />
+        <android.support.v4.view.ViewPager app:id="@+id/vp_fragment" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:behavior_overlapTop="0dp" />
+        <com.xunlei.common.commonview.UnifiedLoadingView app:id="@+id/lv_loading" app:background="@color/white" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include android:id="@+id/layout_publisher_bottom_chat_follow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_alignParentBottom="true" layout="@layout/publisher_bottom_chat_follow_layout" />
+</RelativeLayout>

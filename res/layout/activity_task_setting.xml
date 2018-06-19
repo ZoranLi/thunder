@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/SettingMain">
+    <include layout="@layout/common_title_bar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/sett_task_content_layout" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:contentDescription="@string/default_description" style="@style/SettingSectionDivline" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/settings_group_bg" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/sett_task_num_layout" android:background="@drawable/settings_item_radius_bg" style="@style/SettingTaskCell">
+                    <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle" android:id="@+id/sett_task_num_title" android:text="@string/sett_task_num" android:layout_centerVertical="true" style="@style/SettingTitle" />
+                    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/sett_task_num_minus" android:background="@drawable/sett_task_minus_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/default_description" />
+                        <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/sett_task_num_text" android:background="@drawable/sett_task_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                        <ImageView android:id="@+id/sett_task_num_plus" android:background="@drawable/sett_task_plus_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/default_description" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/settings_group_bg" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <RelativeLayout android:id="@+id/sett_auto_install_layout" android:background="@drawable/settings_item_top_radius_bg" style="@style/SettingTaskCell">
+                    <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_download_install" android:layout_centerVertical="true" style="@style/SettingTitle" />
+                    <CheckBox android:id="@+id/sett_auto_install" style="@style/SettingsCheckBoxStyle2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/sett_delete_packet_layout" android:background="@drawable/settings_item_angle_bg" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingTaskCell">
+                    <LinearLayout style="@style/SettingVerticalTexts">
+                        <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_auto_delete" style="@style/SettingTitle" />
+                        <TextView android:textAppearance="@style/TextAppearanceEntrySecondaryTitle_Normal" android:text="@string/sett_auto_delete_description" style="@style/SettingTitle" />
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/sett_delete_packet" style="@style/SettingsCheckBoxStyle2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/auto_accerate" android:background="@drawable/settings_item_angle_bg" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingTaskCell"
+                    <RelativeLayout android:layout_marginRight="70dp" style="@style/SettingVerticalTexts">
+                        <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/sett_auto_accerate_text" android:text="@string/sett_download_auto_accerate" style="@style/SettingTitle" />
+                        <TextView android:textAppearance="@style/TextAppearanceEntrySecondaryTitle_Normal" android:text="@string/sett_download_auto_accerate_tips" android:layout_below="@+id/sett_auto_accerate_text" style="@style/SettingSubTitle" />
+                    </RelativeLayout>
+                    <CheckBox android:id="@+id/sett_auto_accerate" style="@style/SettingsCheckBoxStyle2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/auto_sync_to_lixian_space" android:background="@drawable/settings_item_angle_bg" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingTaskCell"
+                    <RelativeLayout android:layout_marginRight="70dp" style="@style/SettingVerticalTexts">
+                        <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/sett_auto_sync_to_lixian_space_text" android:text="@string/sett_download_auto_sync_to_lixian_space" style="@style/SettingTitle" />
+                        <TextView android:textAppearance="@style/TextAppearanceEntrySecondaryTitle_Normal" android:visibility="gone" android:text="@string/sett_download_auto_sync_to_lixian_space_tips" android:layout_below="@+id/sett_auto_sync_to_lixian_space_text" style="@style/SettingSubTitle" />
+                    </RelativeLayout>
+                    <CheckBox android:id="@+id/sett_auto_sync_to_lixian_space" style="@style/SettingsCheckBoxStyle2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/sett_ignore_battery_optimizations_layout" android:background="@drawable/settings_item_angle_bg" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingTaskCell">
+                    <LinearLayout style="@style/SettingVerticalTexts">
+                        <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/sett_ignore_battery_optimizations_title" android:text="@string/sett_ignore_battery_optimizations" style="@style/SettingTitle" />
+                        <TextView android:textAppearance="@style/TextAppearanceEntrySecondaryTitle_Normal" android:text="@string/sett_ignore_battery_optimizations_description" style="@style/SettingTitle" />
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/sett_ignore_battery_optimizations_switch" style="@style/SettingsCheckBoxStyle2" />
+                    <Button android:id="@+id/sett_ignore_battery_optimizations_arrow" android:background="@drawable/setting_arrow" android:visibility="gone" android:clickable="false" style="@style/SettingRightButton" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

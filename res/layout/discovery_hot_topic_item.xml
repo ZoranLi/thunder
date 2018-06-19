@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/black" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0" app:ratio="1.36">
+    <ImageView app:id="@+id/topic_poster" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="fitXY" />
+    <View app:id="@+id/view" app:background="#66000000" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <TextView app:textSize="14sp" app:textStyle="bold" app:textColor="#fff" app:ellipsize="end" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/hot_topic_title" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="" app:maxLines="2" />
+</com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/goback_btn" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3801" android:src="@drawable/commonui_nav_arrow_back_selector" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3801" android:layout_centerHorizontal="true">
+        <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/speed_billboard_title_textview" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="TA们也在下" />
+        <TextView android:textSize="17sp" android:textColor="#979aa0" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/speed_billboard_title_number" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/speed_billboard_title_textview" />
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_below="@+id/goback_btn" />
+    <android.support.v7.widget.RecyclerView android:id="@+id/icon_recycleview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/line" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="@dimen/task_tab_card_interval" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/cardView" android:background="@drawable/task_card_bkg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/edit_mode_select_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/edit_mode_select_btn" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/big_unselected" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/taskItemLayout" android:paddingLeft="@dimen/task_card_padding" android:paddingTop="@dimen/task_card_padding" android:paddingRight="@dimen/task_card_padding" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/edit_mode_select_layout" android:layout_toStartOf="@+id/edit_mode_select_layout">
+            <include android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_task_card_template_download_card_icon_style0" />
+            <include layout="@layout/layout_task_card_template_download_card_basic_info" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/layout_task_list_download_card_under_banner" />
+</LinearLayout>

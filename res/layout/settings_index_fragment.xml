@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" style="@style/SettingCell"
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/sdcard_chooser_layout" android:background="@drawable/settings_item_top_radius_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell"
+            <LinearLayout android:duplicateParentState="true" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/SettingVerticalTexts">
+                <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_choose_sdcard" style="@style/SettingTitle" />
+            </LinearLayout>
+            <Button android:id="@+id/sett_choose_sd" android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/sett_task_layout" android:background="@drawable/settings_item_angle_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+            <LinearLayout android:clickable="false" android:duplicateParentState="true" android:layout_centerVertical="true" style="@style/SettingHorizontalTexts">
+                <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:clickable="false" android:text="@string/sett_task" style="@style/SettingTitle" />
+            </LinearLayout>
+            <Button android:background="@drawable/setting_arrow" android:clickable="false" style="@style/SettingRightButton" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sett_general_layout" android:background="@drawable/settings_item_angle_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+            <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/sett_general_text" android:text="@string/sett_general" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SettingTitle" />
+            <Button android:id="@+id/sett_general" android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sett_network_check_layout" android:background="@drawable/settings_item_bottom_radius_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+            <LinearLayout android:duplicateParentState="true" android:layout_centerVertical="true" style="@style/SettingHorizontalTexts">
+                <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_network_check" style="@style/SettingTitle" />
+            </LinearLayout>
+            <Button android:id="@+id/sett_network_check" android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sett_room_clean_layout" android:background="@drawable/settings_item_bottom_radius_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+            <LinearLayout android:duplicateParentState="true" android:layout_centerVertical="true" style="@style/SettingHorizontalTexts">
+                <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_room_clean" style="@style/SettingTitle" />
+            </LinearLayout>
+            <Button android:id="@+id/sett_room_clean" android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+            <TextView android:textSize="12sp" android:textColor="#979ba1" android:id="@+id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_toLeftOf="@+id/sett_room_clean" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/sett_feedback_layout" android:background="@drawable/settings_item_top_radius_bg_selector" android:visibility="gone" style="@style/SettingCell"
+            <LinearLayout android:duplicateParentState="true" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/SettingVerticalTexts">
+                <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_feed_back" style="@style/SettingTitle" />
+            </LinearLayout>
+            <Button android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/bt_sett_about_check_update_layout" android:background="@drawable/settings_item_angle_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+            <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/bt_sett_about_check_update" android:text="@string/sett_check_update" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SettingTitle" />
+            <Button android:id="@+id/btn_arrow" android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+            <TextView android:textSize="14sp" android:textStyle="bold|italic" android:textColor="#ff0000" android:id="@+id/tv_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:text="" android:drawableRight="@drawable/tab_view_point" android:layout_toLeftOf="@+id/btn_arrow" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sett_more_layout" android:background="@drawable/settings_item_bottom_radius_bg_selector" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+            <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/sett_more_tips" android:text="@string/sett_about_xl" android:layout_centerVertical="true" style="@style/SettingTitle" />
+            <Button android:id="@+id/sett_more" android:background="@drawable/setting_arrow" style="@style/SettingRightButton" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sett_logout_layout_out" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/sett_logout_layout" android:background="@drawable/settings_item_top_radius_bg_selector" style="@style/SettingCell">
+            <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:id="@+id/sett_logout_tips" android:text="@string/sett_logout" android:layout_centerInParent="true" style="@style/SettingTitle" />
+            <Button android:id="@+id/sett_logout" android:background="@drawable/setting_arrow" android:visibility="gone" style="@style/SettingRightButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

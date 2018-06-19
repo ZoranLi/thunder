@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ly_living_replay" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4601" android:layout_marginTop="23dp">
+        <ImageView android:id="@+id/iv_living_icon" android:background="@color/living_icon_bg" android:layout_width="UNKNOWN_DATA_0x6901" android:layout_height="match_parent" android:layout_marginLeft="13dp" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="2dp" android:layout_toLeftOf="@+id/iv_replay_arrow" android:layout_toRightOf="@+id/iv_living_icon" android:layout_centerVertical="true">
+            <com.xunlei.downloadprovider.xlui.widget.ZHTextView android:textSize="16sp" android:textColor="#3b424c" android:ellipsize="middle" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_replay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sdfasdfsfsadfasdfasdfsadfdsfasdfsVin手雷dfeida的历史直播" android:singleLine="true" />
+            <TextView android:textSize="11sp" android:textColor="#969aa0" android:id="@+id/tv_replay_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="2个回放" android:layout_toLeftOf="@+id/iv_replay_arrow" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_replay_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/me_cell_rightIcon_right_margin" android:src="@drawable/click_item_go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/speed_detection_headerbar" layout="@layout/common_has_num_bar" />
+    <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

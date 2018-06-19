@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@drawable/list_item_bg_selector" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:paddingBottom="13dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:id="@+id/icon_iv" app:layout_width="UNKNOWN_DATA_0x7f0b0218" app:layout_height="UNKNOWN_DATA_0x7f0b0213" app:layout_marginLeft="@dimen/task_card_padding" app:layout_marginTop="13dp" app:layout_marginRight="13dp" app:src="@drawable/download_ad_background" app:scaleType="centerCrop" />
+        <ImageView app:layout_width="UNKNOWN_DATA_0x7f0b0218" app:layout_height="UNKNOWN_DATA_0x7f0b0213" app:layout_marginLeft="@dimen/task_card_padding" app:layout_marginTop="13dp" app:layout_marginRight="13dp" app:src="@drawable/download_ad_mask" app:scaleType="fitXY" />
+        <TextView app:id="@+id/action_name_tv" app:layout_width="UNKNOWN_DATA_0x7f0b0210" app:layout_height="UNKNOWN_DATA_0x7f0b020b" app:layout_marginLeft="13dp" app:layout_marginRight="@dimen/task_card_padding" app:text="安装" app:layout_alignParentRight="true" app:layout_centerVertical="true" style="@style/TaskCardBlueButtonAppearance" />
+        <com.xunlei.downloadprovider.xlui.widget.ZHTextView app:id="@+id/name_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:includeFontPadding="false" app:layout_toLeftOf="@+id/action_name_tv" app:layout_toRightOf="@+id/icon_iv" app:layout_alignTop="@+id/icon_iv" app:chn_text_color="#333333" app:chn_textSize="14sp" app:ellipsize="UNKNOWN_DATA_0xffffffffffffffff" app:maxline="1" />
+        <RatingBar app:id="@+id/score_rb" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:layout_toRightOf="@+id/icon_iv" app:layout_below="@+id/name_tv" style="@style/recommend_ad_rating_bar" />
+        <TextView app:textSize="10sp" app:textColor="#9c9c9c" app:ellipsize="end" app:id="@+id/desc_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:singleLine="true" app:includeFontPadding="false" app:layout_toLeftOf="@+id/action_name_tv" app:layout_toRightOf="@+id/icon_iv" app:layout_below="@+id/score_rb" />
+    </RelativeLayout>
+    <View app:id="@+id/gray_line" app:background="@color/search_line_color" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_marginLeft="13dp" app:layout_marginRight="13dp" />
+</LinearLayout>

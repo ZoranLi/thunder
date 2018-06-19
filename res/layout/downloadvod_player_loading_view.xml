@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <com.airbnb.lottie.LottieAnimationView app:id="@+id/lav_loading_indicator" app:layout_width="UNKNOWN_DATA_0x2e01" app:layout_height="UNKNOWN_DATA_0x2e01" app:layout_marginTop="21dp" app:lottie_fileName="lottie/downloaddetailplay/data.json" app:lottie_imageAssetsFolder="lottie/downloaddetailplay/images" />
+    <TextView app:textSize="12sp" app:textColor="@color/white" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/player_loading_text" app:background="0x106000d" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="8dp" app:maxWidth="200dp" app:text="@string/default_unified_loading_text" app:maxLines="2" />
+    <com.xunlei.downloadprovider.download.player.views.member.widget.MemberActionLoadingView app:id="@+id/member_action_loading_view" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+</LinearLayout>

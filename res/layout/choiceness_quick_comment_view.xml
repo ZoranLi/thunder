@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include layout="@layout/line" />
+    <TextView app:textSize="13sp" app:textColor="#5b6473" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/common_padding_left_normal" app:layout_marginTop="8dp" app:layout_marginRight="@dimen/common_padding_left_normal" app:text="等你来评价" app:lines="1" />
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.QuickCommentView app:id="@+id/quick_comment" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="-3dp" app:qk_border="@drawable/bg_quick_comment_item2" app:qk_text_color="@color/quick_comment_text_color2" app:qk_center="false" />
+    <View app:background="@color/common_content_bkg_color" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x501" />
+</LinearLayout>

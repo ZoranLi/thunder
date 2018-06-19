@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/short_movie_detail_brand_ad" />
+    <RelativeLayout android:id="@+id/rl_native_header_root" android:background="#ffffff" android:paddingTop="9.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_card_interval">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#3b424c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_recommend_header" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2601" android:text="相关推荐" />
+    </RelativeLayout>
+</LinearLayout>

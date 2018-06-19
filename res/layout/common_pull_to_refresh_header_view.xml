@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/pull_to_refresh_content" app:paddingTop="@dimen/header_footer_top_bottom_padding" app:paddingBottom="7dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4b01"
+        <RelativeLayout app:id="@id/pull_to_refresh" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.xunlei.common.commonview.GifView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/pull_to_refresh_pulling" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0b01d6" app:layout_height="UNKNOWN_DATA_0x7f0b01d5" app:layout_centerInParent="true" app:gif="@raw/pulling" app:paused="true" />
+            <ImageView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/pull_to_refresh_refreshing" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x7f0b01d6" app:layout_height="UNKNOWN_DATA_0x7f0b01d5" app:src="@drawable/loading_animate" app:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:paddingTop="5dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_below="@id/pull_to_refresh" app:layout_centerHorizontal="true">
+            <TextView app:textSize="9sp" app:textColor="#999999" app:id="@id/pull_to_refresh_text" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" app:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

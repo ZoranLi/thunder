@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/ll_subject_icon_name" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/ll_click_nice">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1801">
+            <ImageView android:id="@+id/iv_subject_icon" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" />
+            <ImageView android:id="@+id/small_img_v" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0xb01" android:layout_height="UNKNOWN_DATA_0xb01" android:layout_marginLeft="18dp" android:src="@drawable/big_img_v" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#333333" android:id="@+id/tv_subject_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="专题" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/rl_feed_share" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/iv_share_icon" android:background="@drawable/feed_share_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="12sp" android:textColor="#5a6473" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_share_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="123" android:layout_toRightOf="@+id/iv_share_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/rl_feed_follow" android:paddingLeft="13dp" android:paddingRight="13dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/rl_feed_share">
+        <ImageView android:id="@+id/iv_follow_icon" android:background="@drawable/feed_follow_default" android:layout_width="UNKNOWN_DATA_0x1201" android:layout_height="UNKNOWN_DATA_0x1201" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_comment" android:paddingLeft="13dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/rl_feed_follow">
+        <ImageView android:id="@+id/iv_hot_comment_arrow" android:background="@drawable/short_video_feed_hot_comment_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_alignParentTop="true" />
+        <ImageView android:id="@+id/iv_comment_icon" android:background="@drawable/feed_comment_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="12sp" android:textColor="#5a6473" android:id="@+id/tv_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:layout_toRightOf="@+id/iv_comment_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/ll_click_nice" android:paddingLeft="13dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/rl_comment">
+        <ImageView android:id="@+id/iv_click_nice_icon" android:background="@drawable/feed_click_good_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" />
+        <TextView android:textSize="12sp" android:textColor="#5a6473" android:id="@+id/tv_click_nice_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

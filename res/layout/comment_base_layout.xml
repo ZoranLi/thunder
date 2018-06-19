@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15sp" android:textColor="#3b424c" android:id="@+id/tv_content" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:layout_marginTop="0dp" android:layout_marginRight="13dp" />
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/lyt_target" android:background="@drawable/bg_reply_comment" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="6dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:layout_marginTop="10dp" android:layout_marginRight="13dp">
+        <ImageView android:id="@+id/iv_toggle" android:padding="4dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1201" android:layout_height="UNKNOWN_DATA_0x1201" android:layout_marginTop="0dp" android:layout_marginRight="0dp" android:src="@drawable/ic_down_triangle_normal" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12sp" android:textColor="#979ba1" android:ellipsize="end" android:id="@+id/tv_target" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="0dp" android:layout_weight="1.0" android:layout_toLeftOf="@+id/iv_toggle" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+</merge>

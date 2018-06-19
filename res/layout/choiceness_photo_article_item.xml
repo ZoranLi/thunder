@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/video_clickable_background_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/item_publisher_layout" />
+    <TextView android:ellipsize="end" android:id="@+id/article_title" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="@dimen/common_padding_left_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" style="@style/ChoicenessTitle" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_padding_left_normal" android:layout_marginTop="13dp" android:layout_marginRight="@dimen/common_padding_left_normal" android:layout_below="@id/tv_title">
+        <ImageView android:id="@+id/article_poster" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x9801" android:layout_height="UNKNOWN_DATA_0x10e01" android:src="@drawable/choiceness_icon_default" android:scaleType="centerCrop" />
+        <TextView android:textSize="11sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_article_icon" android:background="@drawable/photo_article_icon_bg" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1601" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:text="图文" />
+        <LinearLayout android:id="@+id/layout_3_poster" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_poster_1" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7801" android:layout_marginRight="10dp" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/iv_poster_2" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7801" android:layout_marginRight="10dp" android:scaleType="centerCrop" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/iv_poster_3" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7801" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:id="@+id/ll_share_comment" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_below="@+id/item_icon_layout" layout="@layout/share_like_comment_layout" />
+    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" />
+</LinearLayout>

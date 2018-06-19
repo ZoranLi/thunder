@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/payment_light_gray" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@drawable/pay_auto_renew_content_bg" android:padding="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pay_auto_renew_alert_tip" android:lineSpacingExtra="3dp" />
+    <TextView android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pay_i_know_tv" android:background="@drawable/pay_auto_renew_blue_btn_bg" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b00db" android:text="@string/pay_i_got" />
+</LinearLayout>

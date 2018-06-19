@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="#3b424c" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/hot_search_word_title" android:background="@color/white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginTop="5dp" android:text="全网搜索推荐" />
+    <include layout="@layout/line" />
+    <FrameLayout android:id="@+id/hot_search_word_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <HorizontalScrollView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/hot_search_word_container" android:background="@color/white" android:paddingLeft="13dp" android:paddingRight="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3c01">
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+                <include layout="@layout/search_btn_layout" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+</LinearLayout>

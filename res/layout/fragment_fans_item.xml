@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="13dp" android:paddingRight="11dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5401">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x3401" android:layout_height="UNKNOWN_DATA_0x3401" android:src="@drawable/ic_default_avatar_new" />
+        <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_weight="1.0">
+            <TextView android:textSize="14sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@+id/tv_replyContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JAcool 关注了你" android:maxLines="1" />
+            <com.xunlei.downloadprovider.publiser.visitors.view.VisitUserInfoTagView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/view_user_info_tag" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="11sp" android:textColor="#979ba1" android:ellipsize="end" android:id="@+id/tv_time" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刚刚" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_follow" android:background="@drawable/common_blue_button_selector" android:layout_width="UNKNOWN_DATA_0x3601" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginLeft="17dp" android:text="+ 关注" android:layout_toRightOf="@+id/iv_good_icon" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+</LinearLayout>

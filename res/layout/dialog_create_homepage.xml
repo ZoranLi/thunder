@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_create_homepage_qrcode" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="二维码下载" />
+    <include layout="@layout/line" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_create_homepage_link" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="新建下载链接" />
+    <include layout="@layout/line" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_create_homepage_bt" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="新建BT任务" />
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_cancel" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="取消" />
+</LinearLayout>

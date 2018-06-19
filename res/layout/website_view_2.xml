@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/website_view_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@+id/tv_link_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="战狼2百度云盘资源 《战狼2》里塑造了一个更加的真实与接地气、有血有肉的英雄。" android:maxLines="2" />
+    <TextView android:textSize="10sp" android:textColor="#979aa0" android:ellipsize="end" android:id="@+id/tv_link_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="http://80sdf" android:maxLines="1" />
+    <ImageView android:id="@+id/iv_res" android:layout_width="UNKNOWN_DATA_0x6c01" android:layout_height="UNKNOWN_DATA_0x9001" android:layout_marginTop="6dp" android:src="@drawable/choiceness_icon_default" android:scaleType="centerCrop" android:layout_below="@id/tv_title" />
+</LinearLayout>

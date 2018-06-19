@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <raw name="common_pull_up_refresh">res/raw/common_pull_up_refresh.gif</raw>
+    <raw name="ding">res/raw/ding.mp3</raw>
+    <raw name="keep">res/raw/keep.xml</raw>
+    <raw name="pulling">res/raw/pulling.gif</raw>
+    <raw name="pulling_new_year">res/raw/pulling_new_year.gif</raw>
+</resources>

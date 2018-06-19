@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/download_tab_top_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ViewStub android:id="@+id/download_tab_edit_title_bar" android:layout="@layout/download_tab_edit_title_bar_view" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f" />
+        <com.xunlei.downloadprovider.homepage.download.DownloadBriefInfoView android:id="@+id/download_tab_brief_info" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b00da" />
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentTaskListPage" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/download_tab_bottom_area" android:layout_below="@+id/download_tab_top_area" />
+    <FrameLayout android:orientation="vertical" android:id="@+id/download_tab_bottom_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.xunlei.downloadprovider.download.center.widget.DownloadStorageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/storageView" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xf01" />
+        <ViewStub android:id="@+id/download_tab_edit_tool_bar" android:layout="@layout/download_tab_edit_tool_bar_view" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/view_temp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1ea01" />
+    <com.xunlei.downloadprovider.cardslide.slide.CardSlidePanel android:id="@+id/image_slide_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@+id/fl_bottom_btn_contain" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_temp" android:layout_alignParentBottom="true"
+        <RelativeLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/fl_btn_left" android:background="@drawable/card_slide_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_btn_left" android:background="@drawable/ic_card_btn_del_gray" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/fl_btn_right" android:background="@drawable/card_slide_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="65dp" android:layout_alignBottom="@+id/fl_btn_left" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_btn_right" android:background="@drawable/ic_card_btn_love" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_btn_right_ani" android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0x6401" android:layout_marginRight="57dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_end_contain" android:background="@drawable/common_layout_content_bkg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_end_bg" android:background="@drawable/ic_card_slide_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16sp" android:textColor="#3b424c" android:id="@+id/tv_remaining_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="23:59:55" android:layout_below="@+id/iv_end_bg" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textColor="#979aa0" android:id="@+id/tv_end_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/card_slide_end_text" android:layout_below="@+id/tv_remaining_time" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:id="@+id/title_layout" layout="@layout/common_title_bar" />
+    <Button android:id="@+id/btn_card_slide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刷新" android:layout_alignParentRight="true" />
+    <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/card_slide_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_layout" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/card_slide_ev_show" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_layout" />
+</RelativeLayout>

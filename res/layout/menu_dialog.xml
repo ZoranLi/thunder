@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/btn_copy" android:background="@drawable/bg_normal_press_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="复制文字" style="?unknown_attr_ref: 101032b" />
+    <include layout="@layout/line" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/btn_report" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="举报" style="?unknown_attr_ref: 101032b" />
+    <Button android:textSize="16sp" android:textColor="#b70e25" android:id="@+id/btn_delete" android:background="@drawable/bg_normal_press_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="删除" style="?unknown_attr_ref: 101032b" />
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/btn_cancel" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="取消" style="?unknown_attr_ref: 101032b" />
+</LinearLayout>

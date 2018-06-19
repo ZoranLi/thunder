@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/ll_guide_bind_apk_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48dp">
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_guide_bind_apk_icon" android:paddingRight="2dp" android:paddingBottom="2dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="UNKNOWN_DATA_0x1901" android:src="@drawable/guide_bind_default_apk_icon" android:scaleType="fitXY" android:contentDescription="@string/default_description" />
+                <CheckBox android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/cb_select_install_bind_apk" android:background="@drawable/checkbox_style" android:layout_width="UNKNOWN_DATA_0xa01" android:layout_height="UNKNOWN_DATA_0xa01" android:checked="true" android:button="0x0" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:baselineAligned="true">
+                <TextView android:textSize="12sp" android:textColor="@color/global_text_color_2" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_bind_apk_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_bindapk_content" android:maxLines="1" />
+                <TextView android:textSize="10sp" android:textColor="#999999" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_bind_apk_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_bindapk_name" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/fl_guide_bind_apk_selector" android:layout_width="UNKNOWN_DATA_0x2d01" android:layout_height="UNKNOWN_DATA_0x2d01" /> />
+</merge>

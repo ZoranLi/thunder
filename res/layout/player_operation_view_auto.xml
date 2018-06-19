@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.player.xmp.ui.PlayerPosterView android:id="@+id/player_poster" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.downloadprovider.player.xmp.ui.MediaPlayerLoadingView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_loading" />
+    <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_duration_margin_left" android:layout_marginBottom="@dimen/video_duration_margin_bottom">
+        <TextView android:textSize="11sp" android:textColor="@color/feed_video_title_view_text_color" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+        <ImageView android:id="@+id/iv_voice_animation" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0xd01" android:layout_height="UNKNOWN_DATA_0xd01" android:layout_marginLeft="10dp" android:src="@drawable/auto_play_voice_anim" />
+    </LinearLayout>
+</FrameLayout>

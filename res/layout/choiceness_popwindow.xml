@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/share_pop_tip" android:background="@drawable/choiceness_follow_popup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="喜欢就关注吧!" />

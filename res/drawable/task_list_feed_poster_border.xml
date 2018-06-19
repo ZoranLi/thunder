@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/task_list_feed_divider_height" android:color="@color/task_list_feed_image_border" />
+    <padding android:left="@dimen/task_list_feed_divider_height" android:top="@dimen/task_list_feed_divider_height" android:right="@dimen/task_list_feed_divider_height" android:bottom="@dimen/task_list_feed_divider_height" />
+</shape>

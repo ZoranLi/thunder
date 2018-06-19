@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#c9000000" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801">
+    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/iv_tip_icon" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_marginLeft="12dp" android:src="@drawable/ic_upgrade_alert" />
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_tips" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:text="新版已备好，戳下就能体验了！" android:maxLines="1" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/iv_close" android:layout_width="UNKNOWN_DATA_0x1001" android:layout_height="UNKNOWN_DATA_0x1001" android:layout_marginRight="12dp" android:src="@drawable/ad_close_btn" />
+</LinearLayout>

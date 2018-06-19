@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/vod_player_popupwindow_bg" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="@color/vod_player_text_white" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/vod_popup_seek_time_text" android:background="0x106000d" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_time_format_default" />
+</LinearLayout>

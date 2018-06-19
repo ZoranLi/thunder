@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="mail_domain">
+        <item>@qq.com</item>
+        <item>@163.com</item>
+        <item>@126.com</item>
+        <item>@sina.com</item>
+        <item>@gmail.com</item>
+        <item>@hotmail.com</item>
+        <item>@sohu.com</item>
+        <item>@yahoo.com</item>
+        <item>@foxmail.com</item>
+    </array>
+    <array name="pay_problem_content">
+        <item>自动续费功能是一种为您提供便利实惠的支付方式，可以在会员到期之后帮您自动续期，从微信/支付宝中扣取相应费用，当您不需要此功能时，可在本页面取消。</item>
+        <item>白金会员/快鸟会员自动续费价格为12.6元/月；超级会员自动续费价格为25元/月；</item>
+        <item>进入取消自动续费流程 点击此处&gt;&gt;</item>
+        <item>年费会员享有更低价格和更高特权，有年费白金会员和年费超级会员；</item>
+        <item>一次性购买一年白金或超级会员，或几次购买时长加起来超过12个月，即可成为年费白金/年费超级会员；</item>
+        <item>超级会员可使用白金会员和快鸟会员的所有特权；</item>
+        <item>客服联系电话为400-1111-000；另外可以微信搜索【迅雷会员】服务号，雷娘竭诚为您服务；</item>
+    </array>
+    <array name="pay_problem_title">
+        <item>1、自动续费是什么？</item>
+        <item>2、自动续费的价格？</item>
+        <item>3、如何取消自动续费？</item>
+        <item>4、年费会员是什么？</item>
+        <item>5、如何成为年费会员？</item>
+        <item>6、超级会员，白金会员，快鸟会员之间的关系和区别？</item>
+        <item>7、客服联系方式</item>
+    </array>
+</resources>

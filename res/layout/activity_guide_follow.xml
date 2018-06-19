@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="70dp">
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="#3b424c" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="选择感兴趣的主题" android:maxLines="1" />
+            <TextView android:textSize="13sp" android:textColor="#979aa0" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="很多有意思的人，等你来发现哦！" android:maxLines="1" />
+            <GridLayout android:id="@+id/gl_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:columnCount="2" android:alignmentMode="alignBounds" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_complete" android:background="@drawable/btn_guide_follow_complete_selector" android:layout_width="UNKNOWN_DATA_0x14801" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginBottom="15dp">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_complete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" />
+        <com.xunlei.common.commonview.AnimationDot android:textSize="@dimen/bt_cm_textsize_17" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/loading_view_complete" android:visibility="gone" android:clickable="false" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="wrap_content" android:layout_marginLeft="4dp" />
+    </LinearLayout>
+</FrameLayout>

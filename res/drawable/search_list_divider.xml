@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="0x106000b" />
+        </shape>
+    </item>
+    <item>
+        <inset android:drawable="@color/search_line_color" android:insetLeft="@dimen/common_padding_left_normal" android:insetRight="@dimen/common_padding_left_normal" />
+    </item>
+</layer-list>

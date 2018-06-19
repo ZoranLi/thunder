@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/common_title_bar" android:background="@color/common_blue" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f">
+        <ImageView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_back" android:padding="11.5dp" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:layout_marginLeft="4dp" android:src="@drawable/download_back_selector" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title_bar_left_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="举报" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scv_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textColor="#9c9c9c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/report_title" />
+            <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+            <RadioGroup android:id="@+id/rgp_type" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/rbtn_sexy" android:tag="1" android:text="色情" style="@style/ReportRadioButton" />
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+                <RadioButton android:id="@+id/rbtn_volient" android:tag="2" android:text="暴力" style="@style/ReportRadioButton" />
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+                <RadioButton android:id="@+id/rbtn_attack" android:tag="3" android:text="人身攻击" style="@style/ReportRadioButton" />
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+                <RadioButton android:id="@+id/rbtn_ad" android:tag="4" android:text="广告" style="@style/ReportRadioButton" />
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+                <RadioButton android:id="@+id/rbtn_policy" android:tag="5" android:text="政治" style="@style/ReportRadioButton" />
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+                <RadioButton android:id="@+id/rbtn_copyright" android:tag="7" android:text="版权" style="@style/ReportRadioButton" />
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+                <RadioButton android:id="@+id/rbtn_other" android:tag="6" android:text="其他" style="@style/ReportRadioButton" />
+            </RadioGroup>
+            <EditText android:id="@+id/et_focus" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" />
+            <EditText android:enabled="true" android:textSize="12sp" android:textColor="#9c9c9c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/et_desc" android:background="@drawable/report_edit_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:hint="@string/report_edit_tips" />
+            <Button android:enabled="false" android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_commit" android:background="@drawable/report_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01" android:layout_marginLeft="13dp" android:layout_marginTop="30dp" android:layout_marginRight="13dp" android:layout_marginBottom="15dp" android:text="提交" style="?unknown_attr_ref: 101032b" />
+            <TextView android:textSize="11sp" android:textColor="#ff1aa3ff" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_copyright_report_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13dp" android:text="@string/report_copyright_protocol" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

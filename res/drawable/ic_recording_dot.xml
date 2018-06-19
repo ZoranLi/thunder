@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_recording_dot_green" android:minLevel="@integer/min_record_time" android:maxLevel="@integer/max_record_time" />
+    <item android:drawable="@drawable/ic_recording_dot_red" android:minLevel="1" android:maxLevel="@integer/min_record_time" />
+    <item android:minLevel="0" android:maxLevel="0">
+        <shape android:shape="rectangle">
+            <size android:height="5dp" android:width="5dp" />
+            <solid android:color="0x106000d" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+</level-list>

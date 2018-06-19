@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="0x1020000" android:drawable="@drawable/progress_bar_bg" />
+    <item android:id="0x102000d">
+        <clip>
+            <shape>
+                <solid android:color="#fff24b17" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

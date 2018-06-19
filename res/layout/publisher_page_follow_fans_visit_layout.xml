@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:paddingLeft="13dp" app:paddingTop="58dp" app:paddingRight="13dp" app:paddingBottom="16dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <FrameLayout app:id="@+id/layout_avatar" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <com.xunlei.thunder.commonui.widget.CircleImageView app:id="@+id/iv_avatar" app:layout_width="UNKNOWN_DATA_0x4b01" app:layout_height="UNKNOWN_DATA_0x4b01" app:src="@drawable/feedflow_icon_default" />
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/img_v" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0xd01" />
+    </FrameLayout>
+    <LinearLayout app:id="@+id/layout_follow_fans_visit" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_toRightOf="@+id/layout_avatar" app:layout_alignTop="@+id/layout_avatar"
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/layout_fans_count" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+            <TextView app:id="@+id/tv_fans_count" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="0" style="@style/FollowCountTextStyle" />
+            <TextView app:textSize="11sp" app:textColor="#5a6473" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="3dp" app:text="粉丝" />
+        </LinearLayout>
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/layout_follow_count" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+            <TextView app:id="@+id/tv_follow_count" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="0" style="@style/FollowCountTextStyle" />
+            <TextView app:textSize="11sp" app:textColor="#5a6473" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="3dp" app:text="关注" />
+        </LinearLayout>
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/layout_visit_count" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+            <TextView app:id="@+id/tv_visitor_count" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="0" style="@style/FollowCountTextStyle" />
+            <TextView app:textSize="11sp" app:textColor="#5a6473" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="3dp" app:text="访客" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:id="@+id/layout_chat_follow_top" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1f01" app:layout_marginLeft="20dp" app:layout_toRightOf="@+id/layout_avatar" app:layout_alignBottom="@+id/layout_avatar">
+        <FrameLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/layout_chat_top" app:background="@drawable/publisher_top_chat_btn_bg" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginRight="8dp" app:layout_weight="1.0">
+            <TextView app:textSize="15sp" app:textColor="#1aa3ff" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="私信" app:drawableLeft="@drawable/publisher_top_chat_icon" app:drawablePadding="6dp" />
+        </FrameLayout>
+        <com.xunlei.downloadprovider.publiser.common.view.PublisherFollowBtn app:id="@+id/btn_follow_top" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView app:textSize="13sp" app:textStyle="bold" app:textColor="#3b424c" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_edit_personal_info" app:background="@drawable/publisher_edit_personal_info_btn_bg" app:paddingLeft="85dp" app:paddingRight="80dp" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1c01" app:layout_marginLeft="20dp" app:text="个人资料" app:drawableLeft="@drawable/publisher_edit_personal_info_icon" app:layout_toRightOf="@+id/layout_avatar" app:layout_alignBottom="@+id/layout_avatar" />
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/layout_user_info" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="16dp" app:layout_below="@+id/layout_avatar">
+        <com.xunlei.downloadprovider.publiser.common.view.PublisherUserInfoTagView app:id="@+id/view_user_info_tag" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="10dp" />
+        <TextView app:textSize="12sp" app:textColor="#5b6473" app:id="@+id/tv_living_id" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView app:textSize="12sp" app:textColor="#979aa0" app:id="@+id/tv_description" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:maxLines="2" app:layout_below="@+id/layout_user_info" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_live_living" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5f01" android:layout_below="@+id/ly_da_shang" layout="@layout/layout_live_living" />
+    <include android:id="@+id/ly_living_replay" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5d01" android:layout_below="@+id/layout_live_living" layout="@layout/layout_live_replay" />
+    <View android:background="@drawable/home_choiceness_listview_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x401" android:layout_marginTop="23dp" />
+</LinearLayout>

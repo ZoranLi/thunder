@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#3b424c" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的关注" />
+        <TextView android:textSize="13sp" android:textColor="#979aa0" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="(10)" />
+    </LinearLayout>
+    <FrameLayout android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@+id/website_recycler_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:id="@+id/space_bottom" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1001" />
+    </LinearLayout>
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/ev_error" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.downloadprovider.web.website.view.CollectionUserSyncTipView android:id="@+id/cloud_sync_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

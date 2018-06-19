@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="13sp" android:textColor="#969696" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/title" android:background="@drawable/top_round_corner_white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp" android:text="标题" />
+        <TextView android:textSize="16sp" android:textColor="#007aff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_item" android:background="@drawable/bottom_round_corner_gray_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:minHeight="44dp" android:text="内容" />
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#007aff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/cancel" android:background="@drawable/round_corner_gray_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_margin="10dp" android:text="取消" />
+</LinearLayout>

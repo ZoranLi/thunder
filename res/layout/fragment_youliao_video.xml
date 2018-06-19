@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/recyclerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.downloadprovider.homepage.choiceness.ui.RefreshPromptView android:textSize="12sp" android:textColor="#1294f6" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/refresh_prompt" android:background="#f2dceffe" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2501" android:maxLines="1" />
+</FrameLayout>

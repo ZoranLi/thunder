@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:duration="@integer/follow_btn_animation_interval">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/follow_btn_personal_big_pressed" />
+            <item android:drawable="@drawable/follow_btn_personal_big_00" />
+        </selector> />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_01" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_02" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_03" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_04" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_05" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_06" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_07" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_08" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_09" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_10" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_11" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_12" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_13" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_14" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_15" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_16" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_17" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_18" />
+    <item android:duration="@integer/follow_btn_animation_interval" android:drawable="@drawable/follow_btn_personal_big_19" />
+    <item android:duration="@integer/follow_btn_animation_interval">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/follow_btn_personal_big_pressed" />
+            <item android:drawable="@drawable/follow_btn_personal_big_00" />
+        </selector> />
+</animation-list>

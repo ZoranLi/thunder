@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/common_blue_button_hover" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/lx_space_sub_info" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/common_blue_button_normal" />
+        </shape>
+    </item>
+</selector>

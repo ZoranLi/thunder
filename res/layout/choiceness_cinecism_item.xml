@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@drawable/video_clickable_background_selector" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <include layout="@layout/item_publisher_layout" />
+    <com.xunlei.downloadprovider.xlui.widget.ZHTextView app:ellipsize="end" app:id="@+id/cinecism_title" app:paddingLeft="@dimen/common_padding_left_normal" app:paddingRight="@dimen/common_padding_left_normal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="5dp" app:maxLines="2" style="@style/ChoicenessTitle" />
+    <com.xunlei.downloadprovider.homepage.cinecism.ui.TextViewFixTouchConsume app:textSize="13sp" app:textColor="#979aa0" app:textColorHighlight="#dce9f3" app:textColorLink="@drawable/choiceness_cinecism_summary_bg_selector" app:id="@+id/cinecism_summary" app:background="@color/transparent" app:paddingLeft="@dimen/common_padding_left_normal" app:paddingRight="@dimen/common_padding_left_normal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:lineSpacingExtra="5dp" />
+    <FrameLayout app:id="@+id/cinecism_poster_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/common_padding_left_normal" app:layout_marginTop="13dp" app:layout_marginRight="@dimen/common_padding_left_normal">
+        <ImageView app:id="@+id/cinecism_poster" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/choiceness_icon_default" app:scaleType="centerCrop" />
+        <LinearLayout app:orientation="horizontal" app:id="@+id/three_image_layout" app:layout_width="match_parent" app:layout_height="match_parent">
+            <ImageView app:id="@+id/cinecism_poster1" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginRight="1px" app:src="@drawable/choiceness_icon_default" app:scaleType="centerCrop" app:layout_weight="9.0" />
+            <RelativeLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="7.0">
+                <View app:id="@+id/strut" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_centerVertical="true" />
+                <ImageView app:id="@+id/cinecism_poster2" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginBottom="1px" app:src="@drawable/choiceness_icon_default" app:scaleType="centerCrop" app:layout_alignBottom="@+id/strut" app:layout_alignParentTop="true" />
+                <ImageView app:id="@+id/cinecism_poster3" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/choiceness_icon_default" app:scaleType="centerCrop" app:layout_alignTop="@+id/strut" app:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView app:textSize="11sp" app:textColor="#ffffff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_cinecism_icon" app:background="@drawable/original_video_icon_bg" app:paddingLeft="7dp" app:paddingRight="7dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1601" app:layout_marginLeft="8dp" app:layout_marginTop="8dp" app:text="影评" />
+        <RelativeLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3201">
+            <ImageView app:id="@+id/iv_gradient_bg" app:background="@drawable/choiceness_livestream_gradient_mask" app:layout_width="match_parent" app:layout_height="match_parent" />
+            <TextView app:textSize="12sp" app:textColor="#ffffff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_cinecism_show" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginBottom="7dp" app:layout_alignParentBottom="true" />
+            <TextView app:textSize="12sp" app:textColor="#ffffff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_cinecism_image_number" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="8dp" app:layout_marginBottom="7dp" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <include app:id="@+id/ll_share_comment" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2c01" layout="@layout/share_like_comment_layout" />
+    <View app:background="@color/common_content_bkg_color" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x501" />
+</LinearLayout>

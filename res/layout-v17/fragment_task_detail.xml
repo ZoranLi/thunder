@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_alignParentLeft="true" app:layout_alignParentTop="true" app:layout_alignParentStart="true">
+        <com.xunlei.downloadprovider.download.taskdetails.widget.FloatDragView app:id="@+id/drag_view" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" app:bl_idle_Y="92dp">
+            <android.support.v7.widget.RecyclerView app:id="@+id/task_detail_recycler_view" app:background="@color/common_content_bkg_color" app:scrollbars="UNKNOWN_DATA_0x0" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fadeScrollbars="true" app:overScrollMode="never" />
+        </com.xunlei.downloadprovider.download.taskdetails.widget.FloatDragView>
+        <include layout="@layout/comment_input_layout" />
+    </LinearLayout>
+</RelativeLayout>

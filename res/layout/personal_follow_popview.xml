@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp" android:src="@drawable/comment_completed" />
+        <TextView android:textSize="15sp" android:textColor="#3b424c" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="发布成功" />
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/bg_user_avatar_new" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x3501" android:layout_height="UNKNOWN_DATA_0x3501" android:layout_marginTop="4dp" android:src="@drawable/user_not_login_avatar" android:layout_centerHorizontal="true" />
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar_type" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0xe01" android:layout_height="UNKNOWN_DATA_0xe01" android:src="@drawable/youliao_big_img_v" android:layout_alignRight="@+id/iv_avatar" android:layout_alignBottom="@+id/iv_avatar" />
+        <TextView android:textSize="14sp" android:textColor="#5a6473" android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/iv_avatar" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="17sp" android:textColor="#3b424c" android:id="@+id/tv_pop_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="@string/follow_popup_tips2" android:layout_below="@+id/tv_nickname" android:layout_centerHorizontal="true" />
+        <Button android:id="@+id/btn_follow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="13dp" android:text="@string/confirm" android:layout_below="@+id/tv_pop_tips" style="@style/common_blue_button" />
+    </RelativeLayout>
+</LinearLayout>

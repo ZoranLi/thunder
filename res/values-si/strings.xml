@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ගෙදරට සංචාලනය කරන්න</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">ඉහලට සංචාලනය කරන්න</string>
+    <string name="abc_action_menu_overflow_description">තවත් විකල්ප</string>
+    <string name="abc_action_mode_done">අවසාන වූ</string>
+    <string name="abc_activity_chooser_view_see_all">සියල්ල බලන්න</string>
+    <string name="abc_activitychooserview_choose_application">යෙදුමක් තෝරන්න</string>
+    <string name="abc_capital_off">ක්‍රියාවිරහිතයි</string>
+    <string name="abc_capital_on">ක්‍රියාත්මකයි</string>
+    <string name="abc_search_hint">සොයන්න...</string>
+    <string name="abc_searchview_description_clear">විමසුම හිස් කරන්න</string>
+    <string name="abc_searchview_description_query">සෙවුම් විමසුම</string>
+    <string name="abc_searchview_description_search">සෙවීම</string>
+    <string name="abc_searchview_description_submit">විමසුම යොමු කරන්න</string>
+    <string name="abc_searchview_description_voice">හඬ සෙවීම</string>
+    <string name="abc_shareactionprovider_share_with">සමඟ බෙදාගන්න</string>
+    <string name="abc_shareactionprovider_share_with_application">%s සමඟ බෙදාගන්න</string>
+    <string name="abc_toolbar_collapse_description">හකුළන්න</string>
+    <string name="search_menu_title">සොයන්න</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="hms_abort">නවත්වන්න</string>
+    <string name="hms_abort_message">බාගැනීම නවත්වන්නද?</string>
+    <string name="hms_bindfaildlg_message">%1$s ට Huawei ජංගම සේවාවන් භාවිතා කළ නොහැකිය. %2$s සඳහා වූ සියලු අවසරයන් සක්‍රීය කිරීමට කරුණාකර දුරකථන කලමණාකරු දියත් කරන්න නැතහොත් සැකසුම් වෙත ගොස් (ස්වයං-දියත්කිරීම සහ ද්විතීය දියත් කිරීම ඇතුළුව) නැවත උත්සාහ කරන්න.</string>
+    <string name="hms_cancel">අවලංගු කරන්න</string>
+    <string name="hms_check_failure">යාවත් කිරීම් පරීක්ෂා කිරීමට අසමත් විය.</string>
+    <string name="hms_check_no_update">ඔබ දැනටමත් නවතම අනුවාදය භාවිතා කරමින් සිටී.</string>
+    <string name="hms_checking">යාවත් කිරීම් පරීක්ෂා කරමින්...</string>
+    <string name="hms_confirm">හරි</string>
+    <string name="hms_download_failure">Huawei ජංගම සේවා පැකේජ බාගැනීමට අසමත් විය.</string>
+    <string name="hms_download_no_space">ප්‍රමාණවත් නිදහස් ඉඩ නැත. බාගැනීම සම්පූර්ණ කළ නොහැක.</string>
+    <string name="hms_download_retry">බාගැනීම අසමත් විය. නැවත උත්සාහ කරන්නද?</string>
+    <string name="hms_downloading">Huawei ජංගම සේවා බාගනිමින් | ප්‍රගතිය: %d%%</string>
+    <string name="hms_downloading_new">HMS බාගනිමින්</string>
+    <string name="hms_install">ස්ථාපනය කරන්න</string>
+    <string name="hms_install_message">මෙම විශේෂාංගය භාවිත කිරීමට Huawei ජංගම සේවාවත් ස්ථාපිත කළ යුතුයි. ස්ථාපනය කරන්න?</string>
+    <string name="hms_retry">යළි තැත් කරන්න</string>
+    <string name="hms_update">යාවත් කරන්න</string>
+    <string name="hms_update_message">මෙම විශේෂාංගය භාවිතා කිරීමට Huawei ජංගම සේවාවල නවතම අනුවාදය යාවත් කරන්න. දැන් යාවත් කරන්නද?</string>
+    <string name="hms_update_message_new">මෙම සේවාව හට පහත යෙදුමේ නවතම අනුවාදය අවශ්‍ය කෙරේ:\n\n%1$s</string>
+    <string name="hms_update_title">Huawei ජංගම සේවා</string>
+</resources>

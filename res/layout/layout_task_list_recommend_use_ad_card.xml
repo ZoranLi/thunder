@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:background="@color/common_content_bkg_color" android:paddingTop="@dimen/task_tab_card_interval" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/root_view" android:background="@color/white" android:paddingBottom="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/task_tab_card_interval">
+            <FrameLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/title_container" android:paddingLeft="13dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2f01">
+                <TextView android:textSize="14sp" android:textColor="#3b424c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/title_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="大家都在用" />
+                <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/game_center_entry_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/me_cell_rightIcon_right_margin">
+                    <TextView android:textColor="#979aa0" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_game_entry" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/iv_red_point_download" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x701" android:layout_height="UNKNOWN_DATA_0x701" android:layout_marginRight="5dp" android:src="@drawable/download_game_center_dot" android:contentDescription="@string/default_description" />
+                    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/iv_find_item_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/click_item_go" />
+                </LinearLayout>
+            </FrameLayout>
+            <View android:id="@+id/gray_line" android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_below="@+id/title_container" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/recommend_list_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/gray_line" />
+            <RelativeLayout android:id="@+id/change_root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/task_card_padding" android:layout_marginRight="@dimen/task_card_padding" android:layout_below="@+id/recommend_list_ll">
+                <TextView android:textSize="10sp" android:textColor="#999c9c9c" android:id="@+id/source_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="此广告由腾讯提供" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/change_data_btn" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="11sp" android:textColor="#333333" android:id="@+id/change_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="换一波" />
+                    <ImageView android:id="@+id/change_data_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/recommend_ad_change_btn" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

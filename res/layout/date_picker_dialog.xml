@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="19sp" android:textColor="#333333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_set_birthday" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择生日" android:singleLine="true" />
+    <DatePicker android:id="@+id/date_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_set_birthday" android:calendarViewShown="false" />
+    <View android:id="@+id/view_line" android:background="#dedede" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_below="@+id/date_picker" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@+id/view_line">
+        <TextView android:textSize="17sp" android:textColor="@color/global_text_color_2" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_dlg_left_btn" android:background="@drawable/left_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="#dedede" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" />
+        <TextView android:textSize="17sp" android:textColor="@color/global_text_color_4" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_dlg_right_btn" android:background="@drawable/right_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/dlg_root_view" android:background="#33ff00ff" android:layout_width="UNKNOWN_DATA_0x12c01" android:layout_height="UNKNOWN_DATA_0x19001">
+    <TextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ddddddddd" android:layout_centerInParent="true" />
+    <TextView android:textSize="20sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_like_btn" android:background="#ffff00" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="赞TA" android:layout_alignParentBottom="true" />
+</RelativeLayout>

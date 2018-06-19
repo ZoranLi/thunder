@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/white" app:paddingLeft="@dimen/common_padding_left_normal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2c01">
+    <FrameLayout app:id="@+id/search_titlebar_download_entrance_layout" app:layout_width="UNKNOWN_DATA_0x3701" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+        <com.xunlei.common.commonview.DownloadEntranceView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/search_titlebar_download_entrance" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:entranceStyle="1" />
+    </FrameLayout>
+    <com.xunlei.downloadprovider.search.ui.widget.HintAnimEditText app:textSize="@dimen/search_bar_text_size" app:textColor="@color/black" app:textColorHint="@color/serach_hint_text_color" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/search_title_bar_title" app:background="@drawable/search_bar_bg_selector" app:paddingLeft="5dp" app:paddingRight="13dp" app:focusable="false" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1c01" app:singleLine="true" app:drawableLeft="@drawable/search_icon_assiotive_item" app:drawablePadding="6dp" app:layout_toLeftOf="@+id/search_titlebar_download_entrance_layout" app:layout_centerVertical="true" />
+</RelativeLayout>

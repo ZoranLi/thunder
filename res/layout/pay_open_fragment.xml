@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/payment_14_sp" android:textColor="@color/payment_title_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pay_privilege_tv" android:background="@color/white" android:paddingTop="@dimen/payment_13_dp" android:paddingBottom="@dimen/payment_13_dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/pay_meal_layout" android:padding="1px" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_title_color" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:paddingLeft="@dimen/payment_13_dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01b5" android:text="套餐选择" />
+                    <include layout="@layout/pay_line" />
+                    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" layout="@layout/pay_meal_area_view" />
+                    <include android:id="@+id/renew_voucher_line" layout="@layout/pay_line" />
+                    <include layout="@layout/include_pay_vouchers" />
+                </LinearLayout>
+                <include android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/pay_config_failed_layout" />
+                <include android:id="@+id/pay_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/get_pay_data_progress_layout" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/pay_area_layout" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/include_pay_way_layout" />
+                <include layout="@layout/include_pay_amount_save_layout" />
+                <include layout="@layout/include_payment_pay_protocol" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

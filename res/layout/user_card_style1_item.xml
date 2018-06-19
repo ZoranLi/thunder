@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="13dp" android:paddingTop="13dp" android:paddingRight="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:id="@+id/rl_card_contain1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_icon1" android:layout_width="UNKNOWN_DATA_0x6a01" android:layout_height="UNKNOWN_DATA_0x4901" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textColor="@color/user_center_card_text_color" android:id="@+id/tv_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="标题" android:layout_below="@+id/iv_icon1" />
+        <TextView android:textSize="9sp" android:textColor="@color/user_center_card_des_color" android:id="@+id/tv_description1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="描述" android:layout_below="@+id/tv_title1" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_card_contain2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_icon2" android:layout_width="UNKNOWN_DATA_0x6a01" android:layout_height="UNKNOWN_DATA_0x4901" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textColor="@color/user_center_card_text_color" android:id="@+id/tv_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="标题" android:layout_below="@+id/iv_icon2" />
+        <TextView android:textSize="9sp" android:textColor="@color/user_center_card_des_color" android:id="@+id/tv_description2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="描述" android:layout_below="@+id/tv_title2" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_card_contain3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/iv_icon3" android:layout_width="UNKNOWN_DATA_0x6a01" android:layout_height="UNKNOWN_DATA_0x4901" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textColor="@color/user_center_card_text_color" android:id="@+id/tv_title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="标题" android:layout_below="@+id/iv_icon3" />
+        <TextView android:textSize="9sp" android:textColor="@color/user_center_card_des_color" android:id="@+id/tv_description3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="描述" android:layout_below="@+id/tv_title3" />
+    </RelativeLayout>
+</RelativeLayout>

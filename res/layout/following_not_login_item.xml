@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001">
+    <TextView android:textSize="17sp" android:textColor="#3b424c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未登录" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView android:textSize="16sp" android:textColor="#1aa3ff" android:id="@+id/tv_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" />
+        <TextView android:textSize="16sp" android:textColor="#3b424c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看已关注的人" />
+    </LinearLayout>
+</LinearLayout>

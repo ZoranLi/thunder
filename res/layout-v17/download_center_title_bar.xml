@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/common_title_bar" android:background="@color/common_blue" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f"
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f">
+        <FrameLayout android:id="@+id/left_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title_bar_left_iv" android:padding="11.5dp" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:layout_marginLeft="4dp" android:src="@drawable/download_back_selector" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <TextView android:textColor="@color/text_appearance_entry_primary_title_selector" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title_bar_left_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" />
+        </FrameLayout>
+        <TextView android:id="@+id/view_4_touch_event" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/title_bar_right_container" android:layout_toRightOf="@+id/left_container" />
+        <LinearLayout android:id="@+id/center_title_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/left_container">
+            <TextView android:textSize="@dimen/global_special_text_size_sp_18" android:textColor="@color/white" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title_bar_center_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="160dp" android:maxLines="1" android:singleLine="true" />
+            <FrameLayout android:id="@+id/icon_click_container" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/title_bar_tip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/title_bar_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/titlebar_right_3_layout" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="wrap_content">
+                <TextView android:textSize="8sp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/titlebar_right_3_tv" android:background="@drawable/ic_private_space_count" android:paddingTop="@dimen/payment_1_dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="1" android:layout_alignParentRight="true" />
+                <ImageView android:id="@+id/title_bar_right_3_iv" android:paddingBottom="2dp" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:layout_marginRight="2dp" android:src="@drawable/ic_pri_space_locek_selector" android:scaleType="center" android:layout_alignParentRight="true" android:layout_marginEnd="2dp" />
+            </RelativeLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/title_bar_right_nav_search" android:padding="11.5dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:layout_marginRight="2dp" android:src="@drawable/ic_download_nav_search_selector" android:contentDescription="0x0" android:layout_marginEnd="2dp" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/titlebar_right_1_tv" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" />
+                <ImageView android:id="@+id/title_bar_right_1_iv" android:padding="11.5dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:layout_marginRight="2dp" android:src="@drawable/common_add_icon_task_btn_selector" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title_bar_right_2_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" />
+                <ImageView android:id="@+id/title_bar_right_2_iv" android:padding="11.5dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x7f0b023c" android:layout_height="UNKNOWN_DATA_0x7f0b023c" android:layout_marginRight="8dp" android:src="@drawable/common_menu_icon_selector" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

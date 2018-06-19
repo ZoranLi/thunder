@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/guide_interest_tag_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="70dp">
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="23sp" android:textColor="#3b424c" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64dp" android:text="选择我的兴趣" android:maxLines="1" />
+            <TextView android:textSize="15sp" android:textColor="#5b424c" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="雷妹会根据你的兴趣来推荐视频哦！" android:maxLines="1" />
+            <GridLayout android:id="@+id/gl_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:columnCount="2" android:alignmentMode="alignBounds" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="17sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_complete" android:background="@drawable/btn_guide_interest_tag_complete_selector" android:layout_width="UNKNOWN_DATA_0x14801" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_marginBottom="15dp" android:text="选好啦" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/more_item" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x9c01">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:src="@drawable/live_group_more" />
+    <TextView android:textSize="14dp" android:textColor="#979aa0" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" />
+</LinearLayout>

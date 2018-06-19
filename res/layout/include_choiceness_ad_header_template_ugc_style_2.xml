@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/choiceness_ad_side_space_template_ugc" android:layout_marginRight="@dimen/choiceness_ad_side_space_template_ugc">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x7f0b008c" android:layout_height="UNKNOWN_DATA_0x7f0b008c" android:src="@drawable/feedflow_icon_default" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/btn_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/choiceness_ad_publisher_space" android:src="@drawable/choiceness_ad_bg_download_btn_template_ugc_selector" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/choiceness_ad_publisher_space" android:layout_toLeftOf="@id/btn_action" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true">
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_publisher_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HeWaHaAHeWaHaAHeWaHaAHeWaHaAHeWaHaAHeWaHaA" style="@style/choiceness_ad_image_publisher_name_tv_template_ugc" />
+            <TextView android:textSize="10sp" android:textColor="#969aa0" android:ellipsize="end" android:id="@+id/choiceness_ad_source_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="腾讯提供" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

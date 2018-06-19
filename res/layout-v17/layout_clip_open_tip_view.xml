@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.downloadprovider.download.assistant.clipboardmonitor.ClipUrlTipView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/clip_open_tip_view_bg" android:paddingLeft="@dimen/clip_open_tip_view_padding" android:paddingRight="@dimen/clip_open_tip_view_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/clip_open_tip_view_padding" android:paddingEnd="@dimen/clip_open_tip_view_padding">
+    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x7f0b0095" android:layout_height="UNKNOWN_DATA_0x7f0b0095" android:layout_marginTop="@dimen/clip_open_tip_view_img_margin" android:layout_marginBottom="@dimen/clip_open_tip_view_img_margin" android:src="@drawable/clip_open_tip_view_icon" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/clip_open_tip_view_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="44dp" android:layout_marginTop="17dp" android:layout_marginStart="44dp">
+        <TextView android:textSize="17sp" android:textColor="@color/white" android:id="@+id/clip_open_tip_view_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/clip_open_tip_title" />
+        <TextView android:textSize="12sp" android:textColor="#bbbcbd" android:ellipsize="end" android:id="@+id/clip_open_tip_view_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="1" />
+    </LinearLayout>
+</com.xunlei.downloadprovider.download.assistant.clipboardmonitor.ClipUrlTipView>

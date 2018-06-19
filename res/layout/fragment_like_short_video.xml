@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/recycler_view_like_list" android:background="#efeff0" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/ev_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

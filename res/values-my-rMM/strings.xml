@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">ရပ်</string>
+    <string name="hms_abort_message">ဒေါင်းလုဒ်ကိုရပ်မည်လား?</string>
+    <string name="hms_bindfaildlg_message">%1$s သည် Huawei မိုဘိုင်း ဝန်ဆောင်မှုများကို သုံး၍ မရနိုင်ပါ။ ဖုန်းမန်နေဂျာအား ဖွင့်ပါ သို့မဟုတ် ဆက်တင်သို့ သွားပါ၊ ထို့နောက် %2$s အတွက် ခွင့်ပြုချက်များ (အလိုအလျောက် ဖွင့်ခြင်းနှင့် အရန် ဖွင့်ခြင်းများ အပါအဝင်) အားလုံးကို ဖွင့်ပေးပြီး ထပ်မံ ကြိုးစားကြည့်ပါ။</string>
+    <string name="hms_cancel">ဖျက်သိမ်းမည်</string>
+    <string name="hms_check_failure">အသစ်မွမ်းမံမှုများကို စစ်ဆေးခြင်း မအောင်မြင်ခဲ့ပါ။</string>
+    <string name="hms_check_no_update">သင်သည်နောက်ဆုံးဗားရှင်းကို အသုံးပြုနေပြီးဖြစ်သည်။</string>
+    <string name="hms_checking">အပ်ဒိတ်များအတွက် စစ်နေပါသည်…</string>
+    <string name="hms_confirm">အိုကေ</string>
+    <string name="hms_download_failure">Huawei မိုဘိုင်းဝန်ဆောင်မှုများပက်ကေ့ခ်ျကို ဒေါင်းလုဒ်ဆွဲခြင်း မအောင်မြင်ခဲ့ပါ။</string>
+    <string name="hms_download_no_space">နေရာလွတ် မလောက်ပါ။ ဒေါင်းလုဒ်မပြီးစီးနိုင်ပါ။</string>
+    <string name="hms_download_retry">ဒေါင်းလုဒ်ဆွဲခြင်း မအောင်မြင်ခဲ့ပါ။ ထပ်ကြိုးစားမည်လား?</string>
+    <string name="hms_downloading">Huawei မိုဘိုင်းဝန်ဆောင်မှုများကို ဒေါင်းလုဒ်ဆွဲနေသည် | တိုးတက်မှု- %d%%</string>
+    <string name="hms_downloading_new">HMS အား ဒေါင်းလုဒ်ဆွဲနေပါသည်</string>
+    <string name="hms_install">ထည့်သွင်းမည်</string>
+    <string name="hms_install_message">ဤအင်္ဂါရပ်ကိုသုံးရန် Huawei မိုဘိုင်းဝန်ဆောင်မှုများကို ထည့်သွင်းထားရမည်။ ထည့်သွင်းမည်လား။</string>
+    <string name="hms_retry">ပြန်ကြိုးစား</string>
+    <string name="hms_update">အပ်ဒိတ်</string>
+    <string name="hms_update_message">ဤအင်္ဂါရပ်ကိုအသုံးပြုရန် Huawei မိုဘိုင်းဝန်ဆောင်မှုများ၏ နောက်ဆုံးထွက်ဗားရှင်းသို့ အသစ်မွမ်းမံပါ။ ယခုအသစ်မွမ်းမံမည်လား။</string>
+    <string name="hms_update_message_new">ဤဝန်ဆောင်မှုသည် ဖော်ပြပါ အက်ပ်၏ နောက်ဆုံး ဗားရှင်းကို လိုအပ်ပါသည် - \n\n%1$s</string>
+    <string name="hms_update_title">Huawei မိုဘိုင်းဝန်ဆောင်မှုများ</string>
+</resources>

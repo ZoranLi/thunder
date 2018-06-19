@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/__picker_delete" app:id="@id/delete" app:orderInCategory="100" app:title="@string/__picker_delete" app:showAsAction="ifRoom" />
+</menu>

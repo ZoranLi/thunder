@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/white" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b01f3"
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/share_count_layout" app:background="@drawable/video_clickable_foreground_selector" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0">
+        <ImageView app:background="@drawable/choiceness_share_selector" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="5dp" />
+        <TextView app:textSize="11sp" app:textColor="#5a6473" app:id="@+id/item_share_count" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+        <com.airbnb.lottie.LottieAnimationView app:id="@+id/lottie_view_share" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x1401" app:layout_height="UNKNOWN_DATA_0x1401" app:lottie_fileName="lottie/homeshare/data.json" app:lottie_imageAssetsFolder="lottie/homeshare/images" />
+        <ImageView app:id="@+id/iv_red_packet_icon" app:background="@drawable/ic_share_red_packet_icon" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x1401" app:layout_height="UNKNOWN_DATA_0x1401" />
+    </LinearLayout>
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/comment_count_layout" app:background="@drawable/video_clickable_foreground_selector" app:paddingLeft="13dp" app:paddingRight="13dp" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" app:layout_toLeftOf="@+id/share_count_layout">
+        <ImageView app:background="@drawable/choiceness_comment_selector" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="5dp" />
+        <TextView app:textSize="11sp" app:textColor="#5a6473" app:id="@+id/item_comment_count" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="1111111" app:lines="1" />
+    </LinearLayout>
+    <com.xunlei.downloadprovider.homepage.choiceness.ui.widget.LikeView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/like_count_layout" app:background="@drawable/video_clickable_foreground_selector" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+</LinearLayout>

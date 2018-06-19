@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_normal_press_selector" android:paddingLeft="13dp" android:paddingTop="10dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x2501" android:layout_height="UNKNOWN_DATA_0x2501" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:src="@drawable/ic_default_avatar" />
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_icon_extra" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp">
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/lyt_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textColor="#516473" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="10sp" android:textColor="#ff9600" android:ellipsize="end" android:id="@+id/tv_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lyt_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/lyt_name">
+                <TextView android:textSize="15sp" android:textColor="#3b424c" android:id="@+id/tv_content" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" />
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/lyt_target" android:background="@drawable/bg_task_reply_comment_new" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="6dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <ImageView android:id="@+id/iv_toggle" android:padding="4dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1201" android:layout_height="UNKNOWN_DATA_0x1201" android:layout_marginTop="0dp" android:layout_marginRight="0dp" android:src="@drawable/ic_down_triangle_normal" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="12sp" android:textColor="#979ba1" android:ellipsize="end" android:id="@+id/tv_target" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_toggle" android:layout_alignWithParentIfMissing="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/lyt_operation" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2001" android:layout_below="@+id/lyt_content">
+                <TextView android:textSize="11sp" android:textColor="#979aa0" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" />
+                <TextView android:textSize="11sp" android:textColor="#969aa0" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/play_position" android:paddingTop="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableLeft="@drawable/download_detail_play_progress" android:drawablePadding="4dp" android:drawableStart="@drawable/download_detail_play_progress" />
+                <View android:id="@+id/fill_view" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" />
+                <FrameLayout android:id="@+id/btn_reply" android:paddingRight="8dp" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_detail_comment_chat_btn_selector" android:scaleType="centerInside" />
+                </FrameLayout>
+                <FrameLayout android:id="@+id/lyt_good" android:paddingLeft="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="0dp">
+                    <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/iv_good_icon" android:duplicateParentState="false" android:layout_width="UNKNOWN_DATA_0x1001" android:layout_height="UNKNOWN_DATA_0x1001" android:src="@drawable/ic_good_selector" android:layout_centerVertical="true" />
+                        <TextView android:textSize="10sp" android:textStyle="UNKNOWN_DATA_0x0" android:textColor="#909399" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_good_count" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="" android:layout_toRightOf="@+id/iv_good_icon" android:layout_alignBottom="@+id/iv_good_icon" />
+                    </RelativeLayout>
+                    <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="#1294f6" android:id="@+id/tv_plus_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="+1" android:layout_above="@+id/iv_good_icon" />
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_guide_pop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="74dp" android:layout_marginBottom="-10dp" android:src="@drawable/download_detail_comment_guide" android:layout_alignBottom="@+id/lyt_content" android:layout_marginStart="74dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/line" />
+</LinearLayout>

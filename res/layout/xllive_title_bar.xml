@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/xllive_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2c01">
+        <View android:id="@id/background" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/left" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/ltext" android:paddingLeft="13dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="" android:drawableLeft="0x0" android:drawablePadding="8dp" />
+            <TextView android:textSize="14sp" android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/ltext2" android:paddingLeft="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="关闭" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="17sp" android:textColor="#2d2d2d" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/ctext" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xllive_app_name" android:singleLine="true" android:maxLength="13" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/right" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/rtext" android:paddingLeft="4dp" android:paddingRight="4dp" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/title_msg_bar" android:background="#000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.75">
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:id="@id/title_msg_text" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在发送..." />
+    </LinearLayout>
+    <View android:id="@id/title_bar_sep_line" android:background="#eff2f4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2a3d7131" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0099">
+    <LinearLayout android:orientation="vertical" android:id="@id/common_delete_buttom_btn_layout" android:background="@drawable/common_delete_btn_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/common_delete_buttom_btn_icon" android:paddingTop="5dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_delete_icon_selector" android:scaleType="centerCrop" android:contentDescription="0x0" />
+        <TextView android:textSize="10dp" android:textColor="@color/common_delete_buttom_text_selector" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/common_delete_buttom_btn_text" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/del" />
+    </LinearLayout>
+</merge>

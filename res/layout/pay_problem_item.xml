@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/payment_14_sp" android:textColor="@color/payment_blue" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/pay_problem_title_tv" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b01b2" android:layout_marginLeft="@dimen/payment_12_dp" />
+    <include layout="@layout/pay_line" />
+    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_gray" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/pay_problem_content_tv" android:paddingTop="@dimen/payment_11_dp" android:paddingBottom="@dimen/payment_11_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_12_dp" android:layout_marginRight="@dimen/payment_12_dp" />
+    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01be" />
+</LinearLayout>

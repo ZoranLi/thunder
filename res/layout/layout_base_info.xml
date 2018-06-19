@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.ShortMovieBaseTitleInfoView app:id="@+id/short_movie_base_title_info_view" app:paddingTop="13dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:fold_title="true" />
+    <RelativeLayout app:id="@+id/lyt_zan" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401">
+        <FrameLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/fl_click_nice" app:background="0x106000b" app:paddingLeft="13dp" app:paddingTop="0dp" app:paddingRight="13dp" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginTop="0dp">
+            <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/iv_good_icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_shortdetail_like_selector" app:layout_centerVertical="true" />
+            <TextView app:textSize="14sp" app:textStyle="bold" app:textColor="#1294f6" app:id="@+id/tv_plus_one" app:visibility="gone" app:clickable="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="4dp" app:text="+1" app:layout_above="@+id/iv_good_icon" />
+        </FrameLayout>
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/lyt_like_list" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_alignParentRight="true">
+            <com.xunlei.thunder.commonui.widget.CircleImageView app:id="@+id/iv_like_avatar1" app:layout_width="UNKNOWN_DATA_0x1901" app:layout_height="UNKNOWN_DATA_0x1901" app:layout_marginRight="7dp" app:src="@drawable/feedflow_icon_default" app:scaleType="centerCrop" app:layout_centerVertical="true" />
+            <com.xunlei.thunder.commonui.widget.CircleImageView app:id="@+id/iv_like_avatar2" app:layout_width="UNKNOWN_DATA_0x1901" app:layout_height="UNKNOWN_DATA_0x1901" app:layout_marginRight="7dp" app:src="@drawable/feedflow_icon_default" app:scaleType="centerCrop" app:layout_centerVertical="true" />
+            <com.xunlei.thunder.commonui.widget.CircleImageView app:id="@+id/iv_like_avatar3" app:layout_width="UNKNOWN_DATA_0x1901" app:layout_height="UNKNOWN_DATA_0x1901" app:layout_marginRight="6dp" app:src="@drawable/feedflow_icon_default" app:scaleType="centerCrop" app:layout_centerVertical="true" />
+            <TextView app:textSize="11sp" app:textStyle="UNKNOWN_DATA_0x0" app:textColor="#5a6473" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/tv_good_count" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="20dp" app:text="1234" />
+            <ImageView app:visibility="gone" app:layout_width="UNKNOWN_DATA_0xd01" app:layout_height="UNKNOWN_DATA_0xd01" app:layout_marginRight="7dp" app:layout_marginBottom="0dp" app:src="@drawable/ic_detail_next_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.ShortMoviePublisherInfoView app:id="@+id/short_movie_publisher_info_view" app:layout_width="match_parent" app:layout_height="wrap_content" />
+</LinearLayout>

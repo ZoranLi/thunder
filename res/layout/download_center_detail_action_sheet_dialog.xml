@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/oepn_with_Button" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="打开方式" />
+    <include layout="@layout/line" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/copy_download_url_Button" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/download_task_more_operation_copy" />
+    <include layout="@layout/line" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/add_bt_Button" android:background="@drawable/bg_normal_press_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="添加BT子任务" />
+    <View android:id="@+id/add_bt_line" android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/delete_bt_Button" android:background="@drawable/bg_normal_press_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="删除BT子任务" />
+    <View android:id="@+id/delete_bt_line" android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    <Button android:textSize="16sp" android:textColor="#f15e4a" android:id="@+id/delete_Button" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="全部删除" />
+    <include layout="@layout/line" />
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_cancel" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="取消" />
+</LinearLayout>

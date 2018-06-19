@@ -1,0 +1,54 @@
+package com.xunlei.downloadprovider.pushmessage.bean;
+
+import com.xiaomi.mipush.sdk.MiPushMessage;
+import java.io.Serializable;
+
+public class PushResult implements Serializable {
+    public static final int AUCTION_TRANSACTION_STATE = 22;
+    public static final String BIG_PIC = "big_pic";
+    public static final String BIG_PIC_NEW = "big_pic_new";
+    public static final String COLLECT_UPDATE_MAIN_URL = "update_main_url";
+    public static final int COMMENT_TYPE = 2;
+    public static final String DESC = "desc";
+    public static final String DISPLAY_TYPE = "display_type";
+    public static final int FOLLOW_TYPE = 6;
+    public static final int FOLLOW_UPDATE_TYPE = 8;
+    public static final String GC_ID = "gcId";
+    public static final int GETUI_NOTIFICATION_AD = 1001;
+    public static final int GRAPHICS_LINK_COMMENT_TYPE = 15;
+    public static final int GRAPHICS_LINK_LIKE_TYPE = 16;
+    public static final int IM_MESSAGE_TYPE = 13;
+    public static final String IS_SHORT_VIDEO = "is_short";
+    public static final int LIKE_TYPE = 3;
+    public static final int LIVE_TYPE = 5;
+    public static final int LOCAL_TYPE = 2000;
+    public static final String MSG_ID = "messageId";
+    public static final int NONE = -1;
+    public static final String NOTIFICATION_ID = "notification_id";
+    public static final int OFFLINE_DOWNLOAD_DONE = 2001;
+    public static final int OTHER_TYPE = 1000;
+    public static final String RECEIVER_USER_ID = "receiver";
+    public static final String RES_TYPE = "res_type";
+    public static final String ROOM_INFO = "room_info";
+    public static final int SILENCE_STARTUP_TYPE = 14;
+    public static final String TARGET = "target";
+    public static final String TITLE = "title";
+    public static final int TOPIC_TYPE = 7;
+    public static final int UNFINISH_DOWNLOAD_NOTICE = 2002;
+    public static final int UNPLAY_NOTICE = 2003;
+    public static final String URL = "url";
+    public static final int URL_TYPE = 4;
+    public static final String VIDEO_ID = "video_id";
+    public static final int VIDEO_NOT_DISTURB_TYPE = 12;
+    public static final int VIDEO_REPLY_TYPE = 10;
+    public static final int VIDEO_SHARE_PROFIT = 21;
+    public static final int VIDEO_TYPE = 1;
+    public static final int VIDEO_UPLOAD_TYPE = 9;
+    public static final int VIDEO_ZAN_TYPE = 11;
+    public static final int VISIT_TYPE = 17;
+    public static final int WEBSITE_COLLECT_UPDATE = 20;
+    public static final int WEBSITE_COMMENT_TYPE = 18;
+    public static final int WEBSITE_LIKE_TYPE = 19;
+    private static final long serialVersionUID = 3830974144002906381L;
+    public MiPushMessage miPushMessage;
+}

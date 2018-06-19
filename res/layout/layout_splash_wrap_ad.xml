@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/splash_ad_bg" android:background="@drawable/splash_ad_bg_blue" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/splash_ad_title_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_ad_title_recommend" android:layout_centerHorizontal="true" />
+        <RatingBar android:id="@+id/splash_ad_score_rb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_below="@+id/splash_ad_title_iv" android:layout_centerHorizontal="true" style="@style/splash_ad_rating_bar" />
+        <RelativeLayout android:id="@+id/splash_ad_content_bg" android:background="@drawable/splash_ad_content_bg" android:layout_width="UNKNOWN_DATA_0x7f0b002a" android:layout_height="UNKNOWN_DATA_0x7f0b0029" android:layout_marginTop="24dp" android:layout_below="@+id/splash_ad_title_iv" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/splash_ad_image_iv" android:layout_width="UNKNOWN_DATA_0x7f0b002d" android:layout_height="UNKNOWN_DATA_0x7f0b002c" android:layout_marginTop="40dp" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/splash_ad_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34dp" android:layout_marginTop="@dimen/splash_desc_space_top" android:layout_marginRight="34dp" android:maxLines="1" android:layout_below="@+id/splash_ad_image_iv" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/splash_ad_action_tv" android:background="@drawable/splash_ad_action_btn_app_immediately_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_below="@+id/splash_ad_content_bg" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include layout="@layout/include_splash_ad_skip_count_down" />
+    <ImageView android:id="@+id/iv_ad_source_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SplashAdSourceLogo" />
+</RelativeLayout>

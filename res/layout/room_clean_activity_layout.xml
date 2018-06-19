@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/speed_detection_headerbar" layout="@layout/common_title_bar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xunlei.downloadprovider.personal.settings.ui.ChartView android:id="@+id/chartView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:text="正在清理" android:layout_below="@+id/chartView" android:layout_centerHorizontal="true" />
+            <com.xunlei.downloadprovider.personal.settings.ui.RoomInfoView android:id="@+id/room_info_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/chartView" />
+        </RelativeLayout>
+        <com.xunlei.downloadprovider.personal.settings.ui.CircleAnimateView android:id="@+id/circle_animate_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

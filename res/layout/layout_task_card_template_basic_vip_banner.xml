@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/task_card_bkg_color" android:paddingLeft="@dimen/task_card_padding" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0207">
+    <View android:id="@+id/task_card_banner_divider" android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_marginLeft="@dimen/task_card_banner_content_padding_left" android:layout_marginRight="@dimen/task_card_padding" />
+    <TextView android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/titleTextView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/task_card_banner_content_padding_left" android:layout_marginRight="5dp" android:text="免费试用会员特权,更快完成下载" android:lines="1" android:layout_toLeftOf="@+id/rightButtonLayout" style="@style/TaskCardBannerOrangeTextAppearance" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/rightButtonLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"
+        <LinearLayout android:orientation="horizontal" android:id="@+id/actionAreaLayout" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginRight="7dp">
+            <FrameLayout android:id="@+id/red_packet_container" android:background="@drawable/task_card_button_sold_orange_left_radius" android:paddingLeft="7dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/red_packet_iv" android:layout_width="UNKNOWN_DATA_0xd01" android:layout_height="wrap_content" android:src="@drawable/ic_free_trial_red_packet" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/task_card_button_text_size" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/actionButton" android:background="@drawable/task_card_button_sold_orange_selector" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="试用加速" />
+                <ImageView android:id="@+id/actionAnimationButton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <include android:id="@+id/closeButton" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/layout_task_card_banner_close" />
+    </LinearLayout>
+</RelativeLayout>

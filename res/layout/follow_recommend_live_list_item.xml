@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#3b424c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/tv_title" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="我的关注" />
+        <FrameLayout android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        <com.xunlei.downloadprovider.homepage.follow.ui.view.RecommendFollowLiveView android:id="@+id/recommend_0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.xunlei.downloadprovider.homepage.follow.ui.view.RecommendFollowLiveView android:id="@+id/recommend_1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.xunlei.downloadprovider.homepage.follow.ui.view.RecommendFollowLiveView android:id="@+id/recommend_2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.xunlei.downloadprovider.homepage.follow.ui.view.RecommendFollowLiveView android:id="@+id/recommend_3" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/text_follow_color_selector" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_follow_all" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="全部关注" />
+        <FrameLayout android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout> />

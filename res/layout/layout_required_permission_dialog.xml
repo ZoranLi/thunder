@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp">
+    <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/dlg_title_layout" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="打开迅雷" style="@style/dlg_title_txt_style" />
+        <RelativeLayout android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dlg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="为了使迅雷正常使用，需要获取以下信息：" android:layout_centerHorizontal="true" style="@style/dlg_content_txt_style" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="获取不到，则迅雷无法正常使用" android:layout_below="@id/dlg_content" android:layout_centerHorizontal="true" style="@style/dlg_content_txt_style" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:paddingLeft="17dp" android:paddingTop="18dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/dlg_item_1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@+id/dlg_item_1_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/launch_ic_permission_storage" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="存储空间" android:layout_below="@+id/dlg_item_1_icon" android:layout_centerHorizontal="true" style="@style/dlg_icon_txt_style" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/dlg_item_2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@+id/dlg_item_2_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/launch_ic_permission_phone" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="手机信息" android:layout_below="@+id/dlg_item_2_icon" android:layout_centerHorizontal="true" style="@style/dlg_icon_txt_style" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/dlg_title_layout">
+        <View style="@style/dlg_horizontal_divider" />
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/dlg_btn_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b00db" android:weightSum="2.0">
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_cancel_btn" android:background="@drawable/left_button_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/dlg_left_white_button" />
+            <View android:id="@id/dlg_btn_vertical_divider" android:visibility="visible" style="@style/dlg_vertical_divider" />
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_confirm_btn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="下一步" android:layout_weight="1.0" style="@style/dlg_single_white_button" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/SettingMain">
+    <include layout="@layout/common_title_bar" />
+    <ScrollView android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/settings_group_bg" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+            <RelativeLayout android:id="@+id/sett_push_layout" android:background="@drawable/settings_item_top_radius_bg" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+                <LinearLayout style="@style/SettingVerticalTexts">
+                    <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_push_always" style="@style/SettingTitle" />
+                    <TextView android:textAppearance="@style/TextAppearanceEntrySecondaryTitle_Normal" android:text="@string/sett_push_always_description" style="@style/SettingSubTitle" />
+                </LinearLayout>
+                <CheckBox android:id="@+id/sett_push" style="@style/SettingsCheckBoxStyle2" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/sett_nf_sound_layout" android:background="@drawable/settings_item_angle_bg" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+                <LinearLayout style="@style/SettingVerticalTexts">
+                    <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:text="@string/sett_sound" style="@style/SettingTitle" />
+                    <TextView android:textAppearance="@style/TextAppearanceEntrySecondaryTitle_Normal" android:text="@string/sett_sound_description" style="@style/SettingSubTitle" />
+                </LinearLayout>
+                <CheckBox android:id="@+id/sett_nf_sound" style="@style/SettingsCheckBoxStyle2" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/sett_auto_play_short_video_rl" android:background="@drawable/settings_item_bottom_radius_bg_selector" android:layout_height="UNKNOWN_DATA_0x7f0b01ee" android:layout_marginTop="@dimen/EntryBorderWidth" style="@style/SettingCell">
+                <TextView android:textAppearance="@style/TextAppearanceEntryPrimaryTitle_Normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sett_auto_play_short_video" android:layout_centerVertical="true" />
+                <TextView android:id="@+id/sett_auto_play_option_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:text="" android:layout_toLeftOf="@+id/sett_click_item_go" android:layout_centerVertical="true" />
+                <ImageView android:id="@+id/sett_click_item_go" android:background="@drawable/click_item_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x28001">
+    <com.xunlei.downloadprovidershare.redpacket.ShareRedPacketView android:id="@id/share_red_envelope_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

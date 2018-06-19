@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/dialog_view" android:background="@drawable/xllive_loading_bkg" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="93dp" android:minHeight="103dp">
+    <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xllive_loading2" />
+    <TextView android:textColor="0x106000b" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/tipTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="数据加载中……" />
+</LinearLayout>

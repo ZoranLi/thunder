@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/xl_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_portrait" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/short_list_item_title_default_bg" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x9801" />
+        <include android:id="@+id/title_layout" layout="@layout/common_title_bar" />
+        <RelativeLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/user_center_avatar_album_new" android:layout_width="UNKNOWN_DATA_0x6801" android:layout_height="UNKNOWN_DATA_0x6801" android:layout_marginTop="100dp">
+            <ImageView android:id="@+id/user_account_portrait_iv" android:background="@drawable/ic_default_avatar" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0x6401" />
+            <ImageView android:background="@drawable/portrait_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/user_account_portrait_iv" android:layout_alignBottom="@+id/user_account_portrait_iv" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_third_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:layout_below="@+id/fl_portrait" android:layout_centerHorizontal="true">
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="#cccccc" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="UNKNOWN_DATA_0x200" />
+        <TextView android:textSize="13sp" android:textColor="#333333" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第三方头像一键同步" />
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="#cccccc" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="UNKNOWN_DATA_0x200" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/ll_third_login"
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_portrait_weixin" android:background="@drawable/third_portrait_weixin_selector" android:layout_width="UNKNOWN_DATA_0x7f0b0258" android:layout_height="UNKNOWN_DATA_0x7f0b0258" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_portrait_weixin_icon" android:background="@drawable/portrait_icon_wechat" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/user_portrait_third_login_text_size" android:textColor="#999999" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/user_portrait_third_login_text_top" android:text="微信头像" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_portrait_qq" android:background="@drawable/third_portrait_qq_selector" android:layout_width="UNKNOWN_DATA_0x7f0b0258" android:layout_height="UNKNOWN_DATA_0x7f0b0258" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_portrait_qq_icon" android:background="@drawable/portrait_icon_tencent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/user_portrait_third_login_text_size" android:textColor="#999999" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/user_portrait_third_login_text_top" android:text="QQ头像" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_portrait_weibo" android:background="@drawable/third_portrait_weibo_selector" android:layout_width="UNKNOWN_DATA_0x7f0b0258" android:layout_height="UNKNOWN_DATA_0x7f0b0258" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_portrait_weibo_icon" android:background="@drawable/portrait_icon_weibo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/user_portrait_third_login_text_size" android:textColor="#999999" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/user_portrait_third_login_text_top" android:text="微博头像" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

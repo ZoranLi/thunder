@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/line_top" android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" />
+        <RelativeLayout android:id="@+id/keyword_web_container" android:background="@color/white" android:paddingLeft="@dimen/task_card_padding" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <RelativeLayout android:orientation="vertical" android:id="@+id/web_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="41dp" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/web_site_icon_iv" android:padding="1dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1201" android:layout_height="UNKNOWN_DATA_0x1201" android:src="@drawable/download_detail_sniff_icon" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/web_site_icon_iv">
+                    <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/web_site_name" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1301" android:text="来源:" android:lines="1" />
+                    <TextView android:textSize="9sp" android:textColor="#9c9c9c" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/task_ref_url" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1301" android:layout_marginLeft="1dp" android:text="wwww.baidu.com" android:lines="1" android:layout_below="@id/container" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_collection" android:padding="13dp" android:layout_width="UNKNOWN_DATA_0x2c01" android:layout_height="UNKNOWN_DATA_0x2c01" android:src="@drawable/dl_collection_icon_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@+id/line_bottom" android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/lx_space_download_entry_vs" android:layout="@layout/lx_space_download_entry_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@+id/lx_space_no_vip_guide_vs" android:layout="@layout/lx_space_no_vip_guide_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

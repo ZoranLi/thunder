@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lyt_coordinator" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_topic_header" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x6401">
+        <ImageView android:id="@+id/bg_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/topic_default_bg" android:scaleType="centerCrop" />
+        <TextView android:textSize="20sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:maxWidth="280dp" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textColor="#5a6473" android:id="@+id/tv_publish_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/topic_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/layout_description" android:background="0x106000b" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="#979aa0" android:id="@+id/tv_description" android:paddingLeft="18dp" android:paddingRight="18dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/layout_expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1201" android:layout_marginRight="18dp" android:layout_marginBottom="15dp">
+            <View android:background="@drawable/topic_detail_description_expand_btn_bg" android:layout_width="UNKNOWN_DATA_0x1901" android:layout_height="match_parent" />
+            <TextView android:textSize="13sp" android:textColor="#1aa3ff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="0x106000b" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="展开" />
+        </LinearLayout>
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </FrameLayout>
+</LinearLayout>

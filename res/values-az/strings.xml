@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Evə naviqasiya et</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Yuxarı get</string>
+    <string name="abc_action_menu_overflow_description">Digər variantlar</string>
+    <string name="abc_action_mode_done">Hazırdır</string>
+    <string name="abc_activity_chooser_view_see_all">Hamısına baxın</string>
+    <string name="abc_activitychooserview_choose_application">Tətbiq seçin</string>
+    <string name="abc_capital_off">DEAKTİV</string>
+    <string name="abc_capital_on">AKTİV</string>
+    <string name="abc_search_hint">Axtarış...</string>
+    <string name="abc_searchview_description_clear">Sorğunu təmizlə</string>
+    <string name="abc_searchview_description_query">Axtarış sorğusu</string>
+    <string name="abc_searchview_description_search">Axtarış</string>
+    <string name="abc_searchview_description_submit">Sorğunu göndərin</string>
+    <string name="abc_searchview_description_voice">Səsli axtarış</string>
+    <string name="abc_shareactionprovider_share_with">Bununla paylaşın</string>
+    <string name="abc_toolbar_collapse_description">Dağıt</string>
+    <string name="search_menu_title">Axtarış</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="hms_abort">Dayandır</string>
+    <string name="hms_abort_message">Yükləmə dayandırılsın?</string>
+    <string name="hms_bindfaildlg_message">%1$s Huawei Mobil Xidmətlərindən istifadə edə bilmir. Lütfən Telefon Menecerini işə salın və ya Parametrlərə keçin, %2$s (avtomatik işəsalma və sonrakı işəsalma daxil olmaqla) üçün bütün icazələri aktivləşdirin.</string>
+    <string name="hms_cancel">Ləğv et</string>
+    <string name="hms_check_failure">Yenilənmələri yoxlamaq mümkün olmadı.</string>
+    <string name="hms_check_no_update">Siz artıq ən son versiyanı istifadə edirsiniz.</string>
+    <string name="hms_checking">Yeniləmələr yoxlanır…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huawei Mobil Xidmətlər paketini yükləmək mümkün olmadı.</string>
+    <string name="hms_download_no_space">Kifayət qədər boş yer yoxdur. Yükləməni tamamlamaq mümkün deyil.</string>
+    <string name="hms_download_retry">Yükləmə baş tutmadı. Təkrar cəhd edilsin?</string>
+    <string name="hms_downloading">Huawei Mobil Xidmətləri yüklənir | gedişat: %d%%</string>
+    <string name="hms_downloading_new">HMS endirilir</string>
+    <string name="hms_install">Quraşdırın</string>
+    <string name="hms_install_message">Bu funksiyanı istifadə etmək üçün Huawei Mobil Xidmətləri quraşdırılmalıdır. Quraşdırılsın?</string>
+    <string name="hms_retry">Təkrar cəhd et</string>
+    <string name="hms_update">Yenilə</string>
+    <string name="hms_update_message">Bu funksiyanı istifadə etmək üçün Huawei Mobil Xidmətlərinin ən son versiyasına yeniləyin. İndi yenilənsin?</string>
+    <string name="hms_update_message_new">Bu xidmət aşağıdakı proqramın ən son versiyasını tələb edir:\n\n%1$s</string>
+    <string name="hms_update_title">Huawei Mobil Xidmətləri</string>
+</resources>

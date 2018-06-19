@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="0x1020000" android:drawable="@drawable/vod_player_progress_power_empty" />
+    <item android:id="0x102000d">
+        <clip android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:drawable="@drawable/vod_player_progress_power_full" android:clipOrientation="horizontal" />
+    </item>
+    <item android:id="0x102000f">
+        <clip android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:drawable="@drawable/vod_player_progress_power_charging" android:clipOrientation="horizontal" />
+    </item>
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:background="@color/common_title_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b007c" android:layout_marginTop="@dimen/browser_tool_bar_margin_top">
+        <RelativeLayout android:id="@+id/browser_tool_bar_goback_container" android:background="@drawable/thunder_browser_bottom_layout_background_selector" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/browser_tool_bar_goback" android:clickable="true" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/thunder_browser_bottom_btn_back_selector" android:scaleType="center" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/browser_tool_bar_goforward_container" android:background="@drawable/thunder_browser_bottom_layout_background_selector" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/browser_tool_bar_goforward" android:clickable="true" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/thunder_browser_bottom_btn_forward_selector" android:scaleType="center" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/browser_tool_bar_favorite_container" android:background="@drawable/thunder_browser_bottom_layout_background_selector" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/browser_tool_bar_favorite" android:clickable="true" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/thunder_browser_bottom_btn_favorite_selector" android:scaleType="center" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/browser_tool_bar_favoritefolder_container" android:background="@drawable/thunder_browser_bottom_layout_background_selector" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/browser_tool_bar_favoritefolder" android:clickable="true" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/thunder_browser_bottom_btn_favoritefolder_selector" android:scaleType="center" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/browser_tool_bar_share_container" android:background="@drawable/thunder_browser_bottom_layout_background_selector" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/browser_tool_bar_share" android:clickable="true" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/thunder_browser_bottom_btn_share_selector" android:scaleType="center" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/re_browser_tool_bar_browserIcon" android:background="@drawable/thunder_browser_bottom_layout_background_selector" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/browser_tool_bar_browserIcon" android:background="@drawable/ic_default_avatar" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

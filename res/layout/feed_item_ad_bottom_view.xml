@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="2">
+        <TableRow>
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/iv_subject_icon" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/ic_default_avatar" />
+            <TextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_subject_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="2" android:maxLines="2" android:layout_weight="1.0" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="10dp">
+                <TextView android:textSize="8sp" android:textColor="#979aa0" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_tag" android:background="@drawable/bg_ad_gray_edge_btn" android:padding="2dp" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广告" />
+            </FrameLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/blue" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/btn_open" android:background="@drawable/bg_ad_blue_tag" android:padding="5dp" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="" />
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

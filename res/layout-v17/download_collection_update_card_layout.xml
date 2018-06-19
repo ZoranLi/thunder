@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/collection_card_interval" android:background="@color/EntryBorderColorHover" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0239" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/parent_view" android:background="@drawable/white" android:paddingLeft="@dimen/task_card_padding" android:paddingTop="8dp" android:paddingRight="@dimen/task_card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#ff3b424c" android:id="@+id/collect_update_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电影天堂更新了6部电影" android:layout_centerVertical="true" />
+            <FrameLayout android:id="@+id/closeButton" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="0dp" android:paddingBottom="4dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:paddingStart="6dp" android:paddingEnd="0dp" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/collect_update_card_close" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/jump_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+            <RelativeLayout android:id="@+id/goto_browser_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="13dp" android:textColor="#ff1aa3ff" android:id="@+id/goto_browser_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去看看" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:src="@drawable/collect_update_card_next" android:layout_toRightOf="@+id/goto_browser_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@+id/website_image1" android:layout_width="UNKNOWN_DATA_0x10a66621" android:layout_height="UNKNOWN_DATA_0x10a66621" android:src="@drawable/website_icon_default_square" />
+            <ImageView android:id="@+id/website_image2" android:layout_width="UNKNOWN_DATA_0x10a66621" android:layout_height="UNKNOWN_DATA_0x10a66621" android:layout_marginLeft="8dp" android:src="@drawable/website_icon_default_square" android:layout_toRightOf="@+id/website_image1" />
+            <ImageView android:id="@+id/website_image3" android:layout_width="UNKNOWN_DATA_0x10a66621" android:layout_height="UNKNOWN_DATA_0x10a66621" android:layout_marginLeft="8dp" android:src="@drawable/website_icon_default_square" android:layout_toRightOf="@+id/website_image2" />
+            <ImageView android:id="@+id/website_image4" android:layout_width="UNKNOWN_DATA_0x10a66621" android:layout_height="UNKNOWN_DATA_0x10a66621" android:layout_marginLeft="8dp" android:src="@drawable/website_icon_default_square" android:layout_toRightOf="@+id/website_image3" />
+            <ImageView android:id="@+id/website_image5" android:layout_width="UNKNOWN_DATA_0x10a66621" android:layout_height="UNKNOWN_DATA_0x10a66621" android:layout_marginLeft="8dp" android:src="@drawable/website_icon_default_square" android:layout_toRightOf="@+id/website_image4" />
+            <ImageView android:id="@+id/website_image6" android:layout_width="UNKNOWN_DATA_0x10a66621" android:layout_height="UNKNOWN_DATA_0x10a66621" android:layout_marginLeft="8dp" android:src="@drawable/website_icon_default_square" android:layout_toRightOf="@+id/website_image5" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

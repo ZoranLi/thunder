@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/message_coordinator" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:id="@+id/message_appbar" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout app:id="@+id/message_collapsing" app:background="@color/white" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_scrollFlags="13" app:expandedTitleMarginTop="0dp" app:expandedTitleMarginBottom="20dp" app:expandedTitleTextAppearance="@style/TitleTextAppearance_Collapsed" app:collapsedTitleTextAppearance="@style/TitleTextAppearance_Collapsed" app:contentScrim="0x106000b" app:collapsedTitleGravity="11" app:expandedTitleGravity="31" app:titleEnabled="false">
+            <android.support.v7.widget.Toolbar app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/message_toolbar" app:background="0x0" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0100a3" app:title="text" app:contentInsetStart="0dp" app:contentInsetLeft="0dp" app:layout_collapseMode="1">
+                <include app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0100a3" layout="@layout/campaign_title_bar" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <com.xunlei.downloadprovider.xlui.widget.PagerSlidingTabStrip app:id="@+id/message_fragment" app:background="@color/white" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2401" />
+        <include app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager app:id="@+id/message_viewPager" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:behavior_overlapTop="0dp" />
+</android.support.design.widget.CoordinatorLayout>

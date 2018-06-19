@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/lyt_base_info" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_toggle_title" android:padding="5dp" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_marginTop="1dp" android:layout_marginRight="0dp" android:src="@drawable/ic_down_triangle_normal" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="17sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_toggle_title" android:layout_alignWithParentIfMissing="true" android:lineSpacingExtra="4dp" />
+    </RelativeLayout>
+    <com.xunlei.downloadprovider.homepage.choiceness.ui.widget.VideoTagView android:id="@+id/video_tag_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="6dp" />
+</LinearLayout>

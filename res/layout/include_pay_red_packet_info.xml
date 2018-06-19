@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/red_packet_layout" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/payment_12_sp" android:textColor="@color/payment_orange" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/red_packet_tips_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_3_dp" android:text="限时红包: 开通12个月会员即获现金红包" />
+    <View android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01a3" />
+</LinearLayout>

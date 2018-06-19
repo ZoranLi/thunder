@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/line" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/shareActionLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/shareButton" android:background="@drawable/bg_normal_press_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="@string/download_task_more_operation_share" />
+        <View android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/copyActionLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/copyButton" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="@string/download_task_more_operation_copy" />
+        <View android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/privateSpaceActionLayout" android:background="@drawable/bg_normal_press_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/privateSpaceButton" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3501" android:text="@string/download_task_more_operation_private" android:drawableRight="@drawable/download_center_vip" android:drawablePadding="2dp" />
+        <View android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/openwithActionLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/openwithButton" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="@string/download_task_more_operation_openwith" />
+        <View android:background="@color/search_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout>
+    <Button android:textSize="16sp" android:textColor="#f15e4a" android:id="@+id/deleteButton" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/download_task_more_operation_delete" />
+    <include layout="@layout/line" />
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/cancelButton" android:background="@drawable/bg_normal_press_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/download_task_more_operation_cancel" />
+</LinearLayout>

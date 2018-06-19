@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/rcv_contents" android:paddingBottom="43.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/ev_try" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/ulv_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

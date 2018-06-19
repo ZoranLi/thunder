@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Ir á páxina de inicio</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Desprazarse cara arriba</string>
+    <string name="abc_action_menu_overflow_description">Máis opcións</string>
+    <string name="abc_action_mode_done">Feito</string>
+    <string name="abc_activity_chooser_view_see_all">Ver todas</string>
+    <string name="abc_activitychooserview_choose_application">Escoller unha aplicación</string>
+    <string name="abc_capital_off">DESACTIVAR</string>
+    <string name="abc_capital_on">ACTIVAR</string>
+    <string name="abc_search_hint">Buscar…</string>
+    <string name="abc_searchview_description_clear">Borrar consulta</string>
+    <string name="abc_searchview_description_query">Consulta de busca</string>
+    <string name="abc_searchview_description_search">Buscar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Busca por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartir con</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartir con %s</string>
+    <string name="abc_toolbar_collapse_description">Contraer</string>
+    <string name="search_menu_title">Buscar</string>
+    <string name="status_bar_notification_info_overflow">&gt;999</string>
+    <string name="hms_abort">Parar</string>
+    <string name="hms_abort_message">Deter a descarga?</string>
+    <string name="hms_bindfaildlg_message">%1$s non pode usar Servizos de Huawei Mobile. Inicie o Xestor do teléfono ou vaia a Configuración, active todos os permisos para %2$s (incluíndo o inicio automático e secundario), e ténteo de novo.</string>
+    <string name="hms_cancel">Cancelar</string>
+    <string name="hms_check_failure">Erro ao comprobar actualizacións.</string>
+    <string name="hms_check_no_update">Xa se está a empregar a última versión.</string>
+    <string name="hms_checking">Comprobando actualizacións...</string>
+    <string name="hms_confirm">Aceptar</string>
+    <string name="hms_download_failure">Erro ao descargar o paquete de Servizos de Huawei Mobile.</string>
+    <string name="hms_download_no_space">Non hai espazo libre suficiente. Non se pode completar a descarga.</string>
+    <string name="hms_download_retry">Erro ao descargar. Tentar de novo?</string>
+    <string name="hms_downloading">Descargando Servizos de Huawei Mobile | progreso: %d%%</string>
+    <string name="hms_downloading_new">Descargando HMS</string>
+    <string name="hms_install">Instalar</string>
+    <string name="hms_install_message">É preciso ter instalado Huawei Mobile Services para usar esta función. Instalar?</string>
+    <string name="hms_retry">Tentar de novo</string>
+    <string name="hms_update">Actualizar</string>
+    <string name="hms_update_message">Actualice á última versión de Servizos de Huawei Moble para usar esta función. Actualizar agora?</string>
+    <string name="hms_update_message_new">Este servizo require a última versión da seguinte app:\n\n%1$s</string>
+    <string name="hms_update_title">Servizos de Huawei Mobile</string>
+</resources>

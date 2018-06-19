@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/dlg_bg_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/collect_success_dialog_content_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_content" android:paddingLeft="22dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44.7dp" android:text="content" android:maxLines="2" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="37.7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/cb_xl_dlg_content_layout">
+            <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                <TextView android:textSize="17sp" android:textColor="@color/collect_success_dialog_left_btn_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_left_btn" android:background="@drawable/left_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/cancel" android:layout_weight="1.0" />
+                <View android:id="@id/devider_btn" android:background="#dedede" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" />
+                <TextView android:textSize="17sp" android:textColor="@color/collect_success_dialog_right_btn_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_right_btn" android:background="@drawable/right_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/ok" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

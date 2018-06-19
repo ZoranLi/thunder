@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/speedbillboard_item_top_title_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginLeft="13dp" android:layout_marginRight="13dp">
+        <TextView android:textSize="14sp" android:textColor="#3b424c" android:id="@+id/speedbillboard_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_center_speedbillboard_title_play" />
+        <TextView android:textSize="11sp" android:textColor="#979aa0" android:id="@+id/speedbillboard_item_all_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:drawableRight="@drawable/click_item_go" android:drawablePadding="10dp" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/speedbillboard_item_icon_layout" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/speed_billboard_item_empty" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/feed_item_main_layout" app:layout_width="match_parent" app:layout_height="match_parent">
+    <FrameLayout app:id="@+id/layout_top" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="8dp" app:layout_alignParentTop="true">
+        <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/item_icon_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/item_title" app:ratio="@dimen/choiceness_ad_image_width_height_radio">
+            <FrameLayout app:id="@+id/item_player_container" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="fitXY" />
+            <com.qq.e.ads.nativ.MediaView app:id="@+id/media_view_gdt" app:layout_width="match_parent" app:layout_height="match_parent" />
+            <ImageView app:id="@+id/item_poster" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/choiceness_icon_default" app:scaleType="fitXY" />
+            <include layout="@layout/player_poster_loading_layout" />
+            <include layout="@layout/gdt_video_ad_error_view" />
+            <TextView app:textSize="12sp" app:textColor="@color/white" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/item_duration" app:background="#4c000000" app:paddingLeft="6dp" app:paddingTop="4dp" app:paddingRight="6dp" app:paddingBottom="4dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            <TextView app:textSize="16sp" app:ellipsize="end" app:id="@id/tv_video_title" app:padding="13dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="视频标题" app:maxLines="2" />
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/iv_video_preview" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="fitXY" />
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/gdt_play_icon" app:layout_width="UNKNOWN_DATA_0x2e01" app:layout_height="UNKNOWN_DATA_0x2e01" app:src="@drawable/ic_play_normal_index" />
+        </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+    </FrameLayout>
+    <com.xunlei.downloadprovider.ad.feedvideo.FeedVideoItemADBottomView app:id="@+id/layout_bottom_bar" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_below="@+id/layout_hot_comment" />
+    <include app:id="@+id/layout_hot_comment" app:background="@color/white" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/layout_top" layout="@layout/hot_comment_layout" />
+</RelativeLayout>

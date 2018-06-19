@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.player.xmp.ui.PlayerGestureViewDefault android:id="@+id/gesture_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.downloadprovider.player.xmp.ui.PlayerOperationViewDetail android:id="@+id/operation_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@+id/error_view" android:layout="@layout/media_player_error_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.downloadprovider.player.xmp.ui.PlayerCompletionViewDetail android:id="@+id/completion_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

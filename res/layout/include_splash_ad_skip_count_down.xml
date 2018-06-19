@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/splash_ad_skip_count_down_btn" app:layout_width="UNKNOWN_DATA_0x2101" app:layout_height="UNKNOWN_DATA_0x2101" app:layout_marginTop="20dp" app:layout_marginRight="16dp" app:layout_alignParentRight="true">
+        <com.xunlei.downloadprovider.ad.splash.view.CountDownCircleProgressBar app:id="@+id/splash_ad_skip_count_down_pb" app:background="@drawable/splash_ad_count_down_btn_bg" app:layout_width="UNKNOWN_DATA_0x2101" app:layout_height="UNKNOWN_DATA_0x2101" app:draw_progress_text="false" app:progress_start_color="#2dbefa" app:progress_end_color="#2dbefa" app:progress_stroke_width="1dp" app:progress_background_color="#00000000" app:style="2" />
+    </LinearLayout>
+</merge>

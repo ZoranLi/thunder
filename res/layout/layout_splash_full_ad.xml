@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_loading_img_ad" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/loading_img_ad" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/common_imageview_contentdescription" />
+    <include layout="@layout/include_splash_ad_skip_count_down" />
+    <ImageView android:id="@+id/iv_ad_source_icon" android:layout_alignBottom="@+id/loading_img_ad" android:layout_alignParentRight="true" style="@style/SplashAdSourceLogo" />
+</RelativeLayout>

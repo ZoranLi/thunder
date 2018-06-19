@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/fl_title_container" app:background="@color/transparent" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b009f">
+    <ImageView app:id="@+id/iv_back" app:padding="11dp" app:layout_width="UNKNOWN_DATA_0x7f0b023c" app:layout_height="match_parent" app:src="@drawable/publish_back_selector" app:scaleType="fitCenter" app:adjustViewBounds="true" app:layout_centerVertical="true" />
+    <ImageView app:id="@+id/iv_menu" app:paddingLeft="10dp" app:paddingRight="13dp" app:layout_width="UNKNOWN_DATA_0x7f0b023c" app:layout_height="match_parent" app:src="@drawable/publish_menu_selector" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:onClick="onClick" />
+    <com.xunlei.downloadprovider.shortvideo.videodetail.widget.ShortMoviePublisherInfoView app:id="@+id/short_movie_publisher_info_view_top" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_toLeftOf="@+id/iv_menu" app:layout_toRightOf="@+id/iv_back" app:layout_centerVertical="true" app:layout_style="2" />
+    <include app:id="@+id/lyt_line" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_alignParentBottom="true" layout="@layout/line" />
+</RelativeLayout>

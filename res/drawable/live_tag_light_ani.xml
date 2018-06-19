@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_000" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_001" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_002" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_003" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_004" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_005" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_006" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_007" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_008" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_009" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_010" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_011" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_012" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_013" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_014" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_015" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_016" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_017" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_018" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_019" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_020" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_021" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_022" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_023" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_024" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_025" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_026" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_027" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_028" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_029" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_030" />
+    <item android:duration="62" android:drawable="@drawable/live_tag_light_031" />
+</animation-list>

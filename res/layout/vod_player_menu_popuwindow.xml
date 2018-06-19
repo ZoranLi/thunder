@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#d90f111a" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="UNKNOWN_DATA_0x7f0b0262" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="#99ffffff" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/vod_player_menu_title" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2801" android:text="@string/vod_player_menu_title" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/vod_player_menu_control_lay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/vod_player_menu_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3701">
+            <TextView android:textSize="14sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/vod_player_menu_video_size" />
+            <RadioGroup android:orientation="horizontal" android:id="@+id/vod_player_menu_video_size_parent" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0">
+                <RadioButton android:id="@+id/vod_player_menu_video_size_100" android:layout_width="wrap_content" android:layout_height="match_parent" android:checked="true" android:text="@string/vod_player_menu_video_size_100" style="@style/vod_player_menu_radio_btn_style" />
+                <RadioButton android:id="@+id/vod_player_menu_video_size_75" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/vod_player_menu_video_size_75" style="@style/vod_player_menu_radio_btn_style" />
+                <RadioButton android:id="@+id/vod_player_menu_video_size_50" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/vod_player_menu_video_size_50" style="@style/vod_player_menu_radio_btn_style" />
+            </RadioGroup>
+        </LinearLayout>
+        <View android:background="@drawable/vod_player_menu_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3701">
+            <TextView android:textSize="14sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/vod_player_menu_video_adapter" />
+            <RadioGroup android:orientation="horizontal" android:id="@+id/vod_player_menu_video_adapter_parent" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0">
+                <RadioButton android:id="@+id/vod_player_menu_video_adapter_normal" android:layout_width="wrap_content" android:layout_height="match_parent" android:checked="true" android:text="@string/vod_player_menu_video_adapter_normal" style="@style/vod_player_menu_radio_btn_style" />
+                <RadioButton android:id="@+id/vod_player_menu_video_adapter_stretch" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/vod_player_menu_video_adapter_stretch" style="@style/vod_player_menu_radio_btn_style" />
+                <RadioButton android:id="@+id/vod_player_menu_video_adapter_cut" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/vod_player_menu_video_adapter_cut" style="@style/vod_player_menu_radio_btn_style" />
+            </RadioGroup>
+        </LinearLayout>
+        <View android:background="@drawable/vod_player_menu_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3701">
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@drawable/vod_player_menu_voice_min" />
+            <SeekBar android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/vod_player_menu_voice_pbar" android:paddingLeft="8dp" android:paddingRight="8dp" android:clickable="false" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/vod_player_seekbar_menu_style" android:minHeight="2dp" android:thumb="@drawable/vod_player_seekbar_thumb_selector" android:thumbOffset="0dp" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@drawable/vod_player_menu_voice_max" />
+        </LinearLayout>
+        <View android:background="@drawable/vod_player_menu_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3701">
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@drawable/vod_player_menu_brightness_min" />
+            <SeekBar android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/vod_player_menu_brightness_pbar" android:paddingLeft="8dp" android:paddingRight="8dp" android:clickable="false" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/vod_player_seekbar_menu_style" android:minHeight="2dp" android:thumb="@drawable/vod_player_seekbar_thumb_selector" android:thumbOffset="0dp" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@drawable/vod_player_menu_brightness_max" />
+        </LinearLayout>
+        <View android:background="@drawable/vod_player_menu_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+    </LinearLayout>
+</LinearLayout>

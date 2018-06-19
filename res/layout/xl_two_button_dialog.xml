@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp">
+    <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/dlg_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tips" style="@style/dlg_title_txt_style" />
+        <RelativeLayout android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/dlg_left_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dlg_icon_fail" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/dlg_content_checkbox" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="0x0" android:drawableLeft="@drawable/checkbox" android:drawablePadding="10dp" />
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="left" android:layout_centerHorizontal="true" style="@style/dlg_content_txt_style" />
+                <TextView android:textSize="14sp" android:textColor="@color/global_text_color_4" android:id="@id/dlg_content_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/quit_dlg_content_nosign_click" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                <TextView android:textSize="17sp" android:textColor="@color/global_text_color_2" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_left_btn" android:background="@drawable/left_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/cancel" android:layout_weight="1.0" />
+                <View android:background="#dedede" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" />
+                <TextView android:textSize="17sp" android:textColor="@color/global_text_color_4" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_right_btn" android:background="@drawable/right_button_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/ok" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

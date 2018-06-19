@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="11dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3f01">
+        <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@+id/iv_avatar" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801" android:src="@drawable/ic_default_avatar_new" />
+            <ImageView android:id="@+id/iv_v_status" android:visibility="visible" android:layout_width="UNKNOWN_DATA_0xb01" android:layout_height="UNKNOWN_DATA_0xb01" android:src="@drawable/big_img_v" android:layout_alignRight="@+id/iv_avatar" android:layout_alignBottom="@+id/iv_avatar" />
+            <ImageView android:id="@+id/iv_live" android:layout_width="UNKNOWN_DATA_0xb01" android:layout_height="UNKNOWN_DATA_0xb01" android:src="@drawable/rad_big_img_v" android:layout_alignRight="@+id/iv_avatar" android:layout_alignBottom="@+id/iv_avatar" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_weight="1.0">
+            <TextView android:textSize="16sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@+id/tv_replyContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="10sp" android:textColor="#979ba1" android:ellipsize="end" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:layout_below="@+id/tv_replyContent" />
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#1aa3ff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_attention" android:background="@drawable/btn_follow_selector" android:layout_width="UNKNOWN_DATA_0x3601" android:layout_height="UNKNOWN_DATA_0x1901" android:layout_marginLeft="17dp" android:text="+ 关注" android:layout_toRightOf="@+id/iv_good_icon" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" layout="@layout/line" />
+</LinearLayout>

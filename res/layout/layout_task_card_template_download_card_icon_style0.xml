@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iconImageView" android:layout_width="UNKNOWN_DATA_0x7f0b0218" android:layout_height="UNKNOWN_DATA_0x7f0b0213" android:src="@drawable/ic_dl_video" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="10sp" android:textColor="#1294f6" android:id="@+id/task_hide_flag_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="已隐藏" />
+</LinearLayout>

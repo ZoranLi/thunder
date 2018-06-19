@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_publisher_layout" />
+    </FrameLayout>
+    <TextView android:ellipsize="end" android:id="@id/tv_title" android:background="#ffffff" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingRight="@dimen/common_padding_left_normal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2001" android:text="呵呵呵" android:singleLine="true" style="@style/ChoicenessTitle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#ffffff" android:layout_width="UNKNOWN_DATA_0xd01" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@+id/item_content" android:layout_width="UNKNOWN_DATA_0x7f0b0249" android:layout_height="UNKNOWN_DATA_0x7f0b0249">
+            <ImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/choiceness_icon_default" android:scaleType="centerCrop" />
+            <ImageView android:id="@+id/iv_live_status_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/livestream_live_status_anim" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+                <FrameLayout android:id="@+id/live_player_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.xunlei.downloadprovider.player.xmp.ui.MediaPlayerLoadingView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/play_loading_ani" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:id="@+id/live_room_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/iv_voice_animation" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0xd01" android:layout_height="UNKNOWN_DATA_0xd01" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/auto_play_voice_anim" />
+            </FrameLayout>
+            <ImageView android:id="@+id/iv_like_bubble_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/livestream_float_heart_anim" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="#ffffff" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/new_user_gift_pack_layout" android:background="#ffffff" android:paddingLeft="13dp" android:paddingTop="10dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01"
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/new_user_gift" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+            <FrameLayout android:background="@drawable/live_gift_pack_background" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/gift_pack_image" android:layout_width="UNKNOWN_DATA_0x2e01" android:layout_height="UNKNOWN_DATA_0x2601" android:src="@drawable/live_gift_pack_icon" />
+            </FrameLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1.0">
+                <TextView android:textSize="14dp" android:textColor="#3b424c" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播新人专属红包礼物" />
+                <TextView android:textSize="10dp" android:textColor="#979aa0" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击即可获得免费礼物" />
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/receive" android:background="#1aa3ff" android:layout_width="UNKNOWN_DATA_0x3501" android:layout_height="UNKNOWN_DATA_0x1701" android:layout_marginRight="17dp" android:text="领取" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/global_text_size_sp_15" android:textColor="#979aa0" android:id="@+id/tv_live_num" android:background="#ffffff" android:paddingLeft="@dimen/common_padding_left_normal" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/common_padding_left_normal" android:paddingBottom="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="87696人在观看" android:singleLine="true" />
+    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x501" />
+</LinearLayout>

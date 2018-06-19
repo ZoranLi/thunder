@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f8f8f9" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x28001"
+    <RelativeLayout android:id="@id/rl_video_contain" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xca01" android:layout_marginTop="214dp">
+        <ImageView android:id="@id/iv_video_poster_blur" android:background="@drawable/bg_video_poster_blur1" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/iv_video_poster" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/ic_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/bg_video_mask" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@id/tv_video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="10dp" android:text="02:34" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@id/tv_video_play_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="10dp" android:text="1.8万次播放" android:drawableLeft="@drawable/share_video_vertical_white_line" android:drawablePadding="8dp" android:layout_toRightOf="@id/tv_video_duration" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/ll_contain_header" android:background="@drawable/bg_red_envelope_share" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xunlei.thunder.commonui.widget.CircleImageView android:id="@id/user_portrait_icon" android:layout_width="UNKNOWN_DATA_0x4201" android:layout_height="UNKNOWN_DATA_0x4201" android:layout_marginTop="29dp" />
+        <TextView android:textSize="15sp" android:textColor="#ffe474" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="大飞的日常大飞的日常大飞的日常" />
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:id="@id/tv_gain_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="已赚23341元元" android:drawableLeft="@drawable/ic_wallet_share" android:drawablePadding="3dp" />
+        <TextView android:textSize="21sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/red_packet_gain_cash" />
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@id/tv_video_title" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="视频标题视频标题视频标题视频标题视频视频标题视频标题视频标题视频标题" android:lines="2" android:layout_below="@id/rl_video_contain" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_qr_code" android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0x6401" android:layout_centerInParent="true" />
+            <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/ic_qr_code_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#5a6473" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/red_packet_qr_code_des" />
+        <TextView android:textSize="10sp" android:textColor="#979aa0" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/tv_get_red_packet_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/red_packet_condition_des" />
+    </LinearLayout>
+</RelativeLayout>

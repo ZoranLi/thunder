@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/xllive_head_portrait_ly" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01">
+    <com.xunlei.tdlive.control.RoundImageView android:id="@id/head_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="1dp" android:layout_marginTop="1dp" android:layout_marginRight="1dp" android:layout_marginBottom="1dp" android:src="@drawable/xllive_avatar_default" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/head_mask_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.xunlei.tdlive.control.RoundImageView android:id="@id/experience_grade_image" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0xd01" android:layout_height="UNKNOWN_DATA_0xd01" android:src="@drawable/xllive_user_grade_zero" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

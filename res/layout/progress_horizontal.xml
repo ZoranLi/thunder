@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/my_profile_tracker" android:background="0x0" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/progress_bar_horizontal" style="?unknown_attr_ref: 1010078" />

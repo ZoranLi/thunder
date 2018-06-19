@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/bg_normal_press_selector" app:paddingLeft="13dp" app:paddingRight="13dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4201">
+    <ImageView app:id="@id/iv_icon" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:src="@drawable/feedflow_icon_default" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+    <LinearLayout app:orientation="horizontal" app:id="@+id/title_container" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="14dp" app:layout_toRightOf="@id/iv_icon" app:layout_alignTop="@id/iv_icon">
+        <TextView app:textSize="15sp" app:textColor="#3b424c" app:ellipsize="end" app:id="@id/tv_user_name" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="160dp" app:text="安娜宝简" app:maxLines="1" />
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/gender_icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_weight="1.0" app:srcCompat="@drawable/user_info_tag_gender_female" />
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/is_zhibo_icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="3dp" app:layout_weight="1.0" app:srcCompat="@drawable/user_info_tag_live" />
+    </LinearLayout>
+    <TextView app:textSize="12sp" app:textColor="#979aa0" app:ellipsize="end" app:id="@+id/tv_desc" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="每个人xxx" app:maxLines="1" app:layout_alignLeft="@+id/title_container" app:layout_alignBottom="@id/iv_icon" />
+    <TextView app:textSize="11sp" app:textColor="#979aa0" app:ellipsize="end" app:id="@+id/tv_follow" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="200粉丝" app:layout_alignTop="@+id/title_container" app:layout_alignParentRight="true" />
+</RelativeLayout>

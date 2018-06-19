@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/layout_all_living_hosts" android:background="@drawable/bg_normal_press_selector" android:paddingLeft="13dp" android:paddingRight="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+        <TextView android:textSize="14sp" android:textColor="#5a6473" android:id="@+id/tv_fold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X个你关注的主播正在直播" />
+        <ImageView android:id="@+id/iv_fold_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/follow_recommend_unfold_icon" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_1" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_2" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_3" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_4" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_5" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_6" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_7" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_8" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_9" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_10" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_11" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_12" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_13" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_14" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_15" />
+    <item android:duration="@integer/user_center_member_aciont_duration" android:drawable="@drawable/user_center_member_action_flash_16" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_17" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_18" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_19" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_20" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_21" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_22" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_23" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_24" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_25" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_26" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_27" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_28" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_29" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_30" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_31" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_32" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_33" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_34" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_35" />
+    <item android:duration="@integer/user_center_member_aciont_duration1" android:drawable="@drawable/user_center_member_action_flash_36" />
+</animation-list>

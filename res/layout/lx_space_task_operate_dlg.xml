@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/lx_space_task_operate_first_btn" android:text="@string/lx_space_create_url_task" style="@style/LXTaskOperateDlgItemStyle" />
+    <include layout="@layout/line" />
+    <Button android:id="@+id/lx_space_task_operate_copy_original_url_btn" android:text="@string/lx_space_task_operate_copy_original_url" style="@style/LXTaskOperateDlgItemStyle" />
+    <include layout="@layout/line" />
+    <Button android:textColor="#f15e4a" android:id="@+id/lx_space_task_operate_delete_btn" android:text="@string/lx_space_task_operate_delete" style="@style/LXTaskOperateDlgItemStyle" />
+    <include layout="@layout/line" />
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <Button android:id="@+id/lx_space_task_operate_cancel_btn" android:layout_height="UNKNOWN_DATA_0x3001" android:text="取消" style="@style/LXTaskOperateDlgItemStyle" />
+</LinearLayout>

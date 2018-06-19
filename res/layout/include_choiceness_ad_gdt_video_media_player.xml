@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/item_icon_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="13dp" app:layout_marginRight="13dp" app:layout_below="@+id/item_title" app:ratio="@dimen/choiceness_ad_image_width_height_radio">
+        <FrameLayout app:id="@+id/item_player_container" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="centerCrop" />
+        <com.qq.e.ads.nativ.MediaView app:id="@+id/media_view_gdt" app:layout_width="match_parent" app:layout_height="match_parent" />
+        <ImageView app:id="@+id/item_poster" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/choiceness_icon_default" app:scaleType="fitXY" />
+        <include layout="@layout/player_poster_loading_layout" />
+        <include layout="@layout/gdt_video_ad_error_view" />
+        <TextView app:textSize="12sp" app:textColor="@color/white" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/item_duration" app:background="#4c000000" app:paddingLeft="6dp" app:paddingTop="4dp" app:paddingRight="6dp" app:paddingBottom="4dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+    </com.xunlei.downloadprovider.ad.taskdetail.view.XRectangleFrameLayout>
+</merge>

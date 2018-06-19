@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xunlei.downloadprovider.homepage.follow.ui.view.RecommendFollowView android:id="@+id/recommend" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.xunlei.downloadprovider.homepage.follow.ui.view.RecommendFollowLiveView android:id="@+id/recommend_live" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

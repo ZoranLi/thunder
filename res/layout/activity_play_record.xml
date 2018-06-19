@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/common_layout_content_bkg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_title_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/title_bar_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0240" layout="@layout/common_title_bar" />
+            <include android:visibility="gone" layout="@layout/common_edit_titlebar" />
+        </FrameLayout>
+        <View android:background="@color/common_top_tab_separate_content_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/play_record_list_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_title_bar_layout"
+        <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/rl_load_or_pay_layout" android:background="#f2fef7de" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <RelativeLayout android:id="@+id/rl_load_or_pay_layout_up" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:textColor="#b99b64" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_load_or_pay_tip" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="10sp" android:textColor="@color/global_text_color_1" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_go_to_load_or_pay" android:background="@drawable/banner_button_selector" android:layout_width="UNKNOWN_DATA_0x4801" android:layout_height="UNKNOWN_DATA_0x1b01" android:layout_marginRight="13dp" android:text="立即加速" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@+id/relax_dyn_item_split_line_2" android:background="#d9d1c0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_below="@+id/rl_load_or_pay_layout_up" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/relax_dyn_item_split_line_1" android:background="#d9d1c0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_below="@+id/rl_load_or_pay_layout" />
+        <RelativeLayout android:id="@+id/play_record_list_widget" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/play_record_list_bottom_delete_bar" android:layout_below="@+id/relax_dyn_item_split_line_1" android:layout_alignParentLeft="true">
+            <com.handmark.pulltorefresh.library.PullToRefreshListView ptr:id="@+id/play_record_list_view" ptr:fadingEdge="UNKNOWN_DATA_0x0" ptr:layout_width="match_parent" ptr:layout_height="match_parent" ptr:cacheColorHint="#00000000" ptr:divider="0x0" ptr:ptrRefreshableViewBackground="@drawable/frame_entertainment_list_bg" ptr:ptrHeaderBackground="@color/play_record_item_bg_normal" ptr:ptrHeaderTextColor="#cc646569" ptr:ptrMode="3" ptr:ptrScrollingWhileRefreshingEnabled="true" />
+            <com.xunlei.common.commonview.UnifiedLoadingView ptr:id="@+id/progress_load_root" ptr:visibility="gone" ptr:layout_width="match_parent" ptr:layout_height="match_parent" />
+            <include ptr:id="@+id/play_record_list_login_warn" ptr:background="@color/white" ptr:visibility="gone" ptr:layout_width="match_parent" ptr:layout_height="match_parent" layout="@layout/layout_play_record_login_view" />
+            <com.xunlei.thunder.commonui.widget.ErrorBlankView ptr:id="@+id/layout_no_network_error_view" ptr:visibility="gone" ptr:layout_width="match_parent" ptr:layout_height="match_parent" />
+        </RelativeLayout>
+        <LinearLayout ptr:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ptr:orientation="vertical" ptr:id="@+id/play_record_list_bottom_delete_bar" ptr:background="@drawable/common_delete_buttom_layout_bkg_shape" ptr:visibility="gone" ptr:layout_width="match_parent" ptr:layout_height="wrap_content" ptr:layout_alignParentBottom="true">
+            <TextView ptr:background="#dedede" ptr:layout_width="match_parent" ptr:layout_height="UNKNOWN_DATA_0x100" />
+            <include layout="@layout/common_delete_buttom_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

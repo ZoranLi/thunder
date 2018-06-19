@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/just_for_space" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rl_packet_contain" android:background="@drawable/ic_share_profit_packet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#ffedb7" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="165dp" android:text="恭喜!" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13sp" android:textColor="#ffed87" android:id="@+id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="获得今日分享红包" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ffffff" android:id="@+id/tv_profit_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/tv_des" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/iv_profit_look" android:background="@drawable/btn_profit_look_selector" android:layout_width="UNKNOWN_DATA_0x10a01" android:layout_height="UNKNOWN_DATA_0x3a01" android:layout_marginTop="-24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rl_packet_contain" />
+    </FrameLayout>
+</LinearLayout>

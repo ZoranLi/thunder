@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp">
+    <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/dlg_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tips" style="@style/dlg_title_txt_style" />
+        <RelativeLayout android:paddingLeft="17dp" android:paddingRight="17dp" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dlg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerHorizontal="true" style="@style/dlg_content_txt_style" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_21_dp" android:layout_below="@id/dlg_content">
+                <TextView android:textSize="@dimen/payment_10_sp" android:textColor="@color/payment_light_gray" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/privilege_1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="加速特权" android:drawableTop="@drawable/pay_float_accel" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/payment_10_sp" android:textColor="@color/payment_light_gray" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/privilege_2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="加速特权" android:drawableTop="@drawable/pay_float_accel" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/payment_10_sp" android:textColor="@color/payment_light_gray" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/privilege_3" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="加速特权" android:drawableTop="@drawable/pay_float_accel" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/dlg_title_layout">
+        <View style="@style/dlg_horizontal_divider" />
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/dlg_btn_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b00db" android:weightSum="2.0">
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_cancel_btn" android:background="@drawable/left_button_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/dlg_left_white_button" />
+            <View android:id="@id/dlg_btn_vertical_divider" android:visibility="visible" style="@style/dlg_vertical_divider" />
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_confirm_btn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/dlg_right_button" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

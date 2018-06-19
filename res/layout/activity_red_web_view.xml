@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.personal.redenvelope.redenvelopedetail.RedWebTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f" />
+    <include layout="@layout/line" />
+    <com.xunlei.downloadprovider.web.base.core.CustomWebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

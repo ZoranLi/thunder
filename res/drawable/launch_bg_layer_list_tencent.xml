@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:src="@drawable/splash_default_bg" android:tileMode="disabled" />
+    </item>
+    <item>
+        <bitmap android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:src="@drawable/splash_default_bird" android:tileMode="disabled" />
+    </item>
+    <item android:bottom="15dp">
+        <bitmap android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:src="@drawable/splash_default_xunlei_copyright" android:tileMode="disabled" />
+    </item>
+    <item android:bottom="80dp">
+        <bitmap android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:src="@drawable/loading_yingyongbao" android:tileMode="disabled" />
+    </item>
+</layer-list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="@dimen/task_tab_card_interval" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/cardView" android:background="@drawable/task_card_bkg" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x6401">
+        <FrameLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/edit_mode_select_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/edit_mode_select_btn" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/big_unselected" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/taskItemLayout" android:paddingLeft="@dimen/task_card_padding" android:paddingTop="10dp" android:paddingRight="@dimen/task_card_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/edit_mode_select_layout" android:layout_toStartOf="@+id/edit_mode_select_layout"
+            <RelativeLayout android:id="@+id/download_info_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0220" android:layout_marginRight="110dp" layout="@layout/layout_task_card_template_download_card_basic_info_2" />
+                <include android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x7f0b0217" android:layout_height="wrap_content" android:layout_alignParentRight="true" layout="@layout/layout_task_card_template_download_card_icon_style2" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <include layout="@layout/layout_task_card_snapshot_tip_popup" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xa01" android:layout_marginTop="10dp" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@+id/progressBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/layout_task_list_download_card_under_banner" />
+</LinearLayout>

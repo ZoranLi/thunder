@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/task_card_bkg" android:paddingLeft="@dimen/task_card_padding" android:paddingTop="10dp" android:paddingRight="@dimen/task_card_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/task_tab_card_interval">
+    <LinearLayout android:orientation="vertical" android:id="@+id/cardContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0220" android:layout_marginBottom="10dp">
+            <ImageView android:id="@+id/iconImageView" android:layout_width="UNKNOWN_DATA_0x7f0b0217" android:layout_height="UNKNOWN_DATA_0x7f0b0216" android:src="@drawable/xunlei_vip_default_style1" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+            <com.xunlei.downloadprovider.xlui.widget.ZHTextView android:ellipsize="end" android:id="@+id/titleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/task_card_icon_interval" android:text="您的白金会员即将到期" android:maxLines="2" android:layout_toLeftOf="@+id/iconImageView" style="@style/TaskCardTitleTextAppearance" />
+            <TextView android:id="@+id/detailTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="@dimen/task_card_icon_interval" android:text="马上续费立享低至8折优惠" android:layout_toLeftOf="@+id/iconImageView" android:layout_below="@+id/titleTextView" style="@style/TaskCardDetailTextAppearance" />
+            <TextView android:id="@+id/actionButton" android:paddingLeft="@dimen/task_card_button_horizontal_padding" android:paddingRight="@dimen/task_card_button_horizontal_padding" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b020c" android:layout_marginRight="@dimen/task_card_icon_interval" android:minWidth="@dimen/task_card_button_width" android:text="立即续费" android:layout_toLeftOf="@+id/iconImageView" android:layout_alignParentBottom="true" style="@style/TaskCardOrangeButtonAppearance" />
+        </RelativeLayout>
+        <include layout="@layout/layout_task_card_close_section_style2" />
+    </LinearLayout>
+</FrameLayout>

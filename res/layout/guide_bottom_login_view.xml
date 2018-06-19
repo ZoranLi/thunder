@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b0139"
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/guide_login_gray_line" />
+        <TextView android:textSize="13sp" android:textColor="#979aa0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:text="@string/guide_bottom_login_view_top_text" />
+        <include layout="@layout/guide_login_gray_line" />
+    </LinearLayout>
+    <RelativeLayout android:paddingLeft="39dp" android:paddingRight="39dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="18dp">
+        <TextView android:id="@+id/btn_wechat" android:text="微信" android:drawableTop="@drawable/guide_bottom_login_btn_wechat_selector" android:layout_alignParentLeft="true" style="@style/GuideBottomLoginBtn" />
+        <TextView android:id="@+id/btn_qq" android:text="QQ" android:drawableTop="@drawable/guide_bottom_login_btn_qq_selector" android:layout_centerHorizontal="true" style="@style/GuideBottomLoginBtn" />
+        <TextView android:id="@+id/btn_account" android:text="手机号/帐号" android:drawableTop="@drawable/guide_bottom_login_btn_account_selector" android:layout_alignParentRight="true" style="@style/GuideBottomLoginBtn" />
+    </RelativeLayout>
+</LinearLayout>

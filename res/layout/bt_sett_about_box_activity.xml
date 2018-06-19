@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/common_layout_content_bkg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+    <ScrollView android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:scrollingCache="false" android:layout_weight="1.0">
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp">
+                <ImageView android:id="@+id/bt_sett_about_logo" android:background="@mipmap/ic_launcher" android:layout_width="UNKNOWN_DATA_0x4001" android:layout_height="UNKNOWN_DATA_0x4001" android:layout_marginTop="30dp" android:contentDescription="@string/common_imageview_contentdescription" />
+                <TextView android:textSize="18sp" android:textColor="#262f3c" android:layout_marginTop="12dp" android:text="@string/app_name" style="@style/SettingAboutTitle" />
+                <TextView android:textSize="12sp" android:textColor="#7b7b7b" android:id="@+id/bt_sett_about_version" android:layout_marginTop="1dp" android:text="5.0.2.0000" style="@style/SettingAboutTitle" />
+            </LinearLayout>
+            <FrameLayout android:background="@drawable/settings_group_bg" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/settings_item_radius_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="#262f3c" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="手机迅雷官方微信" android:drawableLeft="@drawable/settings_about_warn" android:drawablePadding="6dp" />
+                    <View android:background="@drawable/settings_group_bg" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_marginTop="10dp" />
+                    <TextView android:textSize="13sp" android:textColor="#262f3c" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="想获取最新最热大片，想第一时间参与活动赢iphone6等豪礼，想直接微信购买会员，请关注官方微信！" />
+                    <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#262f3c" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="关注方式：" />
+                    <TextView android:textSize="13sp" android:textColor="#262f3c" android:id="@+id/bt_sett_about_weixin_step1" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+                    <TextView android:textSize="13sp" android:textColor="#262f3c" android:id="@+id/bt_sett_about_weixin_step2" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+                    <TextView android:textSize="13sp" android:textColor="#262f3c" android:id="@+id/bt_sett_about_weixin_step3" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:background="@drawable/settings_group_bg" android:padding="@dimen/EntryBorderWidth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/settings_item_radius_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="#262f3c" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="手机迅雷官方微博" android:drawableLeft="@drawable/settings_about_warn" android:drawablePadding="6dp" />
+                    <View android:background="@drawable/settings_group_bg" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_marginTop="10dp" />
+                    <TextView android:textSize="13sp" android:textColor="#262f3c" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="欢迎关注官方微博，在这里可畅所欲言，可及时得到官方回应，可随时收到蕾妹福利。" />
+                    <TextView android:textSize="17sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/bt_sett_about_button_weibo" android:background="@drawable/settings_about_big_btn_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginLeft="50dp" android:layout_marginTop="25dp" android:layout_marginRight="50dp" android:layout_marginBottom="25dp" android:text="点击进入官方微博" />
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:textSize="13sp" android:textColor="#ff4273e1" android:id="@+id/bt_sett_about_button_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/about_share_by_tel" />
+            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <TextView android:textColor="#c9c9c9" android:visibility="gone" android:layout_marginTop="11dp" android:text="@string/about_weixin_info" style="@style/SettingAboutTitle" />
+                <TextView android:textSize="12sp" android:textColor="#6e6d6d" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_marginTop="15dp" android:text="@string/about_right_chn" style="@style/SettingSubTitle" />
+                <TextView android:textSize="12sp" android:textColor="#6e6d6d" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_marginTop="4dp" android:text="@string/sett_about_bottom_2" style="@style/SettingSubTitle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

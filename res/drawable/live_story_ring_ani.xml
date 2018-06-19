@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_000" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_001" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_002" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_003" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_004" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_005" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_006" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_007" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_008" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_009" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_010" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_011" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_012" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_013" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_014" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_015" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_016" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_017" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_018" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_019" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_020" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_021" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_022" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_023" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_024" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_025" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_026" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_027" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_028" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_029" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_030" />
+    <item android:duration="62" android:drawable="@drawable/live_story_ring_031" />
+</animation-list>

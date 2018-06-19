@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/activity_main2" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="horizontal" android:background="#fff6f6f6" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/browser_controller_back" android:background="0x106000d" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_back_normal" android:scaleType="centerInside" />
+        <TextView android:textSize="20sp" android:textColor="#666" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/browser_controller_title" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="5.0" />
+        <ImageButton android:id="@id/browser_controller_back2" android:background="0x106000d" android:paddingLeft="20dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="centerInside" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/mProgressBar" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x301" android:progressDrawable="@drawable/progress_bar_horizontal" style="?unknown_attr_ref: 1010078" />
+    <WebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

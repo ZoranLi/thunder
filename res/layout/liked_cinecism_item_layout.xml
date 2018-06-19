@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/white" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <TextView app:textSize="12sp" app:textColor="#969aa0" app:id="@+id/tv_time" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="13dp" app:layout_marginTop="11dp" />
+    <LinearLayout app:orientation="horizontal" app:background="@drawable/bg_normal_press_selector" app:paddingLeft="13dp" app:paddingTop="9.5dp" app:paddingRight="13dp" app:paddingBottom="9.5dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:baselineAligned="false">
+        <FrameLayout app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <ImageView app:id="@+id/iv_poster" app:layout_width="UNKNOWN_DATA_0x6b01" app:layout_height="UNKNOWN_DATA_0x4601" app:src="@color/black" app:scaleType="centerCrop" />
+            <TextView app:textSize="9sp" app:textColor="0x106000b" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="0x0" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="5dp" app:layout_marginBottom="4dp" app:text="影评" app:drawableLeft="@drawable/ic_detail_cinceism" app:drawablePadding="2dp" app:drawableStart="@drawable/ic_detail_cinceism" />
+        </FrameLayout>
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginLeft="13dp" app:layout_marginTop="1dp" app:layout_weight="1.8">
+            <TextView app:textSize="15sp" app:textColor="#3b424c" app:ellipsize="end" app:id="@id/tv_title" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxLines="2" app:lineSpacingExtra="3dp" />
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent">
+                <com.xunlei.thunder.commonui.widget.CircleImageView app:id="@+id/iv_publisher_avatar" app:layout_width="UNKNOWN_DATA_0xf01" app:layout_height="UNKNOWN_DATA_0xf01" app:src="@drawable/ic_default_avatar" app:border_width="1dp" app:border_color="#ffffff" />
+                <TextView app:textSize="11sp" app:textColor="#969aa0" app:ellipsize="end" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/tv_publisher_name" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="3dp" app:maxLines="1" app:maxEms="5" />
+                <TextView app:textSize="11sp" app:textColor="#969aa0" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/tv_play" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="13dp" app:drawableLeft="@drawable/ic_short_movie_detail_recommend_play_count" app:drawablePadding="4dp" />
+                <TextView app:textSize="11sp" app:textColor="#969aa0" app:ellipsize="end" app:id="@+id/tv_like" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="13dp" app:maxLines="1" app:drawableLeft="@drawable/ic_short_movie_detail_recommend_like_count" app:drawablePadding="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

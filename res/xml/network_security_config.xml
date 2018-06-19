@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <debug-overrides>
+        <trust-anchors>
+            <certificates overridePins="true" src="system" />
+            <certificates overridePins="true" src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

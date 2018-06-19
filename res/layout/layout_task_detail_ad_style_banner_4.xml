@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parent_view" android:background="@drawable/task_card_bkg" android:paddingLeft="@dimen/task_detail_banner_ad_spacing" android:paddingRight="@dimen/task_detail_banner_ad_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_card_interval">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+        <include layout="@layout/task_detail_ad_style_banner_image_4" />
+        <ImageView android:id="@+id/iv_mask" android:background="@drawable/task_detail_ad_style_banner_mask" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/task_detail_banner_ad_4_desc_text_size" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_title" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:maxLines="1" android:includeFontPadding="false" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2501">
+        <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_tag" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f0b021e" android:minWidth="@dimen/task_card_ad_tag_min_width" android:text="广告" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TaskCardPromotionTagAppearance" />
+        <TextView android:textSize="10sp" android:id="@id/btn_action" android:layout_width="UNKNOWN_DATA_0x7f0b0225" android:layout_height="UNKNOWN_DATA_0x7f0b0224" android:layout_marginLeft="7dp" android:text="立即下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TaskCardBlueButtonAppearance" />
+        <TextView android:textSize="@dimen/task_detail_banner_ad_source_text_size" android:textColor="@color/task_detail_banner_ad_source_text_color" android:ellipsize="end" android:id="@+id/tv_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="" android:maxLines="1" android:layout_toLeftOf="@id/btn_action" android:layout_toRightOf="@+id/tv_tag" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="__picker_menu_picker">res/menu/__picker_menu_picker.xml</menu>
+    <menu name="__picker_menu_preview">res/menu/__picker_menu_preview.xml</menu>
+</resources>

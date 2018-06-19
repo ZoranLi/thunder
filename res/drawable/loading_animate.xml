@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00000" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00001" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00002" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00003" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00004" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00005" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00006" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00007" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00008" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00009" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00010" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00011" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00012" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00013" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00014" />
+    <item android:duration="@integer/pull_refreshing_amin_duration" android:drawable="@drawable/refreshing_00015" />
+    <item android:duration="450" android:drawable="@drawable/refreshing_00016" />
+</animation-list>

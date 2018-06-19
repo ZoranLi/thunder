@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">მთავარზე ნავიგაცია</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">ზემოთ ნავიგაცია</string>
+    <string name="abc_action_menu_overflow_description">მეტი ვარიანტები</string>
+    <string name="abc_action_mode_done">დასრულდა</string>
+    <string name="abc_activity_chooser_view_see_all">ყველას ნახვა</string>
+    <string name="abc_activitychooserview_choose_application">აპის არჩევა</string>
+    <string name="abc_capital_off">გამორთულია</string>
+    <string name="abc_capital_on">ჩართულია</string>
+    <string name="abc_search_hint">ძიება...</string>
+    <string name="abc_searchview_description_clear">მოთხოვნის გასუფთავება</string>
+    <string name="abc_searchview_description_query">ძიების მოთხოვნა</string>
+    <string name="abc_searchview_description_search">ძიება</string>
+    <string name="abc_searchview_description_submit">მოთხოვნის გადაგზავნა</string>
+    <string name="abc_searchview_description_voice">ხმოვანი ძიება</string>
+    <string name="abc_shareactionprovider_share_with">გაზიარება:</string>
+    <string name="abc_shareactionprovider_share_with_application">%s-თან გაზიარება</string>
+    <string name="abc_toolbar_collapse_description">აკეცვა</string>
+    <string name="search_menu_title">ძიება</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="hms_abort">შეწყვეტა</string>
+    <string name="hms_abort_message">შევწყვიტოთ ჩამოტვირთვა?</string>
+    <string name="hms_bindfaildlg_message">%1$s -ს არ შეუძლია Huawei მობილური სერვისების გამოყენება. გთხოვთ გაუშვით Phone Manager ან გადადით პარამეტრებში, ჩართეთ ყველა ნებართვა %2$s -სთვის (მათ შორის ავტო-გაშვება და მეორადი გაშვება), და ხელახლა სცადეთ.</string>
+    <string name="hms_cancel">გაუქმება</string>
+    <string name="hms_check_failure">განახლებების შემოწმება ვერ მოხერხდა.</string>
+    <string name="hms_check_no_update">თქვენ უკვე იყენებთ უახლეს ვერსიას.</string>
+    <string name="hms_checking">განახლებების შემოწმება...</string>
+    <string name="hms_confirm">კარგი</string>
+    <string name="hms_download_failure">Huawei Mobile სერვისების პაკეტი ვერ ჩამოიტვირთა.</string>
+    <string name="hms_download_no_space">საკმარისი თავისუფალი სივრცე არ არის. ჩამოტვირთვის დასრულება შეუძლებელია.</string>
+    <string name="hms_download_retry">ვერ ჩამოიტვირთა. გსურთ, სცადოთ ხელახლა?</string>
+    <string name="hms_downloading">მიმდინარეობს Huawei Mobile სერვისების ჩამოტვირთვა | პროგრესი: %d%%</string>
+    <string name="hms_downloading_new">მიმდინარეობს HMS-ის ჩამოტვირთვა</string>
+    <string name="hms_install">დაინსტალირება</string>
+    <string name="hms_install_message">Huawei Mobile Services უნდა იყოს დაინსტალირებული ამ ფუნქციის გამოსაყენებლად. დაინსტალირდეს?</string>
+    <string name="hms_retry">გამეორება</string>
+    <string name="hms_update">განახლება</string>
+    <string name="hms_update_message">განაახლეთ Huawei Mobile სერვისების უახლესი ვერსიით, ამ ფუნქციის გამოსაყენებლად. გსურთ ახლავე განახლება?</string>
+    <string name="hms_update_message_new">ეს სერვისი მოითხოვს შემდეგი პროგრამის უახლეს ვერსიას:\n\n%1$s</string>
+    <string name="hms_update_title">Huawei Mobile სერვისები</string>
+</resources>

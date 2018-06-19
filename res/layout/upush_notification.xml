@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001"
+    <RelativeLayout android:id="@id/upush_notification1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <ImageView android:id="@id/notification_large_icon1" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="UNKNOWN_DATA_0x3001" android:scaleType="fitXY" />
+        <TextView android:textSize="16sp" android:textColor="#000000" android:id="@id/notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:text="Title" android:maxLines="1" android:layout_toRightOf="@id/notification_large_icon1" />
+        <TextView android:textColor="#000000" android:ellipsize="marquee" android:id="@id/notification_text" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:text="Message" android:scrollHorizontally="false" android:singleLine="true" android:layout_toRightOf="@id/notification_large_icon1" android:layout_below="@id/notification_title" android:marqueeRepeatLimit="marquee_forever" />
+        <requestFocus />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/upush_notification2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/notification_large_icon2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    </RelativeLayout>
+</RelativeLayout>

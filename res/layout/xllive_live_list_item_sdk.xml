@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#ffefefef" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x801" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/head" android:background="0x106000b" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01">
+        <com.xunlei.tdlive.control.RoundImageView android:id="@id/useravatar" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:src="@drawable/xllive_avatar_default" />
+        <TextView android:textSize="12sp" android:textColor="#2d2d2d" android:ellipsize="end" android:id="@id/username" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="哈哈1111111111111111111111111" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#ed4c37" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5788" />
+            <TextView android:textSize="12sp" android:textColor="#a2a3b2" android:id="@id/audience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在观看" />
+            <TextView android:textSize="14sp" android:textColor="#1294f6" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/addown" android:background="@drawable/xllive_list_down_button_selector" android:paddingLeft="9dp" android:paddingTop="5dp" android:paddingRight="9dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即下载" android:lineSpacingExtra="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/playthumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/xllive_img_loding" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" />
+        <TextView android:textSize="12sp" android:textColor="#fff" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/xllive_live_flag" android:background="@drawable/xllive_live_replay_flag" android:paddingRight="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="" />
+        <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/xllive_list_mask" android:background="@drawable/xllive_list_mask" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="14sp" android:textColor="#fff" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/title" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="标题标题标题" />
+    </FrameLayout>
+    <View android:background="#ffefefef" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x201" />
+</LinearLayout>

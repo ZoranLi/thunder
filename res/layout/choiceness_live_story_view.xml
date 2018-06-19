@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:id="@+id/story_top" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1e01">
+        <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/liveing_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_story_living_ani" />
+        <TextView android:textSize="14dp" android:textColor="#3b424c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="正在直播" android:layout_weight="1.0" />
+        <TextView android:textSize="14dp" android:textColor="#979aa0" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="查看全部" android:drawableRight="@drawable/live_story_more" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/live_story_recycle_view" android:background="#ffffff" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+</LinearLayout>

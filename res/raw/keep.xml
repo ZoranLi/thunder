@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:shrinkMode="safe"
+    tools:keep="@drawable/gdt_ic_download,
+    @drawable/gdt_ic_pause,
+    @drawable/gdt_ic_enter_fullscreen,
+    @drawable/gdt_ic_exit_fullscreen,
+    @drawable/gdt_ic_pause,
+    @drawable/gdt_ic_play,
+    @drawable/gdt_ic_progress_thumb_normal,
+    @drawable/gdt_ic_replay,
+    @drawable/gdt_ic_seekbar_background,
+    @drawable/gdt_ic_seekbar_progress,
+    @drawable/gdt_ic_volume_off,
+    @drawable/gdt_ic_volume_on" />

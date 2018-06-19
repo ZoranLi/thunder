@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:interpolator="0x10a0005" android:duration="60" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:startOffset="0" android:fromXScale="1.0" android:toXScale="2.5" android:fromYScale="1.0" android:toYScale="2.5" />
+    <scale android:interpolator="0x10a0005" android:duration="60" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:startOffset="60" android:fromXScale="1.0" android:toXScale="0.4" android:fromYScale="1.0" android:toYScale="0.4" />
+    <scale android:duration="60" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:startOffset="120" android:fromXScale="1.0" android:toXScale="1.2" android:fromYScale="1.0" android:toYScale="1.2" />
+    <scale android:duration="60" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:startOffset="180" android:fromXScale="1.0" android:toXScale="0.83" android:fromYScale="1.0" android:toYScale="0.83" />
+    <scale android:duration="60" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:startOffset="240" android:fromXScale="1.0" android:toXScale="1.2" android:fromYScale="1.0" android:toYScale="1.2" />
+    <scale android:duration="100" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:startOffset="300" android:fromXScale="1.0" android:toXScale="0.83" android:fromYScale="1.0" android:toYScale="0.83" />
+</set>

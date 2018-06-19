@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/vod_speed_rate_container" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.xunlei.downloadprovider.vod.speedplayback.VodSpeedRateTextView android:textSize="8dp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/vod_speed_rate_view" android:background="@drawable/vod_speed_rate_bg" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1201" android:text="1.0X" />
+</FrameLayout>

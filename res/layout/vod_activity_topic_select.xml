@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/xlps_edit_title_ly" app:background="#ffffff" app:focusable="true" app:focusableInTouchMode="true" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" layout="@layout/vod_topic_select_topbar" />
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="6dp">
+        <com.xunlei.downloadprovider.vod.recordpublish.VodTopicSearchBar app:id="@+id/xlps_topic_search_bar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+        <View app:background="#f0f3f5" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x100" app:layout_marginTop="6dp" />
+        <com.xunlei.downloadprovider.vod.recordpublish.flowlayout.FlowLayout app:id="@+id/tags" app:paddingLeft="12dp" app:paddingRight="12dp" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:xlps_maxLines="10" app:xlps_spacingLength="10dp" app:xlps_spacingThickness="7dp" />
+        <LinearLayout app:orientation="vertical" app:id="@+id/xlps_hot_topic_ly" app:paddingLeft="12dp" app:paddingRight="12dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="15dp">
+            <TextView app:textSize="11sp" app:textColor="#80000000" app:id="@+id/xlps_hot_topic_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="15dp" app:text="热门话题推荐" />
+            <android.support.v7.widget.RecyclerView app:id="@+id/xlps_hot_topic_rv" app:layout_width="match_parent" app:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1e01" />
+</LinearLayout>

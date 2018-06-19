@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="360dp" />
+    <size android:height="@dimen/guide_follow_avatar_height" android:width="@dimen/guide_follow_avatar_width" />
+    <solid android:color="#f0f1f2" />
+</shape>

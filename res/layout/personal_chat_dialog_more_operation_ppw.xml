@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/popup_menu_window_bkg" android:layout_width="UNKNOWN_DATA_0x7f0b01c6" android:layout_height="wrap_content">
+    <TextView android:id="@+id/btn_watch_info" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01c5" android:text="查看TA的资料" android:drawableLeft="@drawable/icon_personal_chat_dialog_watch_info" style="@style/PersonalChatDialogMoreOperationItem" />
+    <include layout="@layout/line" />
+    <TextView android:id="@+id/btn_clear_chat_messages" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01c5" android:text="清空聊天记录" android:drawableLeft="@drawable/icon_personal_chat_dialog_clear_chat_messages" style="@style/PersonalChatDialogMoreOperationItem" />
+    <TextView android:id="@+id/btn_block" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01c5" android:text="拉黑" android:drawableLeft="@drawable/icon_personal_chat_dialog_block" style="@style/PersonalChatDialogMoreOperationItem" />
+    <include layout="@layout/line" />
+    <TextView android:id="@+id/btn_report" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01c5" android:text="拉黑并举报" android:drawableLeft="@drawable/icon_personal_chat_dialog_report" style="@style/PersonalChatDialogMoreOperationItem" />
+</LinearLayout>

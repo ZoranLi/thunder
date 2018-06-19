@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:background="0x106000b" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginTop="5dp">
+        <TextView android:textStyle="bold" android:textColor="#3b424c" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1401" android:text="相关用户" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="11sp" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tv_move" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:drawableRight="@drawable/search_enter_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

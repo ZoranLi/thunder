@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/comnpletelist_bg" android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/complete_listview" android:background="0x106000d" android:scrollbars="UNKNOWN_DATA_0x0" android:fadingEdge="UNKNOWN_DATA_0x0" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:cacheColorHint="0x106000d" android:divider="@drawable/bt_cm_divline" android:dividerHeight="1dp" />
+</LinearLayout>

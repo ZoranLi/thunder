@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" thunder:orientation="vertical" thunder:background="@drawable/common_layout_content_bkg" thunder:layout_width="match_parent" thunder:layout_height="match_parent">
+    <include thunder:layout_width="match_parent" thunder:layout_height="UNKNOWN_DATA_0x7f0b009f" layout="@layout/web_title_bar" />
+    <com.xunlei.downloadprovider.web.base.core.CustomWebView thunder:id="@+id/funpaly_webview" thunder:layout_width="match_parent" thunder:layout_height="match_parent" thunder:layout_below="@+id/title_layout" />
+</LinearLayout>

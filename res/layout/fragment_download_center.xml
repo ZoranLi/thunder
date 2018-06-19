@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.xunlei.downloadprovider.download.center.widget.DownloadTitleBarView app:id="@+id/download_center_title" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b009f" />
+    <com.xunlei.downloadprovider.download.center.widget.DownloadCenterSelectFileTitleView app:id="@+id/download_center_select_file_title" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0b009f" />
+    <FrameLayout app:id="@+id/tabLayout_title_container" app:background="@color/common_blue" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2201" app:layout_below="@+id/download_center_title" />
+    <FrameLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_above="@+id/storageView_container" app:layout_below="@+id/tabLayout_title_container">
+        <android.support.design.widget.CoordinatorLayout app:id="@+id/main_content" app:layout_width="match_parent" app:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout app:id="@+id/appbar" app:background="@color/common_blue" app:visibility="visible" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="34dp" app:measureWithLargestChild="false" app:elevation="0dp">
+                <com.xunlei.downloadprovider.download.center.widget.DownloadBriefInfoHeaderView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/downloadBriefInfo" app:paddingBottom="8dp" app:visibility="visible" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_scrollFlags="1" />
+                <FrameLayout app:id="@+id/tabLayout_appbar_container" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2201">
+                    <com.xunlei.downloadprovider.download.center.widget.DownloadCenterTabLayout app:id="@+id/tabLayout" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2201" app:tabIndicatorColor="0x106000d" app:tabIndicatorHeight="@dimen/download_indicator_height" app:tabBackground="@color/common_blue" app:tabGravity="0" style="@style/DownloadCenterTabLayoutStyle" />
+                </FrameLayout>
+            </android.support.design.widget.AppBarLayout>
+            <com.xunlei.downloadprovider.download.center.widget.DownloadCenterViewPager app:id="@+id/taskListViewPager" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/storageView_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/expand_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" />
+        <com.xunlei.downloadprovider.download.center.widget.DownloadStorageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/storageView" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xf01" />
+    </FrameLayout>
+    <com.xunlei.downloadprovider.download.center.widget.DownloadCenterBottomView android:id="@+id/bottom_operate_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/iv_go_to_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:layout_marginBottom="13dp" android:src="@drawable/go_to_top_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.xunlei.downloadprovider.web.website.view.CollectionUserSyncTipBottomView android:id="@+id/cloud_sync_bottom_card" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_alignParentBottom="true" />
+</RelativeLayout>

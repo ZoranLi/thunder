@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/lx_space_empty_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="93dp" />
+    <TextView android:textSize="19sp" android:textColor="@color/lx_space_main_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/lx_space_vip_privilege_tip" />
+    <TextView android:textSize="12sp" android:textColor="@color/lx_space_sub_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/lx_space_privelege_detail" />
+    <Button android:textSize="17sp" android:textColor="@color/lx_space_golden" android:id="@+id/lx_space_open_vip_btn" android:background="@drawable/lx_space_black_btn_selector" android:layout_width="UNKNOWN_DATA_0x9c01" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginTop="42dp" android:text="@string/lx_space_open_vip" />
+</LinearLayout>

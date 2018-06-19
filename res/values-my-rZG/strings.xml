@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">ရပ္</string>
+    <string name="hms_abort_message">ေဒါင္းလုဒ္ကိုရပ္မည္လား?</string>
+    <string name="hms_bindfaildlg_message">%1$s သည္ Huawei မိုဘိုင္း ဝန္ေဆာင္မႈမ်ားကို သုံး၍ မရႏိုင္ပါ။ ဖုန္းမန္ေနဂ်ာအား ဖြင့္ပါ သို႔မဟုတ္ ဆက္တင္သို႔ သြားပါ၊ ထို႔ေနာက္ %2$s အတြက္ ခြင့္ျပဳခ်က္မ်ား (အလိုအေလ်ာက္ ဖြင့္ျခင္းႏွင့္ အရန္ ဖြင့္ျခင္းမ်ား အပါအဝင္) အားလုံးကို ဖြင့္ေပးျပီး ထပ္မံ ၾကိဳးစားၾကည့္ပါ။</string>
+    <string name="hms_cancel">ဖ်က္သိမ္းမည္</string>
+    <string name="hms_check_failure">အသစ္မြမ္းမံမႈမ်ားကို စစ္ေဆးျခင္း မေအာင္ျမင္ခဲ့ပါ။</string>
+    <string name="hms_check_no_update">သင္သည္ေနာက္ဆံုးဗား႐ွင္းကို အသံုးျပဳေနၿပီးျဖစ္သည္။</string>
+    <string name="hms_checking">အပ္ဒိတ္မ်ားအတြက္ စစ္ေနပါသည္…</string>
+    <string name="hms_confirm">အိုေက</string>
+    <string name="hms_download_failure">Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ားပက္ေက့ခ်္ကို ေဒါင္းလုဒ္ဆြဲျခင္း မေအာင္ျမင္ခဲ့ပါ။</string>
+    <string name="hms_download_no_space">ေနရာလြတ္ မေလာက္ပါ။ ေဒါင္းလုဒ္မၿပီးစီးႏုိင္ပါ။</string>
+    <string name="hms_download_retry">ေဒါင္းလုဒ္ဆြဲျခင္း မေအာင္ျမင္ခဲ့ပါ။ ထပ္ႀကိဳးစားမည္လား?</string>
+    <string name="hms_downloading">Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ားကို ေဒါင္းလုဒ္ဆြဲေနသည္ | တိုးတက္မႈ- %d%%</string>
+    <string name="hms_downloading_new">HMS အား ေဒါင္းလုဒ္ဆြဲေနပါသည္</string>
+    <string name="hms_install">ထည့္သြင္းမည္</string>
+    <string name="hms_install_message">ဤအဂၤါရပ္ကိုသံုးရန္ Huawei မိုဘိုင္းဝန္ေဆာင္မႈမ်ားကို ထည့္သြင္းထားရမည္။ ထည့္သြင္းမည္လား။</string>
+    <string name="hms_retry">ျပန္ႀကိဳးစား</string>
+    <string name="hms_update">အပ္ဒိတ္</string>
+    <string name="hms_update_message">ဤအဂၤါရပ္ကိုအသံုးျပဳရန္ Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ား၏ ေနာက္ဆံုးထြက္ဗား႐ွင္းသို႔ အသစ္မြမ္းမံပါ။ ယခုအသစ္မြမ္းမံမည္လား။</string>
+    <string name="hms_update_message_new">ဤဝန္ေဆာင္မႈသည္ ေဖာ္ျပပါ အက္ပ္၏ ေနာက္ဆုံး ဗားရွင္းကို လိုအပ္ပါသည္ - \n\n%1$s</string>
+    <string name="hms_update_title">Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ား</string>
+</resources>

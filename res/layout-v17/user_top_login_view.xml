@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:id="@+id/already_login_layout" app:background="@drawable/bg_user_center_top" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x9501" app:layout_alignParentLeft="true" app:layout_alignParentTop="true" app:layout_alignParentStart="true"
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="60dp">
+            <RelativeLayout app:orientation="vertical" app:id="@+id/user_header_fl" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <ImageView app:id="@+id/user_head_sculpture_iv" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="30dp" app:src="@drawable/ic_user_header_imperial_crown" app:scaleType="center" />
+                <com.xunlei.thunder.commonui.widget.CircleImageView app:id="@+id/iv_user_icon" app:focusableInTouchMode="false" app:layout_width="UNKNOWN_DATA_0x7f0b0163" app:layout_height="UNKNOWN_DATA_0x7f0b0163" app:layout_marginLeft="24dp" app:src="@drawable/user_center_default_avatar" app:scaleType="centerCrop" />
+            </RelativeLayout>
+            <RelativeLayout app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginLeft="15dp" app:layout_marginRight="15dp" app:layout_weight="1.0">
+                <TextView app:textSize="@dimen/me_user_name_text_size" app:textColor="@color/white" app:ellipsize="end" app:id="@id/tv_user_name" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="xxxxxx" app:singleLine="true" />
+                <LinearLayout app:orientation="horizontal" app:id="@+id/vip_layout" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="7dp" app:layout_below="@id/tv_user_name">
+                    <RelativeLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rl_vip_icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="4dp">
+                        <ImageView app:id="@+id/iv_member_type_icon" app:paddingTop="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_normal_vip_level" app:layout_centerVertical="true" />
+                        <TextView app:textSize="@dimen/me_user_vip_text_size" app:textStyle="bold" app:id="@+id/tv_member_level" app:paddingTop="0.3dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="3.5dp" app:text="2" app:layout_alignRight="@+id/iv_member_type_icon" app:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/iv_year_vip_icon" app:paddingTop="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="7dp" />
+                    <TextView app:textSize="10sp" app:textColor="#ffffff" app:ellipsize="end" app:id="@+id/tv_expiration_date" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="999999" app:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout app:id="@+id/member_action_fl" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/member_action_ll" app:background="@drawable/personal_member_action_view_bg" app:paddingLeft="9dp" app:paddingRight="3dp" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2101">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_imperial_crown" app:scaleType="center" />
+                    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginRight="5dp" app:layout_weight="1.0">
+                        <TextView app:textSize="12dp" app:textColor="#af6700" app:ellipsize="end" app:id="@+id/member_action_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:singleLine="true" app:lineSpacingExtra="0dp" />
+                        <TextView app:textSize="9dp" app:textColor="#d37c00" app:ellipsize="end" app:id="@+id/member_action_subtitle_tv" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="0dp" app:singleLine="true" app:lineSpacingExtra="0dp" />
+                    </LinearLayout>
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_arrow_right_orange" app:scaleType="center" />
+                </LinearLayout>
+                <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/member_action_flash_iv" app:background="@drawable/user_center_member_action_ani" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x2f01" app:maxWidth="120dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="1px" app:layout_below="@+id/already_login_layout" layout="@layout/user_center_fans_bar" />
+    <RelativeLayout app:id="@+id/not_login_layout" app:background="@drawable/bg_user_center_top" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:id="@+id/iv_user_icon_no_login" app:background="@drawable/user_not_login_avatar" app:focusableInTouchMode="false" app:layout_width="UNKNOWN_DATA_0x3c01" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_marginTop="15dp" app:layout_centerHorizontal="true" />
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/ll_logging_layout" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:layout_below="@+id/iv_user_icon_no_login" app:layout_centerHorizontal="true">
+            <TextView app:textSize="12sp" app:textColor="#ffffff" app:paddingLeft="20dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="登录中" />
+            <com.xunlei.common.commonview.AnimationDot app:textSize="13sp" app:textColor="#979aa0" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/login_animation_dot" app:visibility="gone" app:clickable="false" app:layout_width="UNKNOWN_DATA_0x1401" app:layout_height="wrap_content" app:layout_marginLeft="2dp" />
+        </LinearLayout>
+        <TextView app:textSize="12sp" app:textColor="#ffffff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_not_login" app:background="@drawable/btn_user_login_selector" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x1701" app:layout_marginTop="10dp" app:text="点击登录" app:layout_below="@+id/iv_user_icon_no_login" app:layout_centerHorizontal="true" />
+        <TextView app:textSize="10sp" app:textColor="#ccffffff" app:id="@+id/tv_login_describe" app:visibility="gone" app:clickable="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:text="登录就送下载加速特权" app:layout_below="@+id/tv_not_login" app:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout app:id="@+id/rl_top" app:paddingRight="17dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true"
+        <RelativeLayout app:id="@+id/rl_setting_icon_contain" app:paddingLeft="9dp" app:paddingTop="9dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="16dp">
+            <ImageView app:id="@+id/iv_setting_icon" app:background="@drawable/ic_user_center_set" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView app:id="@+id/iv_message_icon" app:background="@drawable/ic_user_center_msg" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="9dp" app:layout_toRightOf="@+id/rl_setting_icon_contain" />
+        <TextView app:textSize="9sp" app:textColor="@color/white" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_message_count" app:background="@drawable/user_center_msg_circle_bg" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="-13dp" app:layout_marginTop="3dp" app:text="12" app:layout_toRightOf="@+id/iv_message_icon" />
+        <ImageView app:textSize="9sp" app:textColor="@color/white" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/iv_message_red_point" app:background="@drawable/tab_view_point" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="-7dp" app:layout_marginTop="10dp" app:text="12" app:layout_toRightOf="@+id/iv_message_icon" />
+    </RelativeLayout>
+    <TextView app:textColor="@color/white" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_user_msg_pop_text" app:background="@drawable/bg_user_msg_pop" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="33dp" app:layout_marginRight="8dp" app:drawableLeft="@drawable/ic_user_center_msg_pop" app:drawablePadding="6dp" app:layout_alignParentRight="true" app:layout_marginEnd="13dp" app:layout_alignParentEnd="true" />
+</RelativeLayout>

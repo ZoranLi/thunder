@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xunlei.downloadprovider.web.base.core.WebTitleBar android:id="@+id/web_title_bar_score_center" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b009f" />
+    <com.xunlei.downloadprovider.web.base.core.CustomWebView android:id="@+id/webView_score_center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/web_title_bar_score_center" />
+    <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/loading_view_score_center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/web_title_bar_score_center" />
+    <com.xunlei.thunder.commonui.widget.ErrorBlankView android:id="@+id/ev_show_score_center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/web_title_bar_score_center" />
+</RelativeLayout>

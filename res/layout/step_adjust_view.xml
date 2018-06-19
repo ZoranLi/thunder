@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_dec" android:layout_width="UNKNOWN_DATA_0x1a01" android:layout_height="UNKNOWN_DATA_0x1a01" android:src="@drawable/ic_adjust_down" />
+    <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_value" android:background="@drawable/bg_subtitle_sync" android:layout_width="UNKNOWN_DATA_0x4001" android:layout_height="UNKNOWN_DATA_0x1a01" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:text="0s" />
+    <ImageView android:id="@+id/iv_add" android:layout_width="UNKNOWN_DATA_0x1a01" android:layout_height="UNKNOWN_DATA_0x1a01" android:src="@drawable/ic_adjust_up" />
+    <Button android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/btn_reset" android:background="@drawable/bg_subtitle_reset" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="UNKNOWN_DATA_0x1a01" android:layout_marginLeft="4dp" android:text="@string/subtitle_reset" />
+</merge>

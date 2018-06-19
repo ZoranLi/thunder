@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/btn_back" android:paddingLeft="@dimen/vod_player_status_bar_margin" android:paddingTop="@dimen/sniffer_results_status_bar_margin" android:paddingRight="@dimen/vod_player_status_bar_margin" android:paddingBottom="@dimen/sniffer_results_status_bar_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/download_detail_before_play_back_selector" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="0x0" />
+</merge>

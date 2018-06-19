@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="__picker_provider_paths">res/xml/__picker_provider_paths.xml</xml>
+    <xml name="file_paths">res/xml/file_paths.xml</xml>
+    <xml name="network_security_config">res/xml/network_security_config.xml</xml>
+    <xml name="provider_paths">res/xml/provider_paths.xml</xml>
+</resources>

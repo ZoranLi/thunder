@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/dlg_root_view" android:background="#33ff00ff" android:layout_width="UNKNOWN_DATA_0x13a01" android:layout_height="UNKNOWN_DATA_0xb701">
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/bg_like_guide_dlg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="19sp" android:textColor="#3b424c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点赞成功！获得3积分" android:layout_centerInParent="true" />
+        <TextView android:textSize="15sp" android:textColor="#5b6473" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="积分可以兑换礼品哦！" />
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textColor="#1aa3ff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_go_btn" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3501" android:text="去看看" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/iv_close_dlg" android:background="@drawable/qr_dialog_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

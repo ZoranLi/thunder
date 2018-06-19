@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/dlg_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp">
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/dlg_title_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tips" style="@style/dlg_title_txt_style" />
+        <RelativeLayout android:paddingLeft="17dp" android:paddingRight="17dp" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/dlg_left_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dlg_icon_fail" android:layout_centerVertical="true" />
+            <TextView android:id="@id/dlg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content" android:layout_toRightOf="@id/dlg_left_icon" android:layout_centerHorizontal="true" style="@style/dlg_content_txt_style" />
+        </RelativeLayout>
+        <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/dlg_2btn_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b00db" android:weightSum="2.0" android:layout_below="@id/dlg_title_layout">
+        <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_left_btn" android:layout_width="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/dlg_left_white_button" />
+        <View android:background="#e4e4e4" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="match_parent" />
+        <TextView android:id="@id/dlg_right_btn" android:layout_width="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/dlg_right_white_button" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/dlg_1btn_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/dlg_title_layout">
+        <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dlg_bottom_btn" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="@string/ok" style="@style/dlg_single_white_button" />
+    </LinearLayout>
+</RelativeLayout>

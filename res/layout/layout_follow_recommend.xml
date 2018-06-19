@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.downloadprovider.xlui.widget.KeyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/arrow_up" android:background="@drawable/follow_recommend_arrow_up" android:layout_width="UNKNOWN_DATA_0x7f0b012e" android:layout_height="UNKNOWN_DATA_0x701" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_round_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="14sp" android:textColor="#5a6473" android:ellipsize="middle" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/followed_user_name" android:paddingLeft="16dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="关注这个是一个普通的用户但是它的名字很长很长的人还关注了" android:singleLine="true" />
+        <include layout="@layout/line" />
+        <com.xunlei.downloadprovider.publiser.common.recommendfollow.FollowRecommendItemView android:id="@+id/fan_item1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.xunlei.downloadprovider.publiser.common.recommendfollow.FollowRecommendItemView android:id="@+id/fan_item2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.xunlei.downloadprovider.publiser.common.recommendfollow.FollowRecommendItemView android:id="@+id/fan_item3" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_arrow_bottom" android:background="@drawable/follow_recommend_arrow_down" android:layout_width="UNKNOWN_DATA_0x7f0b012e" android:layout_height="UNKNOWN_DATA_0x701" />
+</com.xunlei.downloadprovider.xlui.widget.KeyLinearLayout>

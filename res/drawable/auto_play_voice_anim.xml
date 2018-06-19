@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_1" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_2" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_3" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_4" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_5" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_6" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_7" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_8" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_9" />
+    <item android:duration="70" android:drawable="@drawable/auto_play_voice_10" />
+</animation-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_normal_press_selector" android:paddingLeft="13dp" android:paddingTop="9.5dp" android:paddingRight="13dp" android:paddingBottom="9.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_poster" android:layout_width="UNKNOWN_DATA_0x6b01" android:layout_height="UNKNOWN_DATA_0x4a01" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:src="@color/black" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textColor="#ffffff" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:text="00:02" android:drawableLeft="@drawable/ic_detail_play" android:layout_alignRight="@+id/iv_poster" android:layout_alignBottom="@+id/iv_poster" />
+    <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="1dp" android:layout_weight="1.8" android:layout_toRightOf="@+id/iv_poster" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="#3b424c" android:ellipsize="end" android:id="@+id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="11sp" android:textColor="#979aa0" android:ellipsize="end" android:id="@+id/pub_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="发布者：xxx" android:maxLines="1" android:layout_below="@+id/tv_desc" />
+    </RelativeLayout>
+</RelativeLayout>

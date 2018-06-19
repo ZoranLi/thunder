@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.thunder.commonui.widget.ErrorBlankView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ev_comment_error" android:background="0x106000b" android:paddingTop="60dp" android:paddingBottom="60dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" />

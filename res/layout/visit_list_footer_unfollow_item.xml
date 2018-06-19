@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+    <TextView android:textSize="15sp" android:textColor="#4677bc" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_follow" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="关注" />
+    <TextView android:textSize="15sp" android:textColor="#979ba1" android:id="@+id/tv_foot" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="后可查看更多访客信息" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/me_cell_margin_top">
+    <com.xunlei.downloadprovider.discovery.widgets.DisableScrollGridView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/gv_local_service" android:background="@color/white" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="0x0" android:verticalSpacing="30dp" android:stretchMode="columnWidth" android:numColumns="UNKNOWN_DATA_0x3" />
+</LinearLayout>

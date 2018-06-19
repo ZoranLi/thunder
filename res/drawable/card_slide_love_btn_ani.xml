@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:duration="50" android:drawable="@drawable/card_slide_love01" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love02" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love03" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love04" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love05" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love06" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love07" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love08" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love09" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love10" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love11" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love12" />
+    <item android:duration="50" android:drawable="@drawable/card_slide_love13" />
+</animation-list>

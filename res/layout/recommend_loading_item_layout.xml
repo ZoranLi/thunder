@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="0x106000b" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingBottom="19dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/iv_poster" android:background="#f5f7f9" android:layout_width="UNKNOWN_DATA_0x6b01" android:layout_height="UNKNOWN_DATA_0x4601" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="1dp" android:layout_weight="1.8">
+        <View android:textSize="16sp" android:ellipsize="end" android:background="#f5f7f9" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xf01" android:maxLines="2" />
+        <View android:textSize="16sp" android:ellipsize="end" android:background="#f5f7f9" android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0xf01" android:layout_marginTop="7dp" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

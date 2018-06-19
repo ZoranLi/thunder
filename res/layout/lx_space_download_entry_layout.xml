@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+            <ViewStub android:id="@+id/lx_space_create_task_vs" android:layout="@layout/lx_space_create_task_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.xunlei.downloadprovider.xlui.recyclerview.XRecyclerView android:id="@+id/lx_space_task_list_rv" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x200" />
+        <include layout="@layout/lx_space_expansion_layout" />
+    </LinearLayout>
+    <com.xunlei.common.commonview.UnifiedLoadingView android:id="@+id/lx_space_loading_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

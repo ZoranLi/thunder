@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/payment_14_sp" android:textColor="@color/payment_dark_black" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@color/white" android:paddingLeft="@dimen/payment_13_dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01b5" android:text="使用代金券" />
+    <include layout="@layout/pay_line" />
+    <ListView android:id="@+id/pay_voucher_lv" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:listSelector="@drawable/bt_addaddress_list_item_bg_selector" android:cacheColorHint="0x106000d" android:divider="@color/common_white_button_line" android:dividerHeight="1px" android:layout_weight="1.0" android:fadeScrollbars="true" />
+    <include layout="@layout/pay_line" />
+    <View android:background="@color/common_content_bkg_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01be" />
+    <TextView android:textSize="@dimen/payment_14_sp" android:textColor="@color/payment_dark_black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pay_voucher_cancel_tv" android:background="@drawable/bt_addaddress_list_item_bg_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b01b9" android:text="取消" />
+</LinearLayout>

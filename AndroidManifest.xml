@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="11100" android:versionName="5.60.2.5510" android:installLocation="auto" package="com.xunlei.downloadprovider" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.miui.mihome2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.miui.mihome2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.xiaomi.market.sdk.UPDATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="getui.permission.GetuiService.com.xunlei.downloadprovider" />
+    <permission android:name="getui.permission.GetuiService.com.xunlei.downloadprovider" android:protectionLevel="UNKNOWN_DATA_0x0" />
+    <permission android:name="com.xunlei.downloadprovider.permission.MIPUSH_RECEIVE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.xunlei.downloadprovider.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+    <application android:theme="@style/ThemeActivity" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.xunlei.downloadprovider.app.ThunderTinkerApplication" android:persistent="true" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:resizeableActivity="true" android:networkSecurityConfig="@xml/network_security_config">
+        <service android:name="com.xunlei.downloadprovider.service.DownloadService">
+            <intent-filter>
+                <action android:name="com.xunlei.downloadprovider.service.DownloadServiceAction" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.xunlei.downloadprovider.download.engine.kernel.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.xunlei.downloadprovider.thirdpart.content.XLContentProvider" android:exported="true" android:authorities="com.xunlei.downloadprovider.info" />
+        <activity android:theme="@style/LaunchTheme_LoadingActivity" android:name="com.xunlei.downloadprovider.loading.LoadingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/LaunchTheme_LaunchActivity" android:label="@string/app_name" android:name="com.xunlei.downloadprovider.launch.LaunchActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xulei.downloadprovider.thirdpart.start" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/sharePage" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/hotResource" />
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/artical" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/resourceDetail" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.xunlei.downloadprovider" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/shareDetail" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/publisher" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xunleiapp" android:host="xunlei.com" android:path="/hotTopic" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taylor" android:host="*" android:path="/downloadh5" />
+                <data android:scheme="kk" android:host="*" android:path="/downloadh5" />
+                <data android:scheme="xl" android:host="*" android:path="/downloadh5" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xunleiapp" android:host="xunlei.com" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.launch.guide.GuideActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.frame.MainTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustPan|adjustNothing" android:hardwareAccelerated="true" />
+        <activity android:name="com.xunlei.downloadprovider.homepage.category.ShortVideoCategoryActivity" android:launchMode="standard" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustPan|adjustNothing" />
+        <meta-data android:name="android.max_aspect" android:value="2.2" />
+        <meta-data android:name="BaiduMobAd_APP_ID" android:value="f708d7b5" />
+        <activity android:name="com.baidu.mobads.AppActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.member.payment.ui.ActivationActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.member.payment.ui.ActivationPaySuccessActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.download.center.DownloadCenterActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustPan|adjustNothing" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.download.taskdetails.DownloadDetailPageActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustPan|adjustNothing" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustPan|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.SettingsIndexActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.TaskSettingActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.GeneralSettingActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.AboutBoxActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.HelpActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.FeedBackActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.ChooseDownloadSDCardActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.PathChooserActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.bho.ThunderTaskBHOActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.xunlei.downloadprovider.ADD_TASK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xunlei.downloadprovider.launch.dispatch.mocklink.LinkBHOActivity" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.xunlei.downloadprovider.ADD_TASK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ftp" />
+                <data android:scheme="thunder" />
+                <data android:scheme="ed2k" />
+                <data android:scheme="magnet" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="ftp" />
+                <data android:scheme="thunder" />
+                <data android:scheme="ed2k" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/*" />
+                <data android:mimeType="torrent/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="ftp" />
+                <data android:scheme="ed2k" />
+                <data android:host="*" />
+                <data android:pathPattern=".*exe.*" />
+                <data android:pathPattern=".*apk.*" />
+                <data android:pathPattern=".*torrent.*" />
+                <data android:pathPattern=".*avi.*" />
+                <data android:pathPattern=".*mov.*" />
+                <data android:pathPattern=".*asf.*" />
+                <data android:pathPattern=".*wmv.*" />
+                <data android:pathPattern=".*mp4.*" />
+                <data android:pathPattern=".*3gp.*" />
+                <data android:pathPattern=".*mkv.*" />
+                <data android:pathPattern=".*flv.*" />
+                <data android:pathPattern=".*f4v.*" />
+                <data android:pathPattern=".*rmvb.*" />
+                <data android:pathPattern=".*rm.*" />
+                <data android:pathPattern=".*asx.*" />
+                <data android:pathPattern=".*mpg.*" />
+                <data android:pathPattern=".*mpeg.*" />
+                <data android:pathPattern=".*m4v.*" />
+                <data android:pathPattern=".*wma.*" />
+                <data android:pathPattern=".*mp3.*" />
+                <data android:pathPattern=".*wav.*" />
+                <data android:pathPattern=".*acc.*" />
+                <data android:pathPattern=".*ape.*" />
+                <data android:pathPattern=".*7z.*" />
+                <data android:pathPattern=".*rar.*" />
+                <data android:pathPattern=".*zip.*" />
+                <data android:pathPattern=".*EXE.*" />
+                <data android:pathPattern=".*APK.*" />
+                <data android:pathPattern=".*TORRENT.*" />
+                <data android:pathPattern=".*AVI.*" />
+                <data android:pathPattern=".*MOV.*" />
+                <data android:pathPattern=".*ASF.*" />
+                <data android:pathPattern=".*WMV.*" />
+                <data android:pathPattern=".*MP4.*" />
+                <data android:pathPattern=".*3GP.*" />
+                <data android:pathPattern=".*MKV.*" />
+                <data android:pathPattern=".*FLV.*" />
+                <data android:pathPattern=".*F4V.*" />
+                <data android:pathPattern=".*RMVB.*" />
+                <data android:pathPattern=".*RM.*" />
+                <data android:pathPattern=".*ASX.*" />
+                <data android:pathPattern=".*MPG.*" />
+                <data android:pathPattern=".*MPEG.*" />
+                <data android:pathPattern=".*M4V.*" />
+                <data android:pathPattern=".*WMA.*" />
+                <data android:pathPattern=".*MP3.*" />
+                <data android:pathPattern=".*WAV.*" />
+                <data android:pathPattern=".*ACC.*" />
+                <data android:pathPattern=".*APE.*" />
+                <data android:pathPattern=".*7Z.*" />
+                <data android:pathPattern=".*RAR.*" />
+                <data android:pathPattern=".*ZIP.*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.bho.BHOActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.launch.dispatch.mocklink.LinkDownloadCenterActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.pushmessage.PushNotificationHandleActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountMemberActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.personal.user.ReportActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.member.payment.ui.PayActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="shouleirenew" android:host="contract" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xunlei.downloadprovider.member.payment.external.PaymentEntryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.member.payment.ui.PaymentSuccessActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.member.payment.ui.PayProblemActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.member.payment.paymentfloat.FloatActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="shouleirenewfloat" android:host="contract" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.download.create.ThunderTaskInteractionActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.download.create.CreateBtTaskActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.download.create.CreateUrlTaskActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.launch.dispatch.mocklink.LinkDLBtFileExplorerActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/x-bittorrent" />
+                <data android:mimeType="*/*" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\..*\..*\..*\.torrent" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\..*\..*\.TORRENT" />
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\..*\..*\..*\..*\..*\..*\..*\..*\..*\.TORRENT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xunlei.downloadprovider.download.create.DownloadBtFileExplorerActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:name="com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.dialog.XLAlarmDialogActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.cooperation.ui.dialog.CooperationDialogActivity" android:excludeFromRecents="true" android:launchMode="singleTask" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.launch.dispatch.mocklink.LinkVodPlayerActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/mp4" />
+                <data android:mimeType="*/rmvb" />
+                <data android:mimeType="*/avi" />
+                <data android:mimeType="*/mkv" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.mov" />
+                <data android:pathPattern=".*\.f4v" />
+                <data android:pathPattern=".*\.xv" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xunlei.downloadprovider.member.login.ui.LoginActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.xunlei.downloadprovider.member.register.ui.MobileSetupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible" />
+        <activity android:theme="@style/PhoneAuthLayoutTheme" android:name="com.xunlei.downloadprovider.member.register.ui.AuthMobileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible" />
+        <activity android:name="com.xunlei.downloadprovider.member.register.ui.BindMobileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible" />
+        <activity android:name="com.xunlei.downloadprovider.homepage.photoarticle.PhotoArticleDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.homepage.cinecism.CinecismDetailActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.shortvideo.videodetail.ShortMovieDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustPan|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.homepage.follow.ui.MyFollowingActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.web.base.CustomWebViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.shortvideo.videodetail.LongVideoDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.ad.common.browser.WebViewADActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.ad.common.browser.WebViewToutiaoActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.RoomCleanActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LixianSpaceH5Activity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LXSpaceActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LXSpaceCreateUrlTaskActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LXSpaceCreateBtTaskActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LXBtFileExplorerActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LXSpaceCreateTaskByMagnetUrlActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.lixianspace.ui.LXSpaceEntryActivity" android:exported="true" android:screenOrientation="portrait" />
+        <receiver android:name="com.xunlei.downloadprovider.notification.CommonFileReceiver">
+            <intent-filter>
+                <action android:name="com.xunlei.action.APK_CLICK" />
+                <action android:name="com.xunlei.action.COMMON_FILE_CLICK" />
+                <action android:name="com.xunlei.action.COMMON_MERGE_FILES_CLICK" />
+                <action android:name="com.xunlei.action.COMMON_DELETE_NOTI_CLICK" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.xunlei.downloadprovider.personal.playrecord.PlayRecordActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
+        <activity android:theme="@style/Gift_Transparent" android:name="com.xunlei.downloadprovider.download.giftdispatch.GiftDispatchingActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false" />
+        <activity android:name="com.qq.e.ads.ADActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <receiver android:name="com.xunlei.downloadprovider.personal.user.NetWorkChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:label="WXPayEntryActivity" android:name="com.xunlei.downloadprovider.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <activity android:name="com.xunlei.downloadprovider.web.browser.BrowserActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":mipush" />
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":mipush" />
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true" />
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true" />
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":mipush">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xunlei.downloadprovider.pushmessage.xiaomi.XiaoMiPushReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="100136581" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.huawei.hms.activity.BridgeActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="locale|orientation|screenSize|layoutDirection|fontScale" android:hardwareAccelerated="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <provider android:name="com.huawei.hms.update.provider.UpdateProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider.hms.update.provider" android:grantUriPermissions="true" />
+        <receiver android:name="com.xunlei.downloadprovider.pushmessage.huawei.HuaweiPushReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="tnuyyaUMxKMapXGrmKrNkk0x" />
+        <activity android:name="com.xunlei.downloadprovider.discovery.kuainiao.KuaiNiaoActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/loading_style" android:label="@string/app_name" android:name="com.xunlei.downloadprovider.ad.revive.ReviveAdActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <provider android:name="com.android.providers.downloads.DownloadProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider" />
+        <service android:name="com.android.providers.downloads.DownloadService" android:exported="false" />
+        <receiver android:name="com.android.providers.downloads.DownloadReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.android.providers.downloads.SizeLimitActivity" android:launchMode="singleTask" />
+        <meta-data android:name="com.xunlei.download.APP_KEY" android:value="bpIzNjAxNTsxNTA0MDk0ODg4LjQyODAwMA&&OxNw==^a2cec7^10e7f1756b15519e20ffb6cf0fbf671f==2D^E21EACA6^E5EB66DA2726E51707BA" />
+        <meta-data android:name="com.xunlei.download.RECOMMENDED_MAX_BYTES_OVER_MOBILE" android:value="-1" />
+        <meta-data android:name="com.xunlei.download.MAX_BYTES_OVER_MOBILE" android:value="-1" />
+        <meta-data android:name="com.xunlei.download.RECOMMENDED_MAX_CONCURRENT_DOWNLOADS" android:value="5" />
+        <meta-data android:name="com.xunlei.download.RECOMMENDED_MAX_CONCURRENT_BT_SUB_DOWNLOADS" android:value="3" />
+        <meta-data android:name="com.xunlei.download.SHOW_NOTIFY" android:value="false" />
+        <meta-data android:name="com.xunlei.download.SERVICE_START_COMMAND" android:value="2" />
+        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity" android:configChanges="orientation|screenLayout" android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.openauth.action.AUTH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baidu.mobad.feeds.BaiduActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" />
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.member.login.ui.XLLoginOfflineDlgActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/LoginDlgStyle" android:name="com.xunlei.downloadprovider.member.login.ui.LoginDlgActivity" android:launchMode="singleTask" android:screenOrientation="behind" />
+        <activity android:theme="@style/LoginDlgStyle" android:name="com.xunlei.downloadprovider.member.login.authphone.AuthDlgActivity" android:launchMode="singleTask" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountInfoActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountPortraitSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountCurrentMobileActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountBindMobileActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.member.register.ui.RegisterSuccessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.ui.UserAccountSecurityActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.settings.AutoPlaySettingActivity" />
+        <activity android:name="com.xunlei.downloadprovider.personal.redenvelope.redenvelopelist.ui.RedEnvelopesActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:name="com.xunlei.downloadprovider.personal.redenvelope.redenvelopedetail.RedEnvelopesDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="4ed2bfb8434105cd20b92dd2cf6c8415" />
+        <meta-data android:name="UMENG_APPKEY" android:value="51fa090156240b6ea5043d84" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="@string/pname" />
+        <service android:name="com.xunlei.downloadprovider.pushmessage.umeng.UmengPushHandleService" />
+        <receiver android:name="com.xunlei.downloadprovider.pushmessage.PushOnClickReceiver" />
+        <receiver android:name="com.xunlei.downloadprovider.pushmessage.localpush.LocalPushReceiver" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.address.ui.UserRegionSelectProvinceActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.user.account.address.ui.UserRegionSelectCityActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.message.MessageActivty" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.liked.LikeContentActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.message.chat.personalchat.dialog.PersonalChatDialogActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.personal.message.chat.personalchat.strangers.view.PersonalChatStrangersActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.message.chat.personalchat.messagecenter.view.MessageCenterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.message.chat.personalchat.messagecenter.view.MessageCenterStableActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.homepage.recommend.fans.FansActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.homepage.recommend.fans.FollowActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.redenvelope.redenvelopedetail.RedWebViewActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.publiser.per.PublisherActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.publiser.campaign.TopicDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.web.base.PushWebViewNormalActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.publiser.common.guide.follow.GuideFollowActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:label="@string/app_name" android:name="com.xunlei.downloadprovider.publiser.common.guide.interesttag.GuideInterestTagActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <service android:name="com.xunlei.downloadprovider.app.PollingService" android:exported="false" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.bugly.beta.ui.BetaActivity" android:excludeFromRecents="true" android:configChanges="locale|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeNoDisplay" android:label="登录小米帐号" android:name="com.xunlei.common.new_ptl.member.act.XLXmLoginActivity" android:configChanges="screenLayout|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="登录小米帐号" android:name="com.xunlei.common.new_ptl.member.act.XLXmBindActivity" android:configChanges="screenLayout|screenSize" />
+        <activity android:theme="@style/ThemeNoDisplay" android:label="登录新浪帐号" android:name="com.xunlei.common.new_ptl.member.act.XLSinaLoginActivity" android:configChanges="screenLayout|screenSize" />
+        <activity android:theme="@style/ThemeNoDisplay" android:label="登录QQ帐号" android:name="com.xunlei.common.new_ptl.member.act.XLQQLoginActivity" android:screenOrientation="portrait" android:configChanges="screenLayout|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="安全手机验证" android:name="com.xunlei.common.new_ptl.member.act.XLLoginVerifyMobileActivity" android:configChanges="screenLayout|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.common.new_ptl.member.act.XLThirdLoginBindMobileActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/AccessibilityDialog" android:name="com.xunlei.downloadprovider.launch.NotificationDialogActivity" android:taskAffinity="com.xunlei.downloadprovider.notification" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:name="com.xunlei.downloadprovider.web.website.activity.BroserCollectionAndHistoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.web.website.activity.DownloadTabWebsiteActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.personal.score.UserScoreCenterActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.xunlei.downloadprovider.publiser.common.AvatarActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.publiser.visitors.VisitActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="me.iwf.photopicker.PhotoPickerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="me.iwf.photopicker.PhotoPagerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.xunlei.downloadprovider.contentpublish.website.WebsiteDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/ThunderTheme.Dialog" android:name="com.xunlei.downloadprovider.download.create.ClipboardHandlerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.cardslide.CardSlideActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.xunlei.downloadprovider.contentpublish.website.WebsiteEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.contentpublish.website.WebsitePublishActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.cardslide.likelist.CardSlideLikeActivity" android:screenOrientation="portrait" />
+        <meta-data android:name="PUSH_APPID" android:value="VoB1KKzGUB6QaN7uLven85" />
+        <meta-data android:name="PUSH_APPKEY" android:value="v19dLVf5Xx5QirrXeK7yy9" />
+        <meta-data android:name="PUSH_APPSECRET" android:value="dDogRzUhBS9JgMDRpYkt28" />
+        <service android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:exported="true" android:process=":getui">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.igexin.sdk.PushActivity" android:exported="false" android:process=":getui" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:excludeFromRecents="true" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.igexin.sdk.GActivity" android:exported="true" android:process=":getui" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:excludeFromRecents="true" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.vod.recordpublish.RecordVideoPreviewActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|orientation|screenLayout|screenSize" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.vod.player.VodPlayerActivity" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.vod.recordpublish.VodPlayerPublishActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboard|orientation|screenLayout|screenSize" />
+        <activity android:theme="@style/ThemeActivity_NoActionBar" android:name="com.xunlei.downloadprovider.vod.recordpublish.VodPlayerTopicSelectActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboard|orientation|screenLayout|screenSize" />
+        <service android:name="com.xunlei.downloadprovider.pushmessage.getui.GetuiPushReceiverIntentService" />
+        <service android:label="PushService" android:name="com.xunlei.downloadprovider.pushmessage.getui.GetuiPushService" android:exported="true" android:process=":getui" />
+        <service android:name="com.xunlei.downloadprovider.pushmessage.NotificationService" />
+        <service android:name="com.xunlei.downloadprovider.download.assistant.clipboardmonitor.ClipboardService" android:process=":umeng" />
+        <receiver android:name="com.xunlei.downloadprovider.download.assistant.clipboardmonitor.ClipboardReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.xunlei.downloadprovider.clipboard" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xunlei.downloadprovider.pushmessage.getui.GetuiADReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.getui.lbs.notification.com.xunlei.downloadprovider" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xunlei.downloadprovider.pushmessage.ginsight.GInsightEventReceiver">
+            <intent-filter>
+                <action android:name="com.getui.gis.action.vJH6icLzKs5wF78jEcyDA4" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.xunlei.downloadprovider.app.XLFileProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider.XLFileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name="com.xunlei.downloadprovider.publiser.websitetopic.WebsiteTopicActivity" android:screenOrientation="sensorPortrait" />
+        <activity android:name="com.xunlei.downloadprovider.download.taskdetails.speedbillboard.SpeedBillboardActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <service android:name="com.xunlei.downloadprovider.vod.floatwindow.VodPlayerFloatWindowService" android:enabled="true" android:exported="false" />
+        <activity android:name="com.xunlei.downloadprovider.download.privatespace.ui.PrivateSpaceFindPwdActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.xunlei.downloadprovider.vodnew.VodPlayerActivityNew" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustPan|adjustNothing" />
+        <activity android:name="com.xunlei.downloadprovider.download.XLFileExploreActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.umeng.socialize.media.WBShareCallBackActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1101105049" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <meta-data android:name="XL_LIVE_APP_VERSION_NAME" android:value="5.54.10" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.tdlive.activity.RouteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.tdlive.route.TransformActivity" android:screenOrientation="portrait" />
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+        <meta-data android:name="com.bumptech.glide.integration.volley.VolleyGlideModule" android:value="GlideModule" />
+        <activity android:theme="@style/ali_feedback_contentoverlay" android:name="com.alibaba.sdk.android.feedback.windvane.CustomHybirdActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@style/ali_feedback_contentoverlay" android:name="com.alibaba.sdk.android.feedback.impl.ErrorPageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name="com.alibaba.sdk.android.feedback.impl.NetworkChangeReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.alibaba.mtl.appmonitor.AppMonitorService" />
+        <provider android:name="com.tencent.bugly.beta.utils.BuglyFileProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+        </provider>
+        <service android:name="com.tencent.bugly.beta.tinker.TinkerResultService" android:exported="false" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09" android:launchMode="singleTop" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T" android:launchMode="singleTop" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T" android:launchMode="singleTop" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T" android:launchMode="singleTop" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09" android:launchMode="singleTask" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T" android:launchMode="singleTask" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T" android:launchMode="singleTask" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T" android:launchMode="singleTask" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08" android:launchMode="singleInstance" />
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09" android:launchMode="singleInstance" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T" android:launchMode="singleInstance" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T" android:launchMode="singleInstance" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T" android:launchMode="singleInstance" />
+        <meta-data android:name="tinker_version" android:value="1.9.1" />
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService" android:exported="false" android:process=":patch" />
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" android:exported="false" android:process=":patch" />
+        <service android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService" android:exported="false" />
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/__picker_provider_paths" />
+        </provider>
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderUI" android:exported="false" android:authorities="com.xunlei.downloadprovider.loader.p.mainN1" />
+        <provider android:name="com.xunlei.downloadprovider.loader.p.ProviderN1" android:exported="false" android:authorities="com.xunlei.downloadprovider.loader.p.prN1" />
+        <service android:name="com.xunlei.downloadprovider.loader.s.ServiceN1" android:exported="false" />
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderLoader0" android:exported="false" android:process=":loader0" android:authorities="com.xunlei.downloadprovider.loader.p.main0" />
+        <provider android:name="com.xunlei.downloadprovider.loader.p.Provider0" android:exported="false" android:process=":loader0" android:authorities="com.xunlei.downloadprovider.loader.p.pr0" />
+        <service android:name="com.xunlei.downloadprovider.loader.s.Service0" android:exported="false" android:process=":loader0" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity0_singleTask1" android:exported="false" android:process=":loader0" android:taskAffinity=":loader0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity0_singleInstance1" android:exported="false" android:process=":loader0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity0_task" android:exported="false" android:process=":loader0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.loader.a.Activity0_fullscreen" android:exported="false" android:process=":loader0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity0_translucent" android:exported="false" android:process=":loader0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.loader.a.Activity0_translucent_fullscreen" android:exported="false" android:process=":loader0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.xunlei.downloadprovider.loader.a.Activity0_dialog" android:exported="false" android:process=":loader0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity0" android:exported="false" android:process=":loader0" android:taskAffinity=":loader0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderLoader1" android:exported="false" android:process=":loader1" android:authorities="com.xunlei.downloadprovider.loader.p.main1" />
+        <provider android:name="com.xunlei.downloadprovider.loader.p.Provider1" android:exported="false" android:process=":loader1" android:authorities="com.xunlei.downloadprovider.loader.p.pr1" />
+        <service android:name="com.xunlei.downloadprovider.loader.s.Service1" android:exported="false" android:process=":loader1" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity1_singleTask1" android:exported="false" android:process=":loader1" android:taskAffinity=":loader1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity1_singleInstance1" android:exported="false" android:process=":loader1" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity1_task" android:exported="false" android:process=":loader1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.loader.a.Activity1_fullscreen" android:exported="false" android:process=":loader1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity1_translucent" android:exported="false" android:process=":loader1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.xunlei.downloadprovider.loader.a.Activity1_translucent_fullscreen" android:exported="false" android:process=":loader1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.xunlei.downloadprovider.loader.a.Activity1_dialog" android:exported="false" android:process=":loader1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.Activity1" android:exported="false" android:process=":loader1" android:taskAffinity=":loader1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <provider android:name="com.qihoo360.replugin.component.provider.PluginPitProviderUI" android:exported="false" android:authorities="com.xunlei.downloadprovider.Plugin.NP.UIP" />
+        <service android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceUI" />
+        <provider android:name="com.qihoo360.replugin.packages.PluginFastInstallProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider.loader.p.pip" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.ui.webview.BaseWebViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.ui.LoginWebViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.ali.auth.third.ui.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.ali.auth.third.accountlink.ui.BindResultActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:name="com.ali.auth.third.accountlink.ui.UnbindWebViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.alibaba.baichuan.android.trade.ui.activity.AlibcWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alibaba.baichuan.android.trade.ui.activity.AlibcNativeTaobaoActivity" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="alisdk" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.alibaba.baichuan.android.auth.AlibcAuthActivity" android:exported="false" android:screenOrientation="portrait" />
+        <service android:name="anetwork.channel.aidl.NetworkService" android:exported="false">
+            <intent-filter>
+                <action android:name="anetwork.channel.aidl.IRemoteNetworkGetter" />
+            </intent-filter>
+        </service>
+        <service android:name="mtopsdk.xstate.XStateService" android:exported="false">
+            <intent-filter>
+                <action android:name="mtopsdk.xstate.aidl.IXState" />
+            </intent-filter>
+        </service>
+        <uses-library android:name="android.test.runner" />
+        <activity android:theme="@style/MyTheme" android:name="com.duiba.maila.sdk.MailaActivityInSdk" android:hardwareAccelerated="false" />
+        <service android:name="com.taobao.accs.ChannelService" android:exported="true" android:process=":umeng">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+        <service android:name="com.taobao.accs.data.MsgDistributeService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.taobao.accs.EventReceiver" android:process=":umeng">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.taobao.accs.ServiceReceiver" android:process=":umeng">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.taobao.accs.internal.AccsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":umeng" />
+        <service android:name="com.taobao.accs.ChannelService$KernelService" android:process=":umeng" />
+        <service android:name="org.android.agoo.accs.AgooService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" android:exported="true" android:process=":umeng">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.XiaomiIntentService" android:exported="true" android:process=":umeng">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.taobao.agoo.AgooCommondReceiver" android:exported="true" android:process=":umeng">
+            <intent-filter>
+                <action android:name="com.xunlei.downloadprovider.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.umeng.message.UmengMessageIntentReceiverService" android:exported="true" android:process=":umeng">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.umeng.message.NotificationProxyBroadcastReceiver" android:exported="false" />
+        <service android:name="com.umeng.message.UmengMessageCallbackHandlerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengDownloadResourceService" android:exported="false" />
+        <provider android:name="com.umeng.message.provider.MessageProvider" android:exported="false" android:authorities="com.xunlei.downloadprovider.umeng.message">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+        <service android:label="CoreService" android:name="com.getui.gtc.GtcService">
+            <intent-filter>
+                <action android:name="com.getui.gtc.sdk.service.action" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderPersist" android:exported="false" android:process="com.xunlei.downloadprovider" android:authorities="com.xunlei.downloadprovider.loader.p.main" />
+        <provider android:name="com.qihoo360.replugin.component.provider.PluginPitProviderPersist" android:exported="false" android:process="com.xunlei.downloadprovider" android:authorities="com.xunlei.downloadprovider.Plugin.NP.PSP" />
+        <provider android:name="com.qihoo360.mobilesafe.svcmanager.ServiceProvider" android:exported="false" android:process="com.xunlei.downloadprovider" android:multiprocess="false" android:authorities="com.xunlei.downloadprovider.svcmanager" />
+        <service android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceGuard" android:process="com.xunlei.downloadprovider" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRTS0" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRTS1" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STPTS0" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STPTS1" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STTS0" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STTS1" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1SITS0" android:exported="false" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1SITS1" android:exported="false" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1SITS2" android:exported="false" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRNTS0" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRNTS1" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRNTS2" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRNTS3" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRNTS4" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1NRNTS5" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STPNTS0" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STPNTS1" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STNTS0" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STNTS1" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1STNTS2" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1SINTS0" android:exported="false" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1SINTS1" android:exported="false" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRTS0" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRTS1" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STPTS0" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STPTS1" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STTS0" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STTS1" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRNTS0" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRNTS1" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRNTS2" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRNTS3" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRNTS4" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0NRNTS5" android:exported="false" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STPNTS0" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STPNTS1" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STNTS0" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STNTS1" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA0STNTS2" android:exported="false" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRTS0" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRTS1" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STPTS0" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STPTS1" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STTS0" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STTS1" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRNTS0" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRNTS1" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRNTS2" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRNTS3" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRNTS4" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1NRNTS5" android:exported="false" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STPNTS0" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STPNTS1" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STNTS0" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STNTS1" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityN1TA1STNTS2" android:exported="false" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRTS0" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRTS1" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STPTS0" android:exported="false" android:process=":p0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STPTS1" android:exported="false" android:process=":p0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STTS0" android:exported="false" android:process=":p0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STTS1" android:exported="false" android:process=":p0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0SITS0" android:exported="false" android:process=":p0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0SITS1" android:exported="false" android:process=":p0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0SITS2" android:exported="false" android:process=":p0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRNTS0" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRNTS1" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRNTS2" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRNTS3" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRNTS4" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0NRNTS5" android:exported="false" android:process=":p0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STPNTS0" android:exported="false" android:process=":p0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STPNTS1" android:exported="false" android:process=":p0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STNTS0" android:exported="false" android:process=":p0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STNTS1" android:exported="false" android:process=":p0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0STNTS2" android:exported="false" android:process=":p0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0SINTS0" android:exported="false" android:process=":p0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0SINTS1" android:exported="false" android:process=":p0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STPTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STPTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRNTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRNTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRNTS2" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRNTS3" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRNTS4" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0NRNTS5" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STPNTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STPNTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STNTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STNTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA0STNTS2" android:exported="false" android:process=":p0" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STPTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STPTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRNTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRNTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRNTS2" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRNTS3" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRNTS4" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1NRNTS5" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STPNTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STPNTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STNTS0" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STNTS1" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP0TA1STNTS2" android:exported="false" android:process=":p0" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <provider android:name="com.qihoo360.replugin.component.provider.PluginPitProviderP0" android:exported="false" android:process=":p0" android:authorities="com.xunlei.downloadprovider.Plugin.NP.0" />
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderP0" android:exported="false" android:process=":p0" android:authorities="com.xunlei.downloadprovider.loader.p.mainN100" />
+        <service android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceP0" android:exported="false" android:process=":p0" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRTS0" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRTS1" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STPTS0" android:exported="false" android:process=":p1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STPTS1" android:exported="false" android:process=":p1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STTS0" android:exported="false" android:process=":p1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STTS1" android:exported="false" android:process=":p1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1SITS0" android:exported="false" android:process=":p1" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1SITS1" android:exported="false" android:process=":p1" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1SITS2" android:exported="false" android:process=":p1" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRNTS0" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRNTS1" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRNTS2" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRNTS3" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRNTS4" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1NRNTS5" android:exported="false" android:process=":p1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STPNTS0" android:exported="false" android:process=":p1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STPNTS1" android:exported="false" android:process=":p1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STNTS0" android:exported="false" android:process=":p1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STNTS1" android:exported="false" android:process=":p1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1STNTS2" android:exported="false" android:process=":p1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1SINTS0" android:exported="false" android:process=":p1" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1SINTS1" android:exported="false" android:process=":p1" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STPTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STPTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRNTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRNTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRNTS2" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRNTS3" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRNTS4" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0NRNTS5" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STPNTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STPNTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STNTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STNTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA0STNTS2" android:exported="false" android:process=":p1" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STPTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STPTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRNTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRNTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRNTS2" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRNTS3" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRNTS4" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1NRNTS5" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STPNTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STPNTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STNTS0" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STNTS1" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP1TA1STNTS2" android:exported="false" android:process=":p1" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <provider android:name="com.qihoo360.replugin.component.provider.PluginPitProviderP1" android:exported="false" android:process=":p1" android:authorities="com.xunlei.downloadprovider.Plugin.NP.1" />
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderP1" android:exported="false" android:process=":p1" android:authorities="com.xunlei.downloadprovider.loader.p.mainN99" />
+        <service android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceP1" android:exported="false" android:process=":p1" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRTS0" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRTS1" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STPTS0" android:exported="false" android:process=":p2" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STPTS1" android:exported="false" android:process=":p2" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STTS0" android:exported="false" android:process=":p2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STTS1" android:exported="false" android:process=":p2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2SITS0" android:exported="false" android:process=":p2" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2SITS1" android:exported="false" android:process=":p2" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2SITS2" android:exported="false" android:process=":p2" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRNTS0" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRNTS1" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRNTS2" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRNTS3" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRNTS4" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2NRNTS5" android:exported="false" android:process=":p2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STPNTS0" android:exported="false" android:process=":p2" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STPNTS1" android:exported="false" android:process=":p2" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STNTS0" android:exported="false" android:process=":p2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STNTS1" android:exported="false" android:process=":p2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2STNTS2" android:exported="false" android:process=":p2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2SINTS0" android:exported="false" android:process=":p2" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2SINTS1" android:exported="false" android:process=":p2" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STPTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STPTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRNTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRNTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRNTS2" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRNTS3" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRNTS4" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0NRNTS5" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STPNTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STPNTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STNTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STNTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA0STNTS2" android:exported="false" android:process=":p2" android:taskAffinity=":t0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STPTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STPTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRNTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRNTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRNTS2" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRNTS3" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRNTS4" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1NRNTS5" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STPNTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STPNTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STNTS0" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STNTS1" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.xunlei.downloadprovider.loader.a.ActivityP2TA1STNTS2" android:exported="false" android:process=":p2" android:taskAffinity=":t1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <provider android:name="com.qihoo360.replugin.component.provider.PluginPitProviderP2" android:exported="false" android:process=":p2" android:authorities="com.xunlei.downloadprovider.Plugin.NP.2" />
+        <provider android:name="com.qihoo360.replugin.component.process.ProcessPitProviderP2" android:exported="false" android:process=":p2" android:authorities="com.xunlei.downloadprovider.loader.p.mainN98" />
+        <service android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceP2" android:exported="false" android:process=":p2" />
+        <meta-data android:name="TINKER_ID" android:value="baseStableRelease_5_60_2_5510_1166" />
+        <meta-data android:name="BUGLY_CHANNEL" android:value="baseStable" />
+    </application>
+</manifest>

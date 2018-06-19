@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/iv_first_use_tip" android:background="@drawable/vod_player_first_use_tip_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />

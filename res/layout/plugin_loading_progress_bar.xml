@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" roundprogressbar:layout_width="wrap_content" roundprogressbar:layout_height="wrap_content">
+    <LinearLayout roundprogressbar:orientation="vertical" roundprogressbar:background="@drawable/xl_toast_bkg" roundprogressbar:layout_width="UNKNOWN_DATA_0xa001" roundprogressbar:layout_height="UNKNOWN_DATA_0x8201">
+        <com.xunlei.common.commonview.RoundProgressBar roundprogressbar:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" roundprogressbar:id="@+id/dlg_storage_tip_size_rpbar" roundprogressbar:layout_width="UNKNOWN_DATA_0x4601" roundprogressbar:layout_height="UNKNOWN_DATA_0x4601" roundprogressbar:layout_marginTop="20dp" roundprogressbar:rPbarColor="#00000000" roundprogressbar:rPbarProgressColor="#aaffffff" roundprogressbar:rPbarWidth="3dp" roundprogressbar:rPbarTextColor="#aaffffff" roundprogressbar:rPbarTextSize="16sp" />
+        <TextView roundprogressbar:textSize="12sp" roundprogressbar:textColor="#aaffffff" roundprogressbar:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" roundprogressbar:id="@+id/plugin_download_tip_txtview" roundprogressbar:layout_width="match_parent" roundprogressbar:layout_height="wrap_content" roundprogressbar:layout_marginTop="10dp" roundprogressbar:text="@string/plugin_download_tip_first_use" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/user_center_fans_bar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+    <RelativeLayout android:id="@+id/rl_follow_contain" android:background="@drawable/me_cell_selector" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="13sp" android:textColor="#3b424c" android:id="@+id/tv_follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="0" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11sp" android:textColor="#757b84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="关注" android:layout_below="@+id/tv_follow_count" android:layout_centerHorizontal="true" />
+        <View android:background="#f0f1f2" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_fans_contain" android:background="@drawable/me_cell_selector" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="13sp" android:textColor="#3b424c" android:id="@+id/tv_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="0" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11sp" android:textColor="#757b84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="粉丝" android:layout_below="@+id/tv_fans_count" android:layout_centerHorizontal="true" />
+        <View android:background="#f0f1f2" android:layout_width="UNKNOWN_DATA_0x100" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_visitors_contain" android:background="@drawable/me_cell_selector" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_weight="1.0">
+        <TextView android:textSize="13sp" android:textColor="#3b424c" android:id="@+id/tv_visitor_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="0" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11sp" android:textColor="#757b84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="访客" android:layout_below="@+id/tv_visitor_count" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>
